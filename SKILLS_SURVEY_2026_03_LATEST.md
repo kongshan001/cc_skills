@@ -3,7 +3,7 @@
 **调研日期**: 2026-03-04  
 **技能来源**: GitHub 热门仓库 + ClawHub 实时搜索 + Antigravity Awesome Skills (970+ Skills)  
 **目标仓库**: https://github.com/kongshan001/cc_skills  
-**状态**: ✅ 调研完成 (第九轮更新)
+**状态**: ✅ 调研完成 (第十轮更新)
 
 ---
 
@@ -37,8 +37,9 @@
 | unity-developer | antigravity | Unity 6 LTS 专家 | 高 |
 | unity | ClawHub | Unity 开发 | **3.030** 🆕 |
 | openclaw-unreal-skill | ClawHub | Unreal 技能 | **3.376** 🆕 |
-| unity-ai-workflow-2026 | antigravity | Unity AI Workflow 2026 | 高 |
 | godot-gdscript-patterns | antigravity | Godot 4 GDScript | 高 |
+| godot-4-migration | antigravity | Godot 3→4 迁移 | 高 |
+| unity-ecs-patterns | antigravity | Unity ECS 模式 | 高 |
 | unreal-engine-cpp-pro | antigravity | UE5 C++ 开发 | 高 |
 | bevy-ecs-expert | antigravity | Bevy ECS (Rust) | 中 |
 | game-audio | antigravity | 游戏音频 | 中 |
@@ -172,6 +173,18 @@ INPUT → UPDATE (固定时间步 50Hz) → RENDER (插值)
 | 渲染 | 5ms |
 ```
 
+### 1.8 游戏开发 Skills 推荐安装
+
+```bash
+# 核心 Skills
+clawhub install game-development
+clawhub install openclaw-godot-skill
+clawhub install godot-dev-guide
+clawhub install unity-developer
+clawhub install unity
+clawhub install openclaw-unreal-skill
+```
+
 ---
 
 ## 🐍 二、Python 开发 Skills
@@ -182,12 +195,17 @@ INPUT → UPDATE (固定时间步 50Hz) → RENDER (插值)
 |------------|------|---------|------|
 | python-executor | ClawHub | 安全沙箱执行 Python | 3.480 |
 | python-dataviz | ClawHub | 数据可视化 | 3.428 |
-| async-python-patterns | antigravity | asyncio 异步编程 | 高 |
-| python-testing-patterns | antigravity | pytest 测试策略 | 高 |
-| dbos-python | antigravity | DBOS Python 框架 | 中 |
-| python-script-generator | ClawHub | 脚本生成 | 3.220 |
+| python-development-python-scaffold | antigravity | Python 项目脚手架 | 高 |
+| python-fastapi-development | antigravity | FastAPI 开发 | 高 |
+| python-patterns | antigravity | Python 设计模式 | 高 |
 | python-pro | antigravity | Python Pro | 高 |
-| uv-python | antigravity | uv 快速包管理 | 高 |
+| python-performance-optimization | antigravity | 性能优化 | 高 |
+| python-testing-patterns | antigravity | pytest 测试策略 | 高 |
+| async-python-patterns | antigravity | asyncio 异步编程 | 高 |
+| python-packaging | antigravity | 包发布 | 高 |
+| lsp-python | ClawHub | LSP Python | 3.289 |
+| python-script-generator | ClawHub | 脚本生成 | 3.220 |
+| fastapi | ClawHub | FastAPI | 3.523 |
 
 ### 2.2 Python Executor 详解 (评分: 3.480)
 
@@ -225,7 +243,26 @@ INPUT → UPDATE (固定时间步 50Hz) → RENDER (插值)
 - 探索性数据分析
 ```
 
-### 2.4 Async Python Patterns 详解
+### 2.4 FastAPI Skill 详解 (评分: 3.523)
+
+**来源**: ClawHub
+
+```markdown
+### 核心能力
+- RESTful API 设计
+- Pydantic 数据验证
+- 依赖注入
+- 自动文档生成 (Swagger/ReDoc)
+- 异步支持
+
+### 适用场景
+- 微服务开发
+- REST API 构建
+- Web 后端开发
+- API 文档自动生成
+```
+
+### 2.5 Async Python Patterns 详解
 
 **来源**: Antigravity Awesome Skills
 
@@ -258,7 +295,7 @@ asyncio.run(fetch_all(["url1", "url2"]))
 ```
 ```
 
-### 2.5 Python Testing Patterns
+### 2.6 Python Testing Patterns
 
 ```markdown
 ### 核心能力
@@ -276,6 +313,19 @@ asyncio.run(fetch_all(["url1", "url2"]))
 | E2E 测试 | 完整流程 | 慢 |
 ```
 
+### 2.7 Python 开发 Skills 推荐安装
+
+```bash
+# 核心 Skills
+clawhub install python-executor
+clawhub install python-dataviz
+clawhub install fastapi
+
+# 可选增强
+clawhub install python-script-generator
+clawhub install lsp-python
+```
+
 ---
 
 ## 🧪 三、自动化测试 Skills
@@ -287,11 +337,17 @@ asyncio.run(fetch_all(["url1", "url2"]))
 | test-runner | ClawHub | 测试运行器 | 3.639 |
 | test-master | ClawHub | 测试大师 | 3.576 |
 | test-patterns | ClawHub | 测试模式 | 3.548 |
+| test-specialist | ClawHub | 测试专家 | 3.467 |
+| test-sentinel | ClawHub | 测试哨兵 | 3.347 |
+| test-case-generator | ClawHub | 测试用例生成器 | 3.336 |
 | playwright | ClawHub | 浏览器自动化 | 3.538 |
 | playwright-mcp | ClawHub | Playwright MCP | 3.581 |
 | playwright-scraper-skill | ClawHub | 网页抓取 | 3.584 |
-| e2e-testing-patterns | antigravity | E2E 测试模式 | 2.406 |
+| e2e-testing | antigravity | E2E 测试 | 高 |
+| e2e-testing-patterns | antigravity | E2E 测试模式 | 高 |
 | browser-automation | antigravity | 浏览器自动化 | 高 |
+| testing-patterns | antigravity | 测试模式 | 高 |
+| test-driven-development | antigravity | TDD | 高 |
 
 ### 3.2 Test Runner 详解 (评分: 3.639)
 
@@ -305,6 +361,12 @@ asyncio.run(fetch_all(["url1", "url2"]))
 - JUnit XML 报告
 - HTML 报告
 - CI/CD 集成
+
+### 适用场景
+- 单元测试运行
+- 集成测试管理
+- CI/CD 流水线集成
+- 测试报告生成
 ```
 
 ### 3.3 Test Master 详解 (评分: 3.576)
@@ -317,6 +379,11 @@ asyncio.run(fetch_all(["url1", "url2"]))
 - 测试用例设计
 - 质量度量
 - 测试报告分析
+
+### 适用场景
+- 测试架构设计
+- 质量评估
+- 测试流程优化
 ```
 
 ### 3.4 Test Patterns 详解 (评分: 3.548)
@@ -329,6 +396,11 @@ asyncio.run(fetch_all(["url1", "url2"]))
 - 最佳实践
 - 代码覆盖率
 - Mock 策略
+
+### 适用场景
+- 测试最佳实践
+- 代码覆盖率提升
+- Mock 对象使用
 ```
 
 ### 3.5 Playwright Skills 专题
@@ -351,9 +423,44 @@ asyncio.run(fetch_all(["url1", "url2"]))
 - E2E 测试
 - 视觉回归测试
 - MCP 协议集成
+
+### 适用场景
+- 网页自动化
+- 数据抓取
+- E2E 测试
+- 视觉回归测试
+- 表单自动填写
 ```
 
-### 3.6 E2E Testing Patterns
+### 3.6 移动端自动化测试 Skills
+
+| Skill 名称 | 来源 | 核心能力 | 评分 |
+|------------|------|---------|------|
+| mobile-appium-test | ClawHub | Appium 移动端测试 | 3.189 |
+| mobile | ClawHub | 移动端基础 | 3.041 |
+| android-remote-control | ClawHub | Android 远程控制 | 3.304 |
+| android-studio | ClawHub | Android Studio | 3.209 |
+| android-control-2 | ClawHub | Android 控制 | 3.204 |
+| ios-simulator | ClawHub | iOS 模拟器 | 3.456 |
+| ios | ClawHub | iOS 开发 | 3.057 |
+
+```markdown
+### Mobile Appium Test (评分: 3.189)
+### 核心能力
+- Appium 测试框架
+- Android/iOS 原生应用测试
+- 混合应用测试
+- 自动化测试脚本
+- 设备农场集成
+
+### 适用场景
+- 移动端功能测试
+- 跨平台测试
+- 回归测试
+- 性能测试
+```
+
+### 3.7 E2E Testing Patterns
 
 **来源**: Antigravity Awesome Skills
 
@@ -372,6 +479,24 @@ asyncio.run(fetch_all(["url1", "url2"]))
 4. 并行化执行
 ```
 
+### 3.8 自动化测试 Skills 推荐安装
+
+```bash
+# 测试运行器
+clawhub install test-runner
+clawhub install test-master
+clawhub install test-patterns
+
+# Playwright
+clawhub install playwright
+clawhub install playwright-mcp
+
+# 移动端测试
+clawhub install mobile-appium-test
+clawhub install android-remote-control
+clawhub install ios-simulator
+```
+
 ---
 
 ## 🛠️ 四、开发者工具 Skills
@@ -386,6 +511,9 @@ asyncio.run(fetch_all(["url1", "url2"]))
 | github-trending-cn | 3.458 | GitHub 中文趋势 |
 | github-ops | 3.345 | GitHub 运维 |
 | github-actions-generator | 3.238 | Actions 生成器 |
+| code-review | 3.620 | 代码审查 |
+| receiving-code-review | 3.570 | 接收代码审查 |
+| requesting-code-review | 3.554 | 请求代码审查 |
 
 ```markdown
 ### 核心能力
@@ -394,6 +522,7 @@ asyncio.run(fetch_all(["url1", "url2"]))
 - Issue 管理
 - GitHub Actions Workflow
 - CI/CD 配置
+- 代码审查
 ```
 
 ### 4.2 Docker 专题
@@ -417,40 +546,110 @@ asyncio.run(fetch_all(["url1", "url2"]))
 - 安全最佳实践
 ```
 
-### 4.3 自动化工作流
+### 4.3 浏览器自动化专题
 
 | Skill | 评分 |
 |-------|------|
-| automation-workflows | 3.699 |
-| workflow-automation | 高 |
-| windows-ui-automation | 3.536 |
+| agent-browser | 3.772 |
+| browser-automation | 3.700 |
+| browser-use | 3.653 |
+| fast-browser-use | 3.619 |
+| stagehand-browser-cli | 3.597 |
+
+```markdown
+### 核心能力
+- 浏览器控制
+- 网页交互
+- 数据提取
+- 截图和录制
+- 表单填写
+```
+
+### 4.4 安全审计 Skills
+
+| Skill | 评分 |
+|-------|------|
+| security-auditor | 3.556 |
+| clawdbot-security-check | 3.514 |
+| security-audit-toolkit | 3.513 |
+| clawdbot-security-suite | 3.452 |
+
+```markdown
+### 核心能力
+- 代码安全审计
+- 漏洞扫描
+- 安全最佳实践
+- 合规检查
+```
+
+### 4.5 API 开发 Skills
+
+| Skill | 评分 |
+|-------|------|
+| api-gateway | 3.684 |
+| secure-api-calls | 3.459 |
+| fastapi | 3.523 |
+| sovereign-api-docs-generator | 3.317 |
+
+```markdown
+### 核心能力
+- API 设计和开发
+- 安全调用
+- 文档生成
+- 网关配置
+```
+
+### 4.6 开发者工具 Skills 推荐安装
+
+```bash
+# GitHub
+clawhub install github
+clawhub install github-cli
+clawhub install code-review
+
+# Docker
+clawhub install docker-essentials
+clawhub install docker-compose
+
+# 浏览器自动化
+clawhub install browser-automation
+clawhub install browser-use
+
+# 安全
+clawhub install security-auditor
+```
 
 ---
 
-## 📈 Skills 评分排行榜 (Top 20)
+## 📈 Skills 评分排行榜 (Top 25)
 
 | 排名 | Skill | 类别 | 评分 | 趋势 |
 |------|-------|------|------|------|
-| 1 | github | DevOps | 3.790 | - |
-| 2 | automation-workflows | Automation | 3.699 | - |
-| 3 | docker-essentials | DevOps | 3.694 | - |
-| 4 | test-runner | Testing | 3.639 | 🆕 |
-| 5 | openclaw-github-assistant | DevOps | 3.615 | 🆕 |
-| 6 | playwright-scraper-skill | Automation | 3.584 | - |
-| 7 | playwright-mcp | Automation | 3.581 | - |
-| 8 | docker | DevOps | 3.577 | - |
-| 9 | test-master | Testing | 3.576 | 🆕 |
-| 10 | docker-sandbox | DevOps | 3.548 | - |
-| 11 | test-patterns | Testing | 3.548 | 🆕 |
-| 12 | playwright | Automation | 3.538 | - |
-| 13 | docker-ctl | DevOps | 3.531 | 🆕 |
-| 14 | docker-compose | DevOps | 3.511 | - |
-| 15 | playwright-browser-automation | Automation | 3.509 | - |
-| 16 | docker-essentials-1-0-0 | DevOps | 3.498 | 🆕 |
-| 17 | openclaw-godot-skill | Game | 3.497 | 🆕 |
-| 18 | github-cli | DevOps | 3.501 | - |
-| 19 | godot-dev-guide | Game | 3.442 | 🆕 |
-| 20 | docker-diag | DevOps | 3.474 | 🆕 |
+| 1 | agent-browser | Browser | 3.772 | - |
+| 2 | github | DevOps | 3.790 | - |
+| 3 | automation-workflows | Automation | 3.699 | - |
+| 4 | docker-essentials | DevOps | 3.694 | - |
+| 5 | browser-automation | Browser | 3.700 | 🆕 |
+| 6 | test-runner | Testing | 3.639 | 🆕 |
+| 7 | openclaw-github-assistant | DevOps | 3.615 | 🆕 |
+| 8 | code-review | DevOps | 3.620 | 🆕 |
+| 9 | browser-use | Browser | 3.653 | 🆕 |
+| 10 | playwright-scraper-skill | Automation | 3.584 | - |
+| 11 | playwright-mcp | Automation | 3.581 | - |
+| 12 | docker | DevOps | 3.577 | - |
+| 13 | test-master | Testing | 3.576 | 🆕 |
+| 14 | fast-browser-use | Browser | 3.619 | 🆕 |
+| 15 | docker-sandbox | DevOps | 3.548 | - |
+| 16 | test-patterns | Testing | 3.548 | 🆕 |
+| 17 | playwright | Automation | 3.538 | - |
+| 18 | docker-ctl | DevOps | 3.531 | 🆕 |
+| 19 | docker-compose | DevOps | 3.511 | - |
+| 20 | playwright-browser-automation | Automation | 3.509 | - |
+| 21 | docker-essentials-1-0-0 | DevOps | 3.498 | 🆕 |
+| 22 | openclaw-godot-skill | Game | 3.497 | 🆕 |
+| 23 | receiving-code-review | DevOps | 3.570 | 🆕 |
+| 24 | security-auditor | Security | 3.556 | 🆕 |
+| 25 | godot-dev-guide | Game | 3.442 | 🆕 |
 
 ---
 
@@ -483,16 +682,15 @@ npx antigravity-awesome-skills --claude
 
 ---
 
-**文档版本**: 2026.03.04.2  
+**文档版本**: 2026.03.04.3  
 **本轮更新**: 
-- 新增 OpenClaw Godot Skill (3.497)
-- 新增 Godot Dev Guide (3.442)
-- 新增 OpenClaw Unreal Skill (3.376)
-- 新增 Unity Skill (3.030)
-- 新增 OpenClaw GitHub Assistant (3.615)
-- 新增 Docker CTL (3.531)
-- 新增 Docker Essentials 1.0.0 (3.498)
-- 新增 Docker Diag (3.474)
-- 更新 Skills 评分排行榜 Top 20
+- 新增游戏客户端开发 Skills 完整列表
+- 新增 Python 开发 Skills (FastAPI, 异步编程)
+- 新增移动端自动化测试 Skills (Appium, iOS, Android)
+- 新增浏览器自动化 Skills 专题 (Agent Browser, Browser Use)
+- 新增安全审计 Skills 专题
+- 新增 API 开发 Skills 专题
+- 更新 Skills 评分排行榜 Top 25
+- 增加各分类 Skills 推荐安装命令
 
 **调研完成**: ✅
