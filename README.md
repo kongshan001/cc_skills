@@ -12,6 +12,7 @@
 | [ui-ux-pro-max](./ui-ux-pro-max/README.md) | AI UI/UX 设计智能助手，67+设计风格，36k⭐ | ✅ 已调研 |
 | [claude-mem](./claude-mem/README.md) | 智能记忆系统，自动捕获会话内容并生成 AI 摘要 | ✅ 已调研 |
 | [episodic-memory](./episodic-memory/README.md) | 跨会话语义搜索，记住之前的讨论、决策和模式 | ✅ 已调研 |
+| [planning-with-files](./planning-with-files/README.md) | Manus 风格持久化 Markdown 规划系统，15k⭐ | ✅ 已调研 |
 
 ## 📝 文档规范
 
