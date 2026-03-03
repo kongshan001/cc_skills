@@ -1,7 +1,8 @@
 # Claude Code Skills 调研报告 - 游戏客户端开发、Python 与自动化测试
 
-> 调研时间: 2026-03-04
+> 调研时间: 2026-03-04 (持续更新)
 > 来源: ClawHub ( Antigravity Awesome Skills )
+> 最新更新: 补充 Unity Skill、游戏客户端自动化测试、API 测试等专题
 
 ---
 
@@ -559,18 +560,225 @@ clawhub install docker
 
 ---
 
-## 七、总结
+## 八、近期新增 Skills (2026年3月)
 
-本次调研覆盖了 20+ 个 Claude Code Skills，涵盖：
+### 8.1 Unity 开发 (新增)
 
-1. **游戏客户端开发**: 5 个核心 Skills (Godot, Unreal, Unity)
-2. **Python 开发**: 5+ 个 Skills (执行、测试、类型检查)
-3. **自动化测试**: 5 个 Skills (Playwright, E2E, 单元测试)
-4. **开发者工具**: 6 个 Skills (Docker, K8s, GitLab, 代码质量)
+**Skill**: `unity`
+**所有者**: 待确认
+**评分**: 3.029
 
-这些 Skills 可以显著提升开发效率，建议根据项目需求选择性安装使用。
+#### 核心能力
+```markdown
+### 🎮 Unity 开发
+- 场景管理
+- 组件操作
+- 脚本编写
+- 资源管理
+
+### 🔧 构建与部署
+- 构建配置
+- 平台部署
+- 性能优化
+```
+
+#### 适用场景
+- ✅ Unity 游戏开发
+- ✅ Unity 编辑器自动化
+- ✅ 资源与资产管理
+
+---
+
+### 8.2 游戏引擎综合
+
+**Skill**: `game-engine`
+**评分**: 0.845
+
+**Skill**: `game-developer-skill`
+**评分**: 0.847
+
+#### 核心能力
+```markdown
+### 🎮 引擎支持
+- Unity 开发
+- Unreal 开发
+- Godot 开发
+- 自定义引擎
+
+### 🛠️ 开发工具
+- 编辑器集成
+- 调试工具
+- 性能分析
+```
+
+---
+
+### 8.3 Git 开发者工具
+
+| Skill 名称 | 评分 | 核心能力 |
+|-----------|------|---------|
+| git-essentials | 3.746 | Git 基础操作 |
+| git-workflows | 3.683 | Git 工作流 |
+| git | 3.656 | Git 全套工具 |
+| git-helper | 3.598 | Git 辅助工具 |
+| git-summary | 3.565 | Git 提交摘要 |
+| git-secrets-scanner | 3.435 | Git 密钥扫描 |
+| git-changelog-gen | 3.409 | changelog 生成 |
+| git-auto | 3.377 | Git 自动化 |
+| git-flow-helper | 3.333 | Git Flow 支持 |
+
+---
+
+### 8.4 Docker 与容器工具
+
+| Skill 名称 | 评分 | 核心能力 |
+|-----------|------|---------|
+| docker-essentials | 1.231 | Docker 基础 |
+| docker | 1.105 | Docker 全套 |
+| kubernetes | 1.101 | K8s 管理 |
+| container-debug | 1.084 | 容器调试 |
+| docker-ctl | 1.074 | Docker 控制 |
+| kubectl | 1.054 | kubectl 工具 |
+| docker-sandbox | 1.039 | Docker 沙箱 |
+| k8s-browser | 1.005 | K8s 浏览器 |
+
+---
+
+### 8.5 API 测试工具
+
+| Skill 名称 | 评分 | 核心能力 |
+|-----------|------|---------|
+| rest-api-tester | 3.073 | REST API 测试 |
+| jira-rest-v3 | 1.849 | Jira API |
+| api-gateway | 1.211 | API 网关 |
+
+---
+
+### 8.6 Web 开发工具
+
+| Skill 名称 | 评分 | 核心能力 |
+|-----------|------|---------|
+| web-deploy-github | 3.482 | GitHub Pages 部署 |
+| web | 3.445 | Web 开发 |
+| web-pilot | 3.441 | Web 导航 |
+| ai-web-automation | 3.427 | Web 自动化 |
+| web-search-free | 3.360 | Web 搜索 |
+
+---
+
+### 8.7 Python 数据可视化
+
+**Skill**: `python-dataviz`
+**评分**: 3.427
+
+#### 核心能力
+```markdown
+### 📊 数据可视化
+- 图表生成
+- 数据绑定
+- 交互式图表
+- 导出功能
+
+### 🐍 Python 集成
+- Pandas 集成
+- Matplotlib 支持
+- Seaborn 支持
+```
+
+---
+
+### 8.8 游戏客户端自动化测试
+
+**Skill**: `qa-testing-bots`
+**评分**: 3.232
+
+**Skill**: `afrexai-qa-testing-engine`
+**评分**: 0.901
+
+#### 核心能力
+```markdown
+### 🧪 自动化测试
+- UI 测试自动化
+- 功能测试
+- 回归测试
+- 性能测试
+
+### 🎮 游戏测试
+- 场景测试
+- AI 行为测试
+- 网络同步测试
+- 资源加载测试
+
+### 🤖 AI 驱动测试
+- 智能测试用例生成
+- 自动化测试执行
+- 测试结果分析
+```
+
+---
+
+## 九、总结
+
+本次调研覆盖了 30+ 个 Claude Code Skills，涵盖：
+
+1. **游戏客户端开发**: 6+ 个核心 Skills (Godot, Unreal, Unity, 通用游戏引擎)
+2. **Python 开发**: 10+ 个 Skills (执行、测试、类型检查、数据可视化)
+3. **自动化测试**: 10+ 个 Skills (Playwright, E2E, 单元测试, 游戏客户端测试)
+4. **开发者工具**: 20+ 个 Skills (Docker, K8s, Git, API 测试, Web 开发)
+
+### 9.1 推荐 Skills 组合
+
+#### 游戏客户端开发
+```
+推荐组合:
+- openclaw-godot-skill (Godot 开发)
+- openclaw-unreal-skill (Unreal 开发)
+- unity (Unity 开发)
+- game-developer-skill (通用游戏开发)
+```
+
+#### Python 开发
+```
+推荐组合:
+- python-executor (代码执行)
+- python-dataviz (数据可视化)
+- clean-pytest (测试)
+- lsp-python (语言支持)
+```
+
+#### 测试与质量保证
+```
+推荐组合:
+- playwright (Web 自动化)
+- e2e-testing-patterns (E2E 测试)
+- test-master (测试策略)
+- rest-api-tester (API 测试)
+- qa-testing-bots (游戏客户端测试)
+```
+
+#### DevOps 工具
+```
+推荐组合:
+- docker / docker-essentials (容器化)
+- kubernetes / kube-medic (K8s 诊断)
+- git / git-workflows (版本控制)
+- gitlab-cli-skills (GitLab 操作)
+```
+
+### 9.2 安装方式
+```bash
+# 使用 ClawHub 安装
+clawhub install <skill-name>
+
+# 例如
+clawhub install openclaw-godot-skill
+clawhub install unity
+clawhub install playwright
+clawhub install docker
+```
 
 ---
 
 *文档生成时间: 2026-03-04*
 *来源: ClawHub Registry*
+*持续更新中...*
