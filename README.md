@@ -14,6 +14,7 @@
 | [episodic-memory](./episodic-memory/README.md) | 跨会话语义搜索，记住之前的讨论、决策和模式 | ✅ 已调研 |
 | [planning-with-files](./planning-with-files/README.md) | Manus 风格持久化 Markdown 规划系统，15k⭐ | ✅ 已调研 |
 | [deep-research](./deep-research/README.md) | Gemini 深度研究技能，自主多步骤市场分析 | ✅ 已调研 |
+| [trailofbits-security](./trailofbits-security/README.md) | Trail of Bits 安全技能集，20+安全插件 | ✅ 已调研 |
 
 ## 📝 文档规范
 
