@@ -27,7 +27,15 @@
 
 ## 🎮 游戏客户端开发 Skills
 
-### 核心 Skills 矩阵
+### 核心 Skills 矩阵 (最新搜索结果)
+
+| Skill ID | 名称 | 核心能力 | 适用引擎 | 评分 |
+|----------|------|---------|---------|------|
+| openclaw-godot-skill | Godot Skill | 场景管理、节点操作、输入模拟 | Godot | ⭐⭐⭐⭐⭐ (0.911) |
+| the-flip-publish | The Flip Publish | 游戏发布 | 通用 | ⭐⭐⭐⭐⭐ (0.985) |
+| clawland | Clawland | 游戏 Land | 通用 | ⭐⭐⭐⭐⭐ (0.957) |
+| clawplay-skill | ClawPlay | 游戏播放 | 通用 | ⭐⭐⭐ (0.720) |
+| agent-rpg | Agent RPG | RPG 游戏开发 | 通用 | ⭐⭐⭐⭐ (0.809) |
 
 | Skill ID | 名称 | 核心能力 | 适用引擎 | 评分 |
 |----------|------|---------|---------|------|
@@ -127,7 +135,15 @@ public class FrameSyncManager
 
 ## 🐍 Python 开发 Skills
 
-### Python Skills 完整列表
+### Python Skills 完整列表 (最新搜索结果)
+
+| Skill ID | 名称 | 核心能力 | 评分 |
+|----------|------|---------|------|
+| python-executor | Python Executor | 安全沙箱执行 Python 代码 | ⭐⭐⭐⭐⭐ (3.479) |
+| python-dataviz | Python Dataviz | 数据可视化 | ⭐⭐⭐⭐⭐ (3.427) |
+| python-sdk | Python SDK | Python SDK 开发 | ⭐⭐⭐⭐⭐ (3.333) |
+| lsp-python | LSP Python | 语言服务器协议 | ⭐⭐⭐⭐⭐ (3.279) |
+| python-script-generator | Python Script Generator | 脚本生成 | ⭐⭐⭐⭐ (3.205) |
 
 | Skill ID | 名称 | 核心能力 | 评分 |
 |----------|------|---------|------|
@@ -229,7 +245,20 @@ async def create_room(
 
 ## 🧪 自动化测试 Skills
 
-### 测试 Skills 矩阵
+### 测试 Skills 矩阵 (最新搜索结果)
+
+| Skill ID | 名称 | 核心能力 | 评分 |
+|----------|------|---------|------|
+| test-runner | Test Runner | 测试运行器 | ⭐⭐⭐⭐⭐ (1.239) |
+| playwright-mcp | Playwright MCP | Playwright MCP 集成 | ⭐⭐⭐⭐⭐ (1.165) |
+| playwright-scraper-skill | Playwright Scraper | 网页抓取 | ⭐⭐⭐⭐⭐ (1.161) |
+| e2e-testing-patterns | E2E Testing Patterns | 端到端测试模式 | ⭐⭐⭐⭐⭐ (1.151) |
+| test-master | Test Master | 测试大师 | ⭐⭐⭐⭐⭐ (1.138) |
+| playwright | Playwright | 浏览器自动化 | ⭐⭐⭐⭐⭐ (1.114) |
+| playwright-browser-automation | Playwright Browser | 浏览器自动化 | ⭐⭐⭐⭐⭐ (1.092) |
+| test-patterns | Test Patterns | 测试模式 | ⭐⭐⭐⭐ (1.056) |
+| web-qa-bot | Web QA Bot | Web QA 机器人 | ⭐⭐⭐⭐ (1.027) |
+| api-tester | API Tester | API 测试 | ⭐⭐⭐⭐ (1.006) |
 
 | Skill ID | 名称 | 核心能力 | 评分 |
 |----------|------|---------|------|
@@ -342,7 +371,24 @@ await page.route('**/api/game/*', route => {
 
 ## 🛠️ 开发者工具 Skills
 
-### DevOps Skills 完整列表
+### DevOps Skills 完整列表 (最新搜索结果)
+
+| Skill ID | 名称 | 核心能力 | 评分 |
+|----------|------|---------|------|
+| github | GitHub | GitHub 自动化 | ⭐⭐⭐⭐⭐ (1.309) |
+| kubernetes | Kubernetes | K8s 集群管理 | ⭐⭐⭐⭐⭐ (1.180) |
+| docker-essentials | Docker Essentials | Docker 基础 | ⭐⭐⭐⭐⭐ (1.172) |
+| docker | Docker | Docker 完整功能 | ⭐⭐⭐⭐⭐ (1.081) |
+| gitflow | GitFlow | GitFlow 工作流 | ⭐⭐⭐⭐⭐ (1.033) |
+| gh | gh | GitHub CLI | ⭐⭐⭐⭐⭐ (1.027) |
+| docker-sandbox | Docker Sandbox | Docker 沙箱 | ⭐⭐⭐⭐⭐ (1.026) |
+| container-debug | Container Debug | 容器调试 | ⭐⭐⭐⭐⭐ (1.017) |
+| cicd-pipeline | CI/CD Pipeline | 持续集成/部署 | ⭐⭐⭐⭐⭐ (1.008) |
+| kubectl | kubectl | K8s 命令行 | ⭐⭐⭐⭐ (0.996) |
+| gitclassic | GitClassic | Git 经典操作 | ⭐⭐⭐⭐ (0.993) |
+| docker-ctl | Docker Ctl | Docker 控制 | ⭐⭐⭐⭐ (0.992) |
+| k8-multicluster | K8s MultiCluster | 多集群管理 | ⭐⭐⭐⭐ (0.984) |
+| k8s-browser | K8s Browser | K8s 浏览器管理 | ⭐⭐⭐⭐ (0.981) |
 
 | Skill ID | 名称 | 核心能力 | 评分 |
 |----------|------|---------|------|
@@ -594,5 +640,5 @@ Use @skill-name to help me...
 
 ---
 
-**文档更新时间**: 2026-03-04  
+**文档更新时间**: 2026-03-04 (新增最新 ClawHub 搜索结果)
 **Claude Code Skills 调研 - 第十三周**
