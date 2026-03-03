@@ -28,6 +28,7 @@
 | [python-dev-skills](./python-dev-skills/README.md) | Python 开发 Skills，Python 3.12+ 现代工具链，FastAPI/异步/测试/性能优化 | ✅ 已调研 |
 | [automation-testing-skills](./automation-testing-skills/README.md) | 自动化测试 Skills，AI 驱动测试、Playwright/Cypress E2E、pytest、TDD | ✅ 已调研 |
 | [developer-tools-skills](./developer-tools-skills/README.md) | 开发者工具 Skills，浏览器自动化、GitHub/GitLab 自动化、CI/CD 流水线 | ✅ 已调研 |
+| [SKILLS_SUPPLEMENT_2026_03](./SKILLS_SUPPLEMENT_2026_03.md) | Claude Code Skills 补充调研报告，2026年3月最新更新，包含 Multiplayer/Playwright/Async Python 等专题 | 🆕 新增 |
 
 ## 📝 文档规范
 
