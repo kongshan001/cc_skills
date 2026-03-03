@@ -6,6 +6,7 @@
 
 | Skill 名称 | 描述 | 状态 |
 |-----------|------|------|
+| [compound-engineering](./compound-engineering/README.md) | 复合工程插件，9,782⭐，29 agents·22 commands·20 skills，完整 Plan→Work→Review→Compound 工作流，多平台配置同步 | ✅ 已调研 |
 | [get-shit-done](./get-shit-done/README.md) | 轻量级 Spec 驱动开发系统，解决 Context Rot，Wave 并行执行 | ✅ 已调研 |
 | [superpowers](./superpowers/README.md) | Agentic Skills 完整工程工作流框架，68k⭐ | ✅ 已调研 |
 | [agentsys](./agentsys/README.md) | 14 插件·43 agents·30 skills 模块化编排系统，任务到生产完整自动化 | ✅ 已调研 |
