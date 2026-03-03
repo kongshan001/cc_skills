@@ -6,6 +6,7 @@
 
 | Skill 名称 | 描述 | 状态 |
 |-----------|------|------|
+| [superpowers](./superpowers/README.md) | Agentic Skills 完整工程工作流框架，68k⭐ | ✅ 已调研 |
 | | | |
 
 ## 📝 文档规范
