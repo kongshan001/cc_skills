@@ -29,6 +29,7 @@
 | [automation-testing-skills](./automation-testing-skills/README.md) | 自动化测试 Skills，AI 驱动测试、Playwright/Cypress E2E、pytest、TDD | ✅ 已调研 |
 | [developer-tools-skills](./developer-tools-skills/README.md) | 开发者工具 Skills，浏览器自动化、GitHub/GitLab 自动化、CI/CD 流水线 | ✅ 已调研 |
 | [SKILLS_SUPPLEMENT_2026_03](./SKILLS_SUPPLEMENT_2026_03.md) | Claude Code Skills 补充调研报告，2026年3月最新更新，包含 Multiplayer/Playwright/Async Python 等专题 | 🆕 新增 |
+| [SKILLS_SUPPLEMENT_2026_03_WEEK2](./SKILLS_SUPPLEMENT_2026_03_WEEK2.md) | Claude Code Skills 补充调研报告（第二周），游戏开发/ Python/ 测试/ 开发者工具完整覆盖 | 🆕 新增 |
 
 ## 📝 文档规范
 
