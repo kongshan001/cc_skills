@@ -258,6 +258,80 @@
 - 加载时间测试
 ```
 
+### 7.3 Unity 测试框架详解
+
+```markdown
+### 测试类型
+- Edit Mode: 纯 C# 逻辑测试，无需运行游戏
+- Play Mode: 集成测试，运行游戏场景
+
+### 核心组件
+- TestRunner: 测试运行器
+- NUnit: 测试框架
+- UnityTestAttribute: 协程测试
+- UnityWebRequest: 网络测试
+
+### 最佳实践
+- 分离单元测试和集成测试
+- 使用 ScriptableObject 存储测试数据
+- 使用 Addressables 加载测试资源
+- CI 集成 (GitHub Actions)
+
+### 示例测试
+```csharp
+[UnityTest]
+public IEnumerator PlayerMove_Test()
+{
+    var player = new GameObject("Player");
+    var mover = player.AddComponent<PlayerMover>();
+    
+    mover.Move(Vector2.right);
+    
+    yield return null; // 等待一帧
+    
+    Assert.AreEqual(Vector2.right, mover.Velocity);
+}
+```
+```
+
+### 7.4 网络同步测试专题
+
+```markdown
+### 帧同步测试
+- 确定性验证: 相同输入 → 相同输出
+- 断线重连测试
+- 录像回放验证
+
+### 状态同步测试
+- 状态一致性验证
+- 增量同步效率
+- 预测回滚测试
+
+### 延迟模拟
+- 网络抖动 (Jitter): 0-200ms 随机延迟
+- 丢包模拟: 5%-20% 丢包率
+- 高延迟环境: 200-500ms RTT
+```
+
+### 7.5 游戏性能基准测试
+
+```markdown
+### 帧率测试
+- 目标: 60 FPS (16.67ms/帧)
+- 最低: 30 FPS (33.33ms/帧)
+- 测量工具: Unity Profiler, UnityFrameTimingManager
+
+### 内存测试
+- 堆内存监控
+- 资源泄漏检测
+- GC 频率分析
+
+### 加载时间测试
+- 场景切换时间
+- 资源预加载
+- 热更新验证
+```
+
 ---
 
 ## 8. Playwright 高级专题
