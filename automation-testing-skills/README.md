@@ -376,6 +376,105 @@ cd $SKILL_DIR && node run.js /tmp/playwright-test-*.js
 
 ---
 
+## 7.6 游戏客户端自动化测试专题
+
+### 7.6.1 Unity Test Framework 详解
+
+```markdown
+### 测试类型
+- Edit Mode: 纯 C# 逻辑测试，无需运行游戏
+- Play Mode: 集成测试，运行游戏场景
+
+### 核心组件
+- TestRunner: 测试运行器
+- NUnit: 测试框架
+- UnityTestAttribute: 协程测试
+- UnityWebRequest: 网络测试
+
+### 最佳实践
+- 分离单元测试和集成测试
+- 使用 ScriptableObject 存储测试数据
+- 使用 Addressables 加载测试资源
+- CI 集成 (GitHub Actions)
+
+### 示例测试
+```csharp
+[UnityTest]
+public IEnumerator PlayerMove_Test()
+{
+    var player = new GameObject("Player");
+    var mover = player.AddComponent<PlayerMover>();
+    
+    mover.Move(Vector2.right);
+    
+    yield return null; // 等待一帧
+    
+    Assert.AreEqual(Vector2.right, mover.Velocity);
+}
+```
+```
+
+### 7.6.2 游戏网络同步测试
+
+```markdown
+### 帧同步测试
+- 确定性验证: 相同输入 → 相同输出
+- 断线重连测试
+- 录像回放验证
+
+### 状态同步测试
+- 状态一致性验证
+- 增量同步效率
+- 预测回滚测试
+
+### 延迟模拟
+- 网络抖动 (Jitter): 0-200ms 随机延迟
+- 丢包模拟: 5%-20% 丢包率
+- 高延迟环境: 200-500ms RTT
+```
+
+### 7.6.3 游戏性能基准测试
+
+```markdown
+### 帧率测试
+- 目标: 60 FPS (16.67ms/帧)
+- 最低: 30 FPS (33.33ms/帧)
+- 测量工具: Unity Profiler, UnityFrameTimingManager
+
+### 内存测试
+- 堆内存监控
+- 资源泄漏检测
+- GC 频率分析
+
+### 加载时间测试
+- 场景切换时间
+- 资源预加载
+- 热更新验证
+```
+
+### 7.6.4 移动端游戏测试 (Android/iOS)
+
+```markdown
+### Android UI 自动化测试
+- ADB 命令基础
+- uiautomator dump UI 检查
+- 触摸事件模拟
+- 截图验证
+
+### iOS 自动化测试
+- XCUITest 框架
+- Instruments 性能分析
+- 设备兼容性测试
+
+### 游戏特定测试
+- 触控响应延迟
+- 陀螺仪/重力感应
+- 内存/电量消耗
+- 网络切换 (WiFi → 4G)
+```
+
+---
+
 ## 8. 优缺点分析
 
 ### ✅ 优点
@@ -387,6 +486,7 @@ cd $SKILL_DIR && node run.js /tmp/playwright-test-*.js
 | **多框架** | Playwright/Cypress/pytest 都有 |
 | **CI/CD** | 深度集成持续集成 |
 | **TDD** | 完整测试驱动开发支持 |
+| **游戏测试** | 覆盖 Unity/移动端/网络同步测试 |
 
 ### ❌ 缺点
 
@@ -394,7 +494,7 @@ cd $SKILL_DIR && node run.js /tmp/playwright-test-*.js
 |-----|------|
 | **复杂度** | 工具链较多，学习成本高 |
 | **维护** | E2E 测试维护仍是挑战 |
-| **游戏测试** | 游戏特定测试 Skills 较少 |
+| **游戏特定** | 部分游戏引擎测试 Skills 较少 |
 
 ---
 
