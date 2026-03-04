@@ -2,7 +2,8 @@
 
 > 记录每个 Skill 的落地实践过程
 
-| [SKILLS_SURVEY_2026_03_WEEK30](./SKILLS_SURVEY_2026_03_WEEK30.md) | Claude Code Skills 完整调研报告（第三十周），ClawHub Top 30 Skills 排行榜，游戏/Python/测试/开发者工具完整覆盖，Claude Code Game Studios 48 agents 专题 | 🆕 新增 |
+| [SKILLS_SURVEY_2026_03_WEEK31](./SKILLS_SURVEY_2026_03_WEEK31.md) | Claude Code Skills 完整调研报告（第三十一周），GitHub 实时搜索最新 Skills，游戏/Python/测试/开发者工具完整覆盖 | 🆕 新增 |
+| [SKILLS_SURVEY_2026_03_WEEK30](./SKILLS_SURVEY_2026_03_WEEK30.md) | Claude Code Skills 完整调研报告（第三十周），ClawHub Top 30 Skills 排行榜，游戏/Python/测试/开发者工具完整覆盖，Claude Code Game Studios 48 agents 专题 | ✅ 已调研 |
 
 ## 📚 Skills 列表
 
