@@ -2,6 +2,7 @@
 
 > 记录每个 Skill 的落地实践过程
 
+| [SKILLS_SURVEY_2026_03_WEEK57](./SKILLS_SURVEY_2026_03_WEEK57.md) | Claude Code Skills 调研报告（第五十七周），GitHub 实时搜索热门 Skills，游戏客户端开发（Claude-Code-Game-Studios 30⭐/Roblox 新兴）/Python开发（claudex 223⭐）/自动化测试（Playwright 1.9k⭐）/开发者工具（jarbitechture 1253⭐）完整覆盖 | 🆕 新增 |
 | [SKILLS_SURVEY_2026_03_WEEK56](./SKILLS_SURVEY_2026_03_WEEK56.md) | Claude Code Skills 调研报告（第五十六周），GitHub API + ClawHub 实时搜索热门 Skills，游戏客户端开发（Claude-Code-Game-Studios 30⭐）/Python开发（py 1.051）/自动化测试（playwright-skill 1860⭐）/开发者工具（git-essentials 1.299）完整覆盖 | 🆕 新增 |
 | [SKILLS_SURVEY_2026_03_WEEK55](./SKILLS_SURVEY_2026_03_WEEK55.md) | Claude Code Skills 调研报告（第五十五周），GitHub API 实时搜索热门 Skills，游戏客户端开发（Claude-Code-Game-Studios 30⭐）/Python开发（pydantic-ai-skills 140⭐）/自动化测试（playwright-skill 1860⭐）/开发者工具（claude-skills-marketplace 431⭐）完整覆盖 | 🆕 新增 |
 | [SKILLS_SURVEY_2026_03_WEEK53](./SKILLS_SURVEY_2026_03_WEEK53.md) | Claude Code Skills 调研报告（第五十三周），GitHub 实时搜索热门 Skills，游戏客户端开发（Claude-Code-Game-Studios 30⭐）/Python开发（claudex 223⭐）/自动化测试（Playwright 1.9k⭐）/开发者工具完整覆盖 | 🆕 新增 |
