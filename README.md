@@ -1,4 +1,6 @@
 # Claude Code Skills 实践指南
+| [SKILLS_SURVEY_2026_03_WEEK49](./SKILLS_SURVEY_2026_03_WEEK49.md) | Claude Code Skills 完整调研报告（第四十九周），GitHub API 实时搜索热门 Skills，新增 Unity-MCP(390⭐)/Agently(3600⭐)/Serena(20K⭐)，游戏/Python/测试/开发者工具完整覆盖 | 🆕 新增 |
+| [SKILLS_SURVEY_2026_03_WEEK48](./SKILLS_SURVEY_2026_03_WEEK48.md) | Claude Code Skills 完整调研报告（第四十八周），GitHub API 实时搜索热门 Skills，游戏/Python/测试/开发者工具完整覆盖，ClawHub Top 10 排行榜 | 🆕 新增 |
 | [SKILLS_SURVEY_2026_03_WEEK47](./SKILLS_SURVEY_2026_03_WEEK47.md) | Claude Code Skills 完整调研报告（第四十七周），GitHub API 实时搜索热门 Skills，游戏/Python/测试/开发者工具完整覆盖，ClawHub Top 10 排行榜 | 🆕 新增 |
 
 > 记录每个 Skill 的落地实践过程
