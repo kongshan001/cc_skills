@@ -1,4 +1,5 @@
 # Claude Code Skills 实践指南
+| [SKILLS_SURVEY_2026_03_WEEK45_V2](./SKILLS_SURVEY_2026_03_WEEK45_V2.md) | Claude Code Skills 调研报告 Week 45 V2，游戏/Python/测试/开发者工具完整覆盖，ClawHub Top 10 排行榜 | 🆕 新增 |
 
 > 记录每个 Skill 的落地实践过程
 
