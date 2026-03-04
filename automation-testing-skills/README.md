@@ -7,6 +7,16 @@
 ### 浏览器自动化
 
 - [playwright.md](./playwright.md) - Playwright 浏览器自动化 ⭐ 1.8k+
+- [playwright-mcp.md](./playwright-mcp.md) - Playwright MCP 服务器 (评分 3.581, TOP 2)
+
+### 测试运行器
+
+- [test-runner.md](./test-runner.md) - 测试运行器 (评分 1.189)
+- [test-master.md](./test-master.md) - 测试管理 (评分 1.158)
+
+### 移动端测试
+
+- [android-adb.md](./android-adb.md) - Android ADB (评分 1.220, 测试 TOP 1)
 
 ### 更多技能
 
@@ -14,25 +24,15 @@
 
 ---
 
-## 评分 Top 5
-
-| 技能 | 评分 | 说明 |
-|------|------|------|
-| playwright-scraper-skill | 3.584 | 爬虫专用 |
-| playwright-mcp | 3.581 | MCP 服务器 |
-| playwright | 3.538 | 基础技能 |
-| test-runner | 1.189 | 测试运行器 |
-| test-master | 1.158 | 测试管理 |
-
----
-
 ## 评分 Top 5 (ClawHub)
 
 | 技能 | 评分 | 说明 |
 |------|------|------|
-| android-adb | 1.220 | 移动端测试 |
-| midscene-android-automation | 1.009 | AI 驱动测试 |
-| e2e-testing-patterns | 1.101 | E2E 测试 |
+| android-adb | 1.220 | 移动端测试 TOP 1 |
+| playwright-scraper-skill | 3.584 | 爬虫专用 |
+| playwright-mcp | 3.581 | MCP 服务器 |
+| playwright | 3.538 | 基础技能 |
+| test-runner | 1.189 | 测试运行器 |
 
 ---
 
