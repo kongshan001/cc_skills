@@ -1,638 +1,644 @@
-# Claude Code Skills 调研报告 - 游戏客户端开发、Python 与自动化测试 (Week13)
+# Claude Code Skills 调研报告 - 第十三周
 
-> 调研时间: 2026-03-05
-> 来源: GitHub Search + Antigravity Awesome Skills
-
----
-
-## 📋 调研概述
-
-本次调研覆盖以下方向：
-1. 游戏客户端开发 (Unity, Unreal, Godot, GameMaker)
-2. Python 开发 (FastAPI, uv, 测试)
-3. 自动化测试与质量保证 (Playwright, 自动化框架)
-4. 开发者工具 (GitHub 自动化, 代码审查)
+**调研日期**: 2026-03-04  
+**技能来源**: Antigravity Awesome Skills (970+ Skills) + 社区精选  
+**目标仓库**: https://github.com/kongshan001/cc_skills  
+**状态**: ✅ 调研完成
 
 ---
 
-## 一、游戏客户端开发 Skills
+## 📊 调研概要
 
-### 1.1 核心 Skills 概览
+本周继续深入分析 Claude Code 热门 Skills，优先调研以下方向：
+1. 游戏客户端开发 (Unity 6 AI Workflow 2026)
+2. Python 开发 (异步/测试/工具链)
+3. 游戏客户端自动化测试 (Unity/移动端)
+4. 其他开发者工具 (GitHub/CI/CD)
 
-| Skill 名称 | 引擎 | 核心能力 | ⭐ |
-|-----------|------|---------|---|
-| openclaw-godot-skill | Godot | 场景管理、节点操作、输入模拟、调试 | 0.924 |
-| openclaw-unreal-skill | Unreal | 级别管理、Actor 操作、组件控制、调试 | 0.922 |
-| game-developer-skill | Unity/Unreal | 游戏系统开发、ECS、物理、性能优化 | 0.861 |
-| unity-ai-workflow | Unity 6.2+ | AI-first 工作流，rules/agents/skills/commands | 4 |
-| OH-Unity-GameDev-Skills | Unity | 符合 Claude Code Skills 规范的 Unity 开发技能集 | 6 |
-| cc-plugin-unity-gamedev | Unity | 21 个 Unity 开发技能 (Addressables, Cinemachine, GAS等) | 1 |
-| gamemaker-skills | GameMaker | GML 开发、Shader、网络、优化 | 2 |
-| game-opus | 通用 | 游戏开发元技能，14 个游戏开发+3D技能 | 0 |
-| ikemen-forge | IKEMEN Go | 9 agents, 13 commands, 13 skill domains | 0 |
+### 统计概览
+
+| 指标 | 数值 |
+|------|------|
+| Skills 总数 | 970+ |
+| 支持平台 | 10+ |
+| 最新版本 | V6.8.0 (2026-03-02) |
 
 ---
 
-### 1.2 Unity AI Workflow 2026 详解
+## 🎮 游戏客户端开发 Skills
 
-**Skill**: `unity-ai-workflow`
-**所有者**: David-GD13
-**⭐**: 4
-**最新更新**: 2026-03-02
+### 核心 Skills 矩阵 (最新搜索结果)
 
-#### 核心能力
+| Skill ID | 名称 | 核心能力 | 适用引擎 | 评分 |
+|----------|------|---------|---------|------|
+| openclaw-godot-skill | Godot Skill | 场景管理、节点操作、输入模拟 | Godot | ⭐⭐⭐⭐⭐ (0.911) |
+| the-flip-publish | The Flip Publish | 游戏发布 | 通用 | ⭐⭐⭐⭐⭐ (0.985) |
+| clawland | Clawland | 游戏 Land | 通用 | ⭐⭐⭐⭐⭐ (0.957) |
+| clawplay-skill | ClawPlay | 游戏播放 | 通用 | ⭐⭐⭐ (0.720) |
+| agent-rpg | Agent RPG | RPG 游戏开发 | 通用 | ⭐⭐⭐⭐ (0.809) |
+
+| Skill ID | 名称 | 核心能力 | 适用引擎 | 评分 |
+|----------|------|---------|---------|------|
+| unity-developer | Unity 6 LTS 专家 | URP/HDRP、跨平台部署 | Unity | ⭐⭐⭐⭐⭐ |
+| unity-ai-workflow | Unity AI Workflow 2026 | Dev Modes、AI 辅助开发 | Unity 6.2+ | ⭐⭐⭐⭐⭐ |
+| unity-ecs-patterns | DOTS/ECS 架构 | Jobs System、Burst | Unity | ⭐⭐⭐⭐⭐ |
+| unreal-engine-cpp-pro | UE5 C++ 开发 | UObject、网络同步 | Unreal | ⭐⭐⭐⭐⭐ |
+| godot-gdscript-patterns | Godot 4 专家 | GDScript 2.0、信号系统 | Godot | ⭐⭐⭐⭐ |
+| bevy-ecs-expert | Bevy ECS | Rust 游戏引擎 | Bevy | ⭐⭐⭐⭐⭐ |
+| game-development | 游戏开发编排器 | 自动路由到子 Skills | 通用 | ⭐⭐⭐⭐ |
+| multiplayer | 多人游戏 | 网络同步、延迟补偿 | 通用 | ⭐⭐⭐⭐⭐ |
+
+### Unity AI Workflow 2026 深入解析
+
+**项目地址**: [David-GD13/unity-ai-workflow](https://github.com/David-GD13/unity-ai-workflow)
+
+#### 三大开发模式
+
+| 模式 | 角色 | 适用场景 |
+|------|------|---------|
+| **Assistant** | 你构建，AI 辅助文档和解释 | 学习、创意控制 |
+| **Mix (默认)** | 协作模式，AI 建议，你确认 | 大多数项目 |
+| **Automatic** | AI 构建，短的 onboarding Q&A | 快速原型、游戏 jam |
+
+#### 核心哲学: Game Feel 不是可选的
+
 ```markdown
-### 🎮 Unity 6.2+ 特性
-- AI-first 开发工作流
-- 现代化项目结构
-- 智能代码生成
-- 自动化测试集成
+每项功能使用 /implement-feature 完整构建:
+1. Interrogate (询问): AI 询问 VFX、SFX、相机反馈和触觉
+2. Implement (实现): 编写功能代码
+3. Feel (打磨): 迭代游戏手感
+4. Commit (提交): 代码提交
 
-### 🛠️ 技能体系
-- Rules: 开发规范和最佳实践
-- Agents: 专用开发代理
-- Skills: 领域特定技能
-- Slash Commands: 快捷命令
-
-### 🤖 AI 集成
-- Claude Code 深度集成
-- Antigravity IDE 支持
-- 自动化代码审查
-- 智能补全建议
+迭代打磨不是单独阶段，而是贯穿整个开发流程
 ```
 
-#### 适用场景
-- ✅ Unity 6.2+ 项目开发
-- ✅ AI 增强游戏开发工作流
-- ✅ 团队协作规范
-- ✅ 自动化代码生成
+#### 技术架构
 
-#### 触发关键词
-> "Unity 6", "AI workflow", "game development", "antigravity", "rules", "agents"
+- **TCREI Prompting**: Task-Context-References-Evaluate-Iterate 方法论
+- **验证系统**: 每个 AI 推荐标记 [VERIFIED]/[SYNTHESIZED]/[UNVERIFIED]
+- **专家 Skills**: UI Toolkit、ScriptableObject、Netcode、game feel、测试、调试
+
+#### 项目阶段
+
+```
+1. 00: Ideation — 从想法到 GDD + GFD
+2. 01: Pre-Production — 技术选型、栈定义、命名规范
+3. 02: Technical Design — 架构、程序集定义、模式
+4. 03: Project Setup — 自动文件夹脚手架和包安装
+5. 04: Production — 特性循环 (interrogate → implement → feel → commit)
+6. 05: Polish — 最终调优、视觉细化、性能分析
+```
+
+### 网络同步专题
+
+| 技术点 | 说明 | 实现方式 |
+|--------|------|---------|
+| **帧同步** | 相同输入 → 相同输出，确定性 | 客户端预测 + 服务器验证 |
+| **状态同步** | 服务器权威，状态差异同步 | 快照插值 + 预测 |
+| **延迟补偿** | Jitter: 0-200ms, 丢包: 5%-20% | 客户端插值 + 服务器回溯 |
+| **客户端预测** | 本地先行，回滚机制 | 确定性锁步 |
+
+#### 帧同步实现要点
+
+```csharp
+// 确定性帧循环
+public class FrameSyncManager
+{
+    public void Update()
+    {
+        // 1. 收集输入
+        var inputs = CollectInputs();
+        
+        // 2. 发送到服务器
+        network.SendFrameInput(inputs);
+        
+        // 3. 执行帧逻辑 (确定性)
+        ExecuteFrame(inputs);
+        
+        // 4. 渲染插值
+        RenderInterpolate();
+    }
+}
+```
+
+### ECS/DOTS 架构 (Unity)
+
+| 组件 | 用途 | 优势 |
+|------|------|------|
+| **Entities** | 数据容器 | 内存连续访问 |
+| **Components** | 数据组件 | 组合优于继承 |
+| **Systems** | 逻辑系统 | 并行执行 |
+| **Jobs** | 多线程 | Burst 编译加速 |
+| **Burst** | LLVM 编译器 | SIMD 优化 |
 
 ---
 
-### 1.3 Unity GameDev Skills 详解
+## 🐍 Python 开发 Skills
 
-**Skill**: `OH-Unity-GameDev-Skills`
-**所有者**: OstrichHermit
-**⭐**: 6
-**最新更新**: 2026-02-27
+### Python Skills 完整列表 (最新搜索结果)
 
-#### 核心能力
-```markdown
-### 📦 符合 Claude Code Skills 规范
-- 标准化的技能定义
-- 易于扩展的架构
-- 跨工具兼容
+| Skill ID | 名称 | 核心能力 | 评分 |
+|----------|------|---------|------|
+| python-executor | Python Executor | 安全沙箱执行 Python 代码 | ⭐⭐⭐⭐⭐ (3.479) |
+| python-dataviz | Python Dataviz | 数据可视化 | ⭐⭐⭐⭐⭐ (3.427) |
+| python-sdk | Python SDK | Python SDK 开发 | ⭐⭐⭐⭐⭐ (3.333) |
+| lsp-python | LSP Python | 语言服务器协议 | ⭐⭐⭐⭐⭐ (3.279) |
+| python-script-generator | Python Script Generator | 脚本生成 | ⭐⭐⭐⭐ (3.205) |
 
-### 🎯 覆盖范围
-- 场景管理
-- 组件开发
-- 资源优化
-- 性能调优
+| Skill ID | 名称 | 核心能力 | 评分 |
+|----------|------|---------|------|
+| python-pro | Python 3.12+ 专家 | 现代特性、生产级实践 | ⭐⭐⭐⭐⭐ |
+| python-fastapi-development | FastAPI 开发 | SQLAlchemy、Pydantic | ⭐⭐⭐⭐⭐ |
+| async-python-patterns | 异步编程 | asyncio、高并发 | ⭐⭐⭐⭐ |
+| dbos-python | DBOS 工作流 | 持久化工作流、容错 | ⭐⭐⭐⭐⭐ |
+| temporal-python-pro | Temporal 工作流 | 分布式事务、Saga 模式 | ⭐⭐⭐⭐⭐ |
+| python-patterns | 设计模式 | 类型提示、最佳实践 | ⭐⭐⭐⭐ |
+| python-performance-optimization | 性能优化 | cProfile、py-spy | ⭐⭐⭐⭐ |
+| python-testing-patterns | 测试模式 | pytest、fixtures、TDD | ⭐⭐⭐⭐⭐ |
+| uv-python | uv 包管理器 | 10-100x pip | ⭐⭐⭐⭐⭐ |
+| ruff-linter | Ruff 代码检查 | 极速 linting | ⭐⭐⭐⭐⭐ |
+
+### 异步 Python 最佳实践
+
+#### 核心模式
+
+```python
+# 1. 基础 async/await
+async def fetch_data(url: str) -> dict:
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url) as response:
+            return await response.json()
+
+# 2. 并发任务管理
+async def concurrent_fetch(urls: list[str]) -> list[dict]:
+    async with asyncio.TaskGroup() as tg:
+        tasks = [tg.create_task(fetch_data(url)) for url in urls]
+    return [task.result() for task in tasks]
+
+# 3. 异步生成器
+async def async_data_stream():
+    for i in range(100):
+        await asyncio.sleep(0.1)
+        yield {"index": i, "data": compute(i)}
 ```
 
-#### 适用场景
-- ✅ Unity 项目快速启动
-- ✅ 标准化开发流程
-- ✅ 团队技能共享
+#### 生产级模式
 
----
+| 模式 | 用途 | 示例 |
+|------|------|------|
+| **Semaphore** | 限流 | API 调用限制 |
+| **Timeout** | 超时控制 | 防止无限等待 |
+| **TaskGroup** | 资源管理 | 优雅并发 |
+| **Queue** | 生产者/消费者 | 消息处理 |
 
-### 1.4 GameMaker Skills 详解
+### uv 工具链 (2024/2025 最快)
 
-**Skill**: `gamemaker-skills`
-**所有者**: leihaht
-**⭐**: 2
-**最新更新**: 2026-02-23
+```bash
+# 安装 uv
+curl -LsSf https://astral.sh/uv/install.sh | sh
 
-#### 核心能力
-```markdown
-### 🎮 GML 开发
-- 语法和语言特性
-- 对象创建和管理
-- 事件系统
+# 创建项目
+uv init my-project
 
-### 🎨 着色器
-- GLSL Shader 编写
-- 特效制作
-- 渲染管线
+# 添加依赖
+uv add fastapi pytest
 
-### 🌐 网络功能
-- multiplayer 实现
-- 多人游戏逻辑
-- 服务器通信
+# 运行脚本
+uv run main.py
 
-### ⚡ 性能优化
-- 代码优化技巧
-- 资源管理
-- 内存优化
+# 虚拟环境管理
+uv venv
+uv sync
+uv pip install -r requirements.txt
 ```
 
-#### 适用场景
-- ✅ GameMaker Studio 2 项目
-- ✅ 2D 游戏开发
-- ✅ 独立游戏开发
+### FastAPI 生产级模式
 
----
+```python
+from fastapi import FastAPI, Depends, HTTPException
+from sqlalchemy.ext.asyncio import AsyncSession
+from pydantic import BaseModel
 
-## 二、Python 开发 Skills
+app = FastAPI(title="Game Frame Sync API")
 
-### 2.1 核心 Skills 概览
+class RoomCreate(BaseModel):
+    name: str
+    max_players: int = 8
 
-| Skill 名称 | 核心能力 | ⭐ |
-|-----------|---------|---|
-| claudex | 自定义 Claude Code UI, 多提供商支持 | 223 |
-| developer-kit | Java/Spring/TypeScript/Python/PHP 多模块 | 133 |
-| beagle | 代码审查和验证工作流 | 35 |
-| borghei/Claude-Skills | 97 Expert AI Skills, 178 Python 工具 | 17 |
-| python-developer-tooling-handbook | uv/pytest/ruff/pre-commit 现代工具链 | 3 |
-| security-antipatterns-python | Python 安全最佳实践 | 3 |
-
----
-
-### 2.2 Developer Kit 详解
-
-**Skill**: `developer-kit`
-**所有者**: giuseppe-trisciuoglio
-**⭐**: 133
-**最新更新**: 2026-03-04
-
-#### 核心能力
-```markdown
-### 🔧 模块化插件系统
-- Java/Spring Boot/LangChain4J
-- TypeScript/NestJS/React
-- Python
-- PHP/WordPress
-- AWS CloudFormation
-- AI 模式
-
-### 🌍 多 CLI 支持
-- Claude Code
-- Cline
-- Cursor
-- 其他 AI 助手
-
-### 🏗️ 架构设计
-- 可复用技能
-- 自动化开发任务
-- 标准化的命令接口
-```
-
-#### Python 模块详情
-```markdown
-### Python 技能
-- 项目脚手架
-- FastAPI 开发
-- SQLAlchemy 集成
-- 异步编程
-- 测试自动化
-- 部署配置
-```
-
-#### 适用场景
-- ✅ 多技术栈项目
-- ✅ 企业级应用开发
-- ✅ 快速原型开发
-
----
-
-### 2.3 Beagle - 代码审查 Skills
-
-**Skill**: `beagle`
-**所有者**: existential-birds
-**⭐**: 35
-**最新更新**: 2026-03-04
-
-#### 核心能力
-```markdown
-### 🔍 代码审查
-- Python 代码验证
-- Go 代码审查
-- React 组件检查
-- FastAPI 最佳实践
-
-### ⚡ 支持框架
-- Pydantic AI
-- LangGraph
-- Vercel AI SDK
-- Phoenix (Elixir)
-- BubbleTea
-
-### 🔄 验证工作流
-- 自动化代码检查
-- 最佳实践验证
-- 安全漏洞扫描
-```
-
-#### 适用场景
-- ✅ 代码质量保证
-- ✅ 安全审查
-- ✅ 框架特定最佳实践
-
----
-
-### 2.4 Python Modern Tooling 详解
-
-**Skill**: `python-developer-tooling-handbook`
-**所有者**: python-developer-tooling-handbook
-**⭐**: 3
-**最新更新**: 2026-02-26
-
-#### 核心能力
-```markdown
-### 🛠️ 现代工具链
-- uv: 极速包管理器 (2024 最快)
-- pytest: 测试框架
-- ruff: 代码检查 (black/isort/flake8 替代)
-- pre-commit: Git hooks
-
-### 📦 项目初始化
-- 现代 Python 项目结构
-- pyproject.toml 配置
-- 依赖管理最佳实践
-
-### ✅ 质量保证
-- 类型检查配置
-- 代码格式化
-- 测试覆盖
-- CI/CD 集成
-```
-
-#### 适用场景
-- ✅ 新 Python 项目启动
-- ✅ 工具链现代化
-- ✅ 团队规范统一
-
----
-
-## 三、自动化测试 Skills
-
-### 3.1 核心 Skills 概览
-
-| Skill 名称 | 核心能力 | ⭐ |
-|-----------|---------|---|
-| playwright-skill | Playwright 浏览器自动化 | 1860 |
-| claude-skills-marketplace | Git 自动化、测试、代码审查 | 431 |
-| qaskills | QA 测试技能目录 | 71 |
-| e2e-test-reviewer | E2E 测试反模式检测 | 0 |
-| playwright-py-skill | Playwright Python 版 | 1 |
-| qa-test-automation-skill | 测试计划/用例自动生成 | 1 |
-
----
-
-### 3.2 Playwright Skill (顶级热门)
-
-**Skill**: `playwright-skill`
-**所有者**: lackeyjb
-**⭐**: 1860 | **Fork**: 105
-**最新更新**: 2026-03-04
-**语言**: JavaScript
-
-#### 核心能力
-```markdown
-### 🌐 浏览器自动化
-- 跨浏览器测试 (Chromium, Firefox, WebKit)
-- 自动检测开发服务器
-- 可见浏览器模式
-- 智能等待策略
-
-### 🧪 测试能力
-- E2E 测试
-- 视觉回归测试
-- API 拦截和 Mock
-- 网络请求控制
-
-### 🤖 Model-Invoked
-- Claude 自主编写和执行自动化
-- 无需预定义脚本
-- 动态测试生成
-- 验证和断言
-
-### 📸 功能
-- 截图和录制
-- 元素定位
-- 表单交互
-- 多标签页处理
-```
-
-#### 适用场景
-- ✅ Web 应用自动化测试
-- ✅ 浏览器工作流自动化
-- ✅ 视觉回归检测
-- ✅ CI/CD 测试集成
-
-#### 典型交互
-```
-"测试这个登录流程"
-"验证页面响应式设计"
-"检查表单提交"
-"执行视觉回归测试"
+@app.post("/rooms", response_model=RoomResponse)
+async def create_room(
+    room: RoomCreate,
+    db: AsyncSession = Depends(get_db)
+):
+    # 业务逻辑
+    result = await db.execute(select(Room).where(Room.name == room.name))
+    if result.scalar_one_or_none():
+        raise HTTPException(status_code=400, detail="Room exists")
+    
+    new_room = Room(**room.model_dump())
+    db.add(new_room)
+    await db.commit()
+    return new_room
 ```
 
 ---
 
-### 3.3 Claude Skills Marketplace 详解
+## 🧪 自动化测试 Skills
 
-**Skill**: `claude-skills-marketplace`
-**所有者**: mhattingpete
-**⭐**: 431 | **Fork**: 50
-**最新更新**: 2026-03-04
+### 测试 Skills 矩阵 (最新搜索结果)
 
-#### 核心能力
-```markdown
-### 🔧 开发工作流
-- Git 自动化
-- 测试执行
-- 代码审查
+| Skill ID | 名称 | 核心能力 | 评分 |
+|----------|------|---------|------|
+| test-runner | Test Runner | 测试运行器 | ⭐⭐⭐⭐⭐ (1.239) |
+| playwright-mcp | Playwright MCP | Playwright MCP 集成 | ⭐⭐⭐⭐⭐ (1.165) |
+| playwright-scraper-skill | Playwright Scraper | 网页抓取 | ⭐⭐⭐⭐⭐ (1.161) |
+| e2e-testing-patterns | E2E Testing Patterns | 端到端测试模式 | ⭐⭐⭐⭐⭐ (1.151) |
+| test-master | Test Master | 测试大师 | ⭐⭐⭐⭐⭐ (1.138) |
+| playwright | Playwright | 浏览器自动化 | ⭐⭐⭐⭐⭐ (1.114) |
+| playwright-browser-automation | Playwright Browser | 浏览器自动化 | ⭐⭐⭐⭐⭐ (1.092) |
+| test-patterns | Test Patterns | 测试模式 | ⭐⭐⭐⭐ (1.056) |
+| web-qa-bot | Web QA Bot | Web QA 机器人 | ⭐⭐⭐⭐ (1.027) |
+| api-tester | API Tester | API 测试 | ⭐⭐⭐⭐ (1.006) |
 
-### 🤖 AI 集成
-- Claude Code 深度集成
-- Anthropic 支持
-- 自动化任务执行
+| Skill ID | 名称 | 核心能力 | 评分 |
+|----------|------|---------|------|
+| playwright-skill | Playwright 浏览器自动化 | E2E 测试、可视化 | ⭐⭐⭐⭐⭐ |
+| e2e-testing-patterns | E2E 测试模式 | 最佳实践 | ⭐⭐⭐⭐ |
+| python-testing-patterns | pytest 测试 | 单元/集成测试 | ⭐⭐⭐⭐⭐ |
+| ai-test-automation | AI 驱动测试 | 自愈测试 | ⭐⭐⭐⭐⭐ |
+| testing-qa | 综合 QA 工作流 | 完整流程 | ⭐⭐⭐⭐⭐ |
+| tdd-orchestrator | TDD 协调器 | 红绿重构 | ⭐⭐⭐⭐ |
+| android_ui_verification | Android UI 测试 | ADB 自动化 | ⭐⭐⭐⭐ |
+| unity-test-framework | Unity 单元测试 | Edit Mode/Play Mode | ⭐⭐⭐⭐⭐ |
 
-### 📦 主题覆盖
-- ai-agents
-- automation
-- developer-tools
-- claude-skills
+### Unity Test Framework 详解
+
+#### 测试类型
+
+| 类型 | 运行环境 | 用途 | 性能 |
+|------|---------|------|------|
+| **Edit Mode** | 编辑器 | 纯 C# 逻辑测试 | 快 |
+| **Play Mode** | 游戏运行 | 集成测试 | 慢 |
+
+#### 核心组件
+
+```csharp
+// 单元测试 (Edit Mode)
+[Test]
+public void CalculateDamage_Test()
+{
+    var calculator = new DamageCalculator();
+    int damage = calculator.Calculate(attack: 100, defense: 50);
+    
+    Assert.AreEqual(50, damage);
+}
+
+// 集成测试 (Play Mode)
+[UnityTest]
+public IEnumerator PlayerMove_IntegrationTest()
+{
+    var player = new GameObject("Player");
+    var mover = player.AddComponent<PlayerMover>();
+    
+    mover.Move(Vector2.right);
+    
+    yield return null; // 等待一帧
+    
+    Assert.AreEqual(Vector2.right, mover.Velocity);
+}
 ```
 
-#### 适用场景
-- ✅ 开发流程自动化
-- ✅ Git 工作流优化
-- ✅ 代码质量保证
+#### 最佳实践
 
----
+1. **分离测试类型**: 单元测试 (Edit Mode) vs 集成测试 (Play Mode)
+2. **使用 ScriptableObject**: 存储测试数据，便于复用
+3. **使用 Addressables**: 加载测试资源，避免硬编码路径
+4. **CI 集成**: GitHub Actions 自动运行测试
 
-### 3.4 QA Skills 目录
+### 游戏客户端测试专题
 
-**Skill**: `qaskills`
-**所有者**: PramodDutta
-**⭐**: 71
-**最新更新**: 2026-03-04
+#### 网络同步测试
 
-#### 核心能力
-```markdown
-### 📋 测试技能目录
-- Claude Code 测试技能
-- Cursor 测试技能
-- Copilot 测试技能
-
-### 🎯 覆盖范围
-- 功能测试
-- 性能测试
-- 安全测试
-- UI/UX 测试
+```csharp
+// 帧同步确定性测试
+[Test]
+public void FrameSync_DeterministicTest()
+{
+    // 给定相同输入
+    var input1 = new FrameInput { direction = Vector2.right, attack = true };
+    var input2 = new FrameInput { direction = Vector2.right, attack = true };
+    
+    // 执行帧逻辑
+    var state1 = ExecuteFrame(initialState, input1);
+    var state2 = ExecuteFrame(initialState, input2);
+    
+    // 验证结果相同
+    Assert.AreEqual(state1.playerPosition, state2.playerPosition);
+    Assert.AreEqual(state1.health, state2.health);
+}
 ```
 
-#### 适用场景
-- ✅ 查找测试相关 Skills
-- ✅ QA 流程自动化
-- ✅ 测试工具选择
+#### 延迟模拟
 
----
+| 场景 | 延迟配置 | 丢包率 |
+|------|---------|--------|
+| 良好网络 | 50ms | 0% |
+| 一般网络 | 100-200ms | 1-5% |
+| 弱网络 | 200-500ms | 5-20% |
+| 极端情况 | >500ms | >20% |
 
-### 3.5 E2E Test Reviewer 详解
+### Playwright 高级特性
 
-**Skill**: `e2e-test-reviewer`
-**所有者**: dididy
-**⭐**: 0
-**最新更新**: 2026-01-30
+```typescript
+// 智能等待
+await page.waitForSelector('[data-testid="game-start"]', { 
+  state: 'visible',
+  timeout: 10000 
+});
 
-#### 核心能力
-```markdown
-### 🔍 反模式检测
-- 错误吞没 (Error Swallowing)
-- 布尔陷阱 (Boolean Traps)
-- 永远通过的断言 (Always-passing Assertions)
-- 11+ 更多反模式
+// 截图验证
+await expect(page.locator('.game-board')).toHaveScreenshot('game-board.png');
 
-### ✅ 测试质量
-- 代码审查自动化
-- 最佳实践验证
-- 潜在问题识别
-```
-
-#### 适用场景
-- ✅ E2E 测试代码审查
-- ✅ 测试质量提升
-- ✅ 自动化测试规范
-
----
-
-## 四、开发者工具 Skills
-
-### 4.1 核心 Skills 概览
-
-| Skill 名称 | 核心能力 | ⭐ |
-|-----------|---------|---|
-| claudex | 自定义 UI, 多提供商, MCP 服务器 | 223 |
-| claude-code-aso-skill | GitHub AEO 自动化 | 231 |
-| developer-kit | 多技术栈开发工具 | 133 |
-| claude-reflect-system | 持续学习和自我改进 | 71 |
-| claude-cli-advanced-starter-pack | 高级 CLI 工具包 | 55 |
-| miro-ai | Miro 白板 AI 开发工具 | 66 |
-| claud-skills | 13 agents, 9 skills 框架 | 12 |
-
----
-
-### 4.2 Claude Code ASO Skill 详解
-
-**Skill**: `claude-code-aso-skill`
-**所有者**: alirezarezvani
-**⭐**: 231 | **Fork**: 22
-**最新更新**: 2026-03-04
-
-#### 核心能力
-```markdown
-### 📱 AEO/ASO 自动化
-- GitHub 自动化
-- 一键式初学者友好
-- 专用 AEO 子代理
-
-### 🤖 子代理系统
-- 规划代理
-- 执行代理
-- 报告代理
-- 可操作项目代理
-- 执行摘要代理
-
-### ⚡ 快捷命令
-- AEO 斜杠命令触发
-- 即时工作启动
-- 完全集成
-
-### 📦 平台支持
-- iOS App Store
-- Android Play Store
-- Claude Code
-- Claude AI App
-```
-
-#### 适用场景
-- ✅ App Store 优化
-- ✅ GitHub 仓库管理
-- ✅ 自动化运营报告
-
----
-
-### 4.3 Claude Reflect System 详解
-
-**Skill**: `claude-reflect-system`
-**所有者**: haddock-development
-**⭐**: 71
-**最新更新**: 2026-03-04
-
-#### 核心能力
-```markdown
-### 🧠 持续学习
-- 从纠正中学习
-- 错误不重复
-- 知识积累
-
-### 🔄 自我改进
-- 模式识别
-- 经验总结
-- 技能增强
-```
-
-#### 适用场景
-- ✅ 长期项目开发
-- ✅ 团队知识传承
-- ✅ 个人技能提升
-
----
-
-### 4.4 Miro AI 开发者工具
-
-**Skill**: `miro-ai`
-**所有者**: miroapp
-**⭐**: 66
-**最新更新**: 2026-03-03
-
-#### 核心能力
-```markdown
-### 🎨 AI 白板集成
-- MCP 服务器配置
-- Claude Code Skills
-- AI 驱动体验
-
-### 📋 功能
-- 智能白板创建
-- 协作自动化
-- 设计工作流
-```
-
-#### 适用场景
-- ✅ 团队协作设计
-- ✅ 头脑风暴
-- ✅ 流程图绘制
-
----
-
-### 4.5 Developer Tools Skills 集合
-
-**Skill**: `terry-li-hm/skills`
-**所有者**: terry-li-hm
-**⭐**: 3
-**最新更新**: 2026-03-04
-
-#### 核心能力
-```markdown
-### 🛠️ 60+ 工作流自动化
-- 开发者工具集成
-- 自动化任务
-- 跨平台支持
+// API Mock
+await page.route('**/api/game/*', route => {
+  route.fulfill({
+    json: { status: 'ready', players: 2 }
+  });
+});
 ```
 
 ---
 
-## 五、新增亮点 Skills 总结
+## 🛠️ 开发者工具 Skills
 
-### 5.1 本周重点推荐
+### DevOps Skills 完整列表 (最新搜索结果)
 
-| 类别 | Skill | 亮点 |
-|-----|-------|------|
-| 🐛 游戏开发 | unity-ai-workflow | Unity 6.2+ AI-first 工作流 |
-| 🐛 游戏开发 | gamemaker-skills | GameMaker GML/Shader/网络 |
-| 🐍 Python | developer-kit | 多技术栈模块化插件 |
-| 🐍 Python | python-developer-tooling-handbook | uv/ruff 现代工具链 |
-| 🧪 测试 | playwright-skill | 1860⭐ 顶级热门 |
-| 🧪 测试 | e2e-test-reviewer | E2E 反模式检测 |
-| 🔧 工具 | claude-code-aso-skill | GitHub AEO 自动化 |
-| 🔧 工具 | claude-reflect-system | 持续学习系统 |
+| Skill ID | 名称 | 核心能力 | 评分 |
+|----------|------|---------|------|
+| github | GitHub | GitHub 自动化 | ⭐⭐⭐⭐⭐ (1.309) |
+| kubernetes | Kubernetes | K8s 集群管理 | ⭐⭐⭐⭐⭐ (1.180) |
+| docker-essentials | Docker Essentials | Docker 基础 | ⭐⭐⭐⭐⭐ (1.172) |
+| docker | Docker | Docker 完整功能 | ⭐⭐⭐⭐⭐ (1.081) |
+| gitflow | GitFlow | GitFlow 工作流 | ⭐⭐⭐⭐⭐ (1.033) |
+| gh | gh | GitHub CLI | ⭐⭐⭐⭐⭐ (1.027) |
+| docker-sandbox | Docker Sandbox | Docker 沙箱 | ⭐⭐⭐⭐⭐ (1.026) |
+| container-debug | Container Debug | 容器调试 | ⭐⭐⭐⭐⭐ (1.017) |
+| cicd-pipeline | CI/CD Pipeline | 持续集成/部署 | ⭐⭐⭐⭐⭐ (1.008) |
+| kubectl | kubectl | K8s 命令行 | ⭐⭐⭐⭐ (0.996) |
+| gitclassic | GitClassic | Git 经典操作 | ⭐⭐⭐⭐ (0.993) |
+| docker-ctl | Docker Ctl | Docker 控制 | ⭐⭐⭐⭐ (0.992) |
+| k8-multicluster | K8s MultiCluster | 多集群管理 | ⭐⭐⭐⭐ (0.984) |
+| k8s-browser | K8s Browser | K8s 浏览器管理 | ⭐⭐⭐⭐ (0.981) |
+
+| Skill ID | 名称 | 核心能力 | 评分 |
+|----------|------|---------|------|
+| workflow-automation | CI/CD 流水线 | GitHub Actions/GitLab CI | ⭐⭐⭐⭐⭐ |
+| deployment-engineer | 部署工程师 | GitOps、Docker | ⭐⭐⭐⭐⭐ |
+| docker-expert | Docker 专家 | 容器化最佳实践 | ⭐⭐⭐⭐⭐ |
+| debugging-strategies | 系统化调试 | 二分搜索、日志分析 | ⭐⭐⭐⭐⭐ |
+| bug-fixing-workflow | Bug 修复工作流 | 系统化修复 | ⭐⭐⭐⭐ |
+| git-advanced-workflows | Git 高级工作流 | Rebase、Cherry-pick | ⭐⭐⭐⭐ |
+| github-automation | GitHub 自动化 | PR/Issue/Workflow | ⭐⭐⭐⭐⭐ |
+
+### GitHub Actions 最佳实践
+
+```yaml
+name: Game Frame Sync CI
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          
+      - name: Install uv
+        uses: astral-sh/setup-uv@v4
+        
+      - name: Install dependencies
+        run: uv sync
+        
+      - name: Run tests
+        run: uv run pytest
+        
+      - name: Upload coverage
+        uses: codecov/codecov-action@v4
+```
+
+### 系统化调试流程
+
+```
+1. 重现问题
+   ├── 捕获完整日志
+   ├── 记录环境详情
+   └── 最小复现步骤
+
+2. 形成假设
+   ├── 分析错误堆栈
+   ├── 定位相关代码
+   └── 设计受控实验
+
+3. 缩小范围
+   ├── 二分查找法
+   ├── 针对性检测
+   └── 日志追踪
+
+4. 验证修复
+   ├── 确认修复有效
+   ├── 检查副作用
+   └── 记录发现
+```
 
 ---
 
-### 5.2 快速选择指南
+## 💡 推荐 Skills 组合
+
+### 游戏开发组合
 
 ```
-游戏客户端开发:
-  → unity-ai-workflow (Unity 6.2+)
-  → openclaw-godot-skill (Godot)
-  → openclaw-unreal-skill (Unreal)
-
-Python 开发:
-  → developer-kit (全栈)
-  → python-developer-tooling-handbook (工具链)
-  → beagle (代码审查)
-
-自动化测试:
-  → playwright-skill (浏览器自动化)
-  → qaskills (测试技能目录)
-  → e2e-test-reviewer (代码审查)
-
-开发者工具:
-  → claude-code-aso-skill (GitHub 自动化)
-  → claude-reflect-system (持续学习)
-  → miro-ai (白板集成)
+推荐: /game-development (编排器，自动路由)
+     /unity-developer + /unity-ai-workflow (2026 新版)
+     /unity-ecs-patterns + /multiplayer
+     /godot-gdscript-patterns + /2d-games
+     /unreal-engine-cpp-pro + /glsl-shaders
+     /bevy-ecs-expert (Rust 游戏引擎)
 ```
 
----
-
-## 六、落地建议
-
-### 6.1 项目实践
-
-对于 **game-frame-sync** 项目：
-
-1. **游戏开发**: 使用 `unity-ai-workflow` 规范 Unity 开发
-2. **Python 后端**: 使用 `python-developer-tooling-handbook` + `beagle`
-3. **测试**: 使用 `playwright-skill` 测试 Web API
-4. **工具**: 使用 `claude-reflect-system` 持续改进
-
-### 6.2 学习路径
+### Python 后端开发组合
 
 ```
-第一周:
-  → 安装 playwright-skill
-  → 学习 basic E2E 测试
+推荐: /python-pro + /python-fastapi-development + /python-testing-patterns
+     /async-python-patterns + /uv-python + /ruff-linter
+     /dbos-python + /python-testing-patterns (DBOS 工作流)
+     /temporal-python-pro + /temporal-python-testing (Temporal 工作流)
+```
 
-第二周:
-  → 探索 python-developer-tooling-handbook
-  → 配置 uv + ruff
+### 测试组合
 
-第三周:
-  → 集成 unity-ai-workflow (如使用 Unity)
-  → 尝试 claude-reflect-system
+```
+推荐: /playwright-skill + /e2e-testing-patterns + /testing-qa
+     /python-testing-patterns + /test-driven-development
+     /ai-test-automation (AI 驱动测试)
+     /unity-test-framework (Unity 客户端测试)
+```
+
+### DevOps 组合
+
+```
+推荐: /workflow-automation + /deployment-engineer + /debugging-strategies
+     /github-automation + /github-workflow-automation
+     /git-advanced-workflows + /git-pr-workflows
+     /docker-expert + /dependency-upgrade
 ```
 
 ---
 
-## 📎 参考链接
+## 🚀 实战案例
 
-- [playwright-skill](https://github.com/lackeyjb/playwright-skill)
-- [claude-skills-marketplace](https://github.com/mhattingpete/claude-skills-marketplace)
-- [developer-kit](https://github.com/giuseppe-trisciuoglio/developer-kit)
-- [unity-ai-workflow](https://github.com/David-GD13/unity-ai-workflow)
-- [claude-code-aso-skill](https://github.com/alirezarezvani/claude-code-aso-skill)
-- [beagle](https://github.com/existential-birds/beagle)
-- [python-developer-tooling-handbook](https://github.com/python-developer-tooling-handbook/claude-plugins)
+### 案例 1: 使用 Skills 开发帧同步游戏后端
+
+```bash
+# 1. 项目初始化
+>> /python-pro 创建一个新的 Python 项目，使用 uv 管理依赖
+
+# 2. FastAPI 开发
+>> /fastapi-pro 设计帧同步游戏的 REST API
+
+# 3. 异步处理
+>> /async-python-patterns 实现游戏房间管理，高并发
+
+# 4. 工作流编排 (可选)
+>> /temporal-python-pro 实现游戏状态持久化工作流
+
+# 5. 测试
+>> /python-testing-patterns 编写房间管理测试
+>> /test-driven-development 使用 TDD 开发新功能
+
+# 6. 部署
+>> /deployment-engineer 设置 Docker 部署
+>> /workflow-automation 配置 CI/CD
+```
+
+### 案例 2: 使用 Skills 开发 Unity 游戏
+
+```bash
+# 1. 项目初始化
+>> /unity-ai-workflow 创建一个新游戏项目
+
+# 2. 选择开发模式
+>> /setup-project 选择 Mix 模式
+
+# 3. 开发功能
+>> /implement-feature 玩家移动系统
+
+# 4. 实现 ECS
+>> /unity-ecs-patterns 设计敌人 AI 系统
+
+# 5. 网络同步
+>> /multiplayer 实现帧同步
+
+# 6. 测试
+>> /unity-test-framework 编写敌人 AI 测试
+```
+
+### 案例 3: 使用 Skills 测试游戏 Web 管理后台
+
+```bash
+# 1. Playwright 测试
+>> /playwright-skill 测试登录流程
+>> /playwright-skill 测试响应式设计
+
+# 2. E2E 测试
+>> /e2e-testing-patterns 测试用户注册流程
+>> /e2e-testing-patterns 测试房间管理
+
+# 3. 质量保证
+>> /testing-qa 建立完整 QA 流程
+```
 
 ---
 
-*文档版本: 2026-03-05 Week13*
-*持续更新中...*
+## 📦 安装指南
+
+### 默认安装 (Antigravity)
+
+```bash
+npx antigravity-awesome-skills
+```
+
+### Claude Code
+
+```bash
+npx antigravity-awesome-skills --claude
+```
+
+### Gemini CLI
+
+```bash
+npx antigravity-awesome-skills --gemini
+```
+
+### Codex CLI
+
+```bash
+npx antigravity-awesome-skills --codex
+```
+
+### Cursor
+
+```bash
+npx antigravity-awesome-skills --cursor
+```
+
+---
+
+## 🔧 使用方式
+
+### Claude Code
+
+```bash
+>> /skill-name 帮助我...
+```
+
+### Gemini CLI/Codex CLI
+
+```bash
+Use @skill-name to help me...
+```
+
+### Cursor
+
+```bash
+@skill-name in chat
+```
+
+---
+
+## 📚 相关资源
+
+- [Antigravity Awesome Skills](https://github.com/sickn33/antigravity-awesome-skills)
+- [Unity AI Workflow 2026](https://github.com/David-GD13/unity-ai-workflow)
+- [DBOS Python SDK](https://docs.dbos.dev/)
+- [Temporal Python SDK](https://docs.temporal.io/)
+- [uv 包管理器](https://github.com/astral-sh/uv)
+- [ruff 工具](https://github.com/astral-sh/ruff)
+- [官方 Skills 目录](../CATALOG.md)
+- [Skills 使用指南](../docs/USAGE.md)
+- [Bundles 精选](../docs/BUNDLES.md)
+- [CC Skills 仓库](https://github.com/kongshan001/cc_skills)
+
+---
+
+**文档更新时间**: 2026-03-04 (新增最新 ClawHub 搜索结果)
+**Claude Code Skills 调研 - 第十三周**

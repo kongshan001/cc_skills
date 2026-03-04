@@ -2,6 +2,31 @@
 
 > 记录每个 Skill 的落地实践过程
 
+| [SKILLS_SURVEY_2026_03_WEEK51](./SKILLS_SURVEY_2026_03_WEEK51.md) | Claude Code Skills 调研报告（第五十一周），GitHub API 实时搜索热门 Skills，游戏客户端开发/Python开发/自动化测试/开发者工具完整覆盖，Top 15 Skills 排行榜，Unity-MCP(390⭐)/Playwright(1860⭐) 深度分析 | 🆕 新增 |
+| [SKILLS_SURVEY_2026_03_WEEK50_SUPPLEMENT](./SKILLS_SURVEY_2026_03_WEEK50_SUPPLEMENT.md) | Claude Code Skills 调研报告（第五十周）补充，GitHub 热门 Skills 实时搜索 Top 50 排行榜，重点 Skills 深度分析，游戏/Python/测试/开发者工具完整覆盖 | 🆕 新增 |
+| [SKILLS_SURVEY_2026_03_WEEK50](./SKILLS_SURVEY_2026_03_WEEK50.md) | Claude Code Skills 调研报告（第五十周），GitHub API 实时搜索热门 Skills，游戏客户端开发/Python开发/游戏客户端自动化测试/开发者工具完整覆盖，Top 15 Skills 排行榜 | 🆕 新增 |
+| [SKILLS_SURVEY_2026_03_WEEK49_SUPPLEMENT](./SKILLS_SURVEY_2026_03_WEEK49_SUPPLEMENT.md) | Claude Code Skills 调研报告（第四十九周）补充，Python 开发 Skills 完整列表、FastAPI Pro/Django Pro/Temporal、游戏客户端自动化测试 Skills、开发者工具 Skills 完整覆盖 | 🆕 新增 |
+| [SKILLS_SURVEY_2026_03_WEEK49](./SKILLS_SURVEY_2026_03_WEEK49.md) | Claude Code Skills 完整调研报告（第四十九周），GitHub API 实时搜索热门 Skills，新增 Unity-MCP(390⭐)/Agently(3600⭐)/Serena(20K⭐)，游戏/Python/测试/开发者工具完整覆盖 | 🆕 新增 |
+| [SKILLS_SURVEY_2026_03_WEEK48](./SKILLS_SURVEY_2026_03_WEEK48.md) | Claude Code Skills 完整调研报告（第四十八周），GitHub API 实时搜索热门 Skills，游戏/Python/测试/开发者工具完整覆盖，ClawHub Top 10 排行榜 | 🆕 新增 |
+| [SKILLS_SURVEY_2026_03_WEEK47](./SKILLS_SURVEY_2026_03_WEEK47.md) | Claude Code Skills 完整调研报告（第四十七周），GitHub API 实时搜索热门 Skills，游戏/Python/测试/开发者工具完整覆盖，ClawHub Top 10 排行榜 | 🆕 新增 |
+
+> 记录每个 Skill 的落地实践过程
+
+| [SKILLS_SURVEY_2026_03_WEEK46](./SKILLS_SURVEY_2026_03_WEEK46.md) | Claude Code Skills 完整调研报告（第四十六周），GitHub API 实时搜索热门 Skills，游戏/Python/测试/开发者工具完整覆盖，ClawHub Top 10 排行榜 | 🆕 新增 |
+| [SKILLS_SURVEY_2026_03_WEEK45](./SKILLS_SURVEY_2026_03_WEEK45.md) | Claude Code Skills 完整调研报告（第四十五周），GitHub API 实时搜索热门 Skills，游戏/Python/测试/开发者工具完整覆盖，ClawHub Top 10 排行榜 | 🆕 新增 |
+| [SKILLS_SURVEY_2026_03_WEEK44](./SKILLS_SURVEY_2026_03_WEEK44.md) | Claude Code Skills 补充调研报告（第四十四周），GitHub API 实时搜索热门 Skills，游戏/Python/测试/开发者工具完整覆盖，Antigravity 968+ Skills 深度分析 | 🆕 新增 |
+| [SKILLS_SURVEY_2026_03_WEEK43](./SKILLS_SURVEY_2026_03_WEEK43.md) | Claude Code Skills 补充调研报告（第四十三周），GitHub API 实时搜索热门 Skills，游戏/Python/测试/开发者工具完整覆盖，移动端测试 Skills | 🆕 新增 |
+| [SKILLS_SURVEY_2026_03_WEEK42](./SKILLS_SURVEY_2026_03_WEEK42.md) | Claude Code Skills 补充调研报告（第四十二周），GitHub API 实时搜索热门 Skills，游戏/Python/测试/开发者工具完整覆盖 | 🆕 新增 |
+| [SKILLS_SURVEY_2026_03_WEEK41](./SKILLS_SURVEY_2026_03_WEEK41.md) | Claude Code Skills 补充调研报告（第四十一周），GitHub API 实时搜索热门 Skills，游戏/Python/测试/开发者工具完整覆盖 | 🆕 新增 |
+| [SKILLS_SURVEY_2026_03_WEEK40](./SKILLS_SURVEY_2026_03_WEEK40.md) | Claude Code Skills 补充调研报告（第四十周），GitHub API 实时搜索热门 Skills，游戏/Python/测试/开发者工具完整覆盖，ClawHub Top 10 排行榜 | 🆕 新增 |
+| [SKILLS_SURVEY_2026_03_WEEK39](./SKILLS_SURVEY_2026_03_WEEK39.md) | Claude Code Skills 补充调研报告（第三十九周），GitHub API 实时搜索热门 Skills，游戏/Python/测试/开发者工具完整覆盖 | 🆕 新增 |
+| [SKILLS_SURVEY_2026_03_WEEK37](./SKILLS_SURVEY_2026_03_WEEK37.md) | Claude Code Skills 完整调研报告（第三十七周），GitHub API 实时搜索热门 Skills，ClawHub Top 10 排行榜，游戏/Python/测试/开发者工具完整覆盖 | 🆕 新增 |
+| [SKILLS_SURVEY_2026_03_WEEK36](./SKILLS_SURVEY_2026_03_WEEK36.md) | Claude Code Skills 完整调研报告（第三十六周），ClawHub 实时搜索 Top Skills 排行榜，游戏/Python/测试/开发者工具完整覆盖 | ✅ 已调研 |
+| [SKILLS_SURVEY_2026_03_WEEK35](./SKILLS_SURVEY_2026_03_WEEK35.md) | Claude Code Skills 完整调研报告（第三十五周），ClawHub 实时搜索 Top Skills 排行榜，游戏/Python/测试/开发者工具完整覆盖 | ✅ 已调研 |
+| [SKILLS_SURVEY_2026_03_WEEK34](./SKILLS_SURVEY_2026_03_WEEK34.md) | Claude Code Skills 完整调研报告（第三十四周），ClawHub 实时搜索 Top Skills 排行榜，游戏/Python/测试/开发者工具完整覆盖 | ✅ 已调研 |
+| [SKILLS_SURVEY_2026_03_WEEK33](./SKILLS_SURVEY_2026_03_WEEK33.md) | Claude Code Skills 完整调研报告（第三十三周）， Antigravity 968+ Skills 深度分析，游戏/Python/测试/开发者工具完整覆盖 | ✅ 已调研 |
+| [SKILLS_SURVEY_2026_03_WEEK32](./SKILLS_SURVEY_2026_03_WEEK32.md) | Claude Code Skills 完整调研报告（第三十二周），ClawHub 实时搜索 Top Skills 排行榜，游戏/Python/测试/开发者工具完整覆盖 | ✅ 已调研 |
+
 ## 📚 Skills 列表
 
 | Skill 名称 | 描述 | 状态 |
@@ -38,8 +63,32 @@
 | [SKILLS_SUPPLEMENT_2026_03_WEEK8](./SKILLS_SUPPLEMENT_2026_03_WEEK8.md) | Claude Code Skills 补充调研报告（第八周），游戏引擎 Unity/Unreal/Godot/Bevy、FastAPI Pro/Django Pro、TDD/Playwright、CI/CD/GitOps 完整覆盖 | 🆕 新增 |
 | [SKILLS_SUPPLEMENT_2026_03_WEEK9](./SKILLS_SUPPLEMENT_2026_03_WEEK9.md) | Claude Code Skills 补充调研报告（第九周），游戏客户端开发/Python开发/自动化测试/开发者工具完整覆盖，新增近期更新亮点 | 🆕 新增 |
 | [SKILLS_SUPPLEMENT_2026_03_WEEK10](./SKILLS_SUPPLEMENT_2026_03_WEEK10.md) | Claude Code Skills 补充调研报告（第十周），ClawHub 搜索发现新兴 Skills、Game Cog/Playwright/GitHub 自动化专题 | 🆕 新增 |
-| [SKILLS_SUPPLEMENT_2026_03_WEEK12](./SKILLS_SUPPLEMENT_2026_03_WEEK12.md) | Claude Code Skills 补充调研报告（第十二周），Unity AI Workflow 2026/DBOS Python/Temporal/Playwright 高级专题 | 🆕 新增 |
 | [SKILLS_SUPPLEMENT_2026_03_WEEK13](./SKILLS_SUPPLEMENT_2026_03_WEEK13.md) | Claude Code Skills 补充调研报告（第十三周），游戏客户端开发/Python开发/自动化测试/开发者工具完整覆盖 | 🆕 新增 |
+| [SKILLS_SUPPLEMENT_2026_03_WEEK12](./SKILLS_SUPPLEMENT_2026_03_WEEK12.md) | Claude Code Skills 补充调研报告（第十二周），Unity AI Workflow 2026/DBOS Python/Temporal/Playwright 高级专题 | 🆕 新增 |
+| [SKILLS_SUPPLEMENT_2026_03_WEEK14](./SKILLS_SUPPLEMENT_2026_03_WEEK14.md) | Claude Code Skills 补充调研报告（第十四周），ClawHub 实时搜索 Top Skills 排行榜，GitHub/Docker/测试/自动化全覆盖 | 🆕 新增 |
+| [SKILLS_SUPPLEMENT_2026_03_WEEK14_PART2](./SKILLS_SUPPLEMENT_2026_03_WEEK14_PART2.md) | Claude Code Skills 补充调研报告（第十四周续），Unity/Unreal/移动端开发/Kubernetes/移动端测试专题 | 🆕 新增 |
+| [SKILLS_SURVEY_2026_03_GAME_PYTHON_TEST_V8](./SKILLS_SURVEY_2026_03_GAME_PYTHON_TEST_V8.md) | Claude Code Skills 调研报告 V8，游戏/Python/测试/开发者工具完整覆盖，970+ Antigravity Skills 深度分析 | 🆕 新增 |
+| [SKILLS_SURVEY_2026_03_LATEST](./SKILLS_SURVEY_2026_03_LATEST.md) | Claude Code Skills 调研报告最新完整版，ClawHub 实时评分排行榜，Top 20 Skills 详解 | 🆕 新增 |
+| [SKILLS_SURVEY_2026_03_GAME_PYTHON_TEST_V9](./SKILLS_SURVEY_2026_03_GAME_PYTHON_TEST_V9.md) | Claude Code Skills 调研报告 V9，游戏客户端开发/Python开发/自动化测试/开发者工具完整覆盖，ClawHub Top 30 Skills 排行榜 | 🆕 新增 |
+| [SKILLS_SUPPLEMENT_2026_03_WEEK15](./SKILLS_SUPPLEMENT_2026_03_WEEK15.md) | Claude Code Skills 补充调研报告（第十五周），ClawHub Top 30 Skills 排行榜，Docker/K8s/Playwright/FastAPI 完整覆盖 | 🆕 新增 |
+| [SKILLS_SUPPLEMENT_2026_03_WEEK16](./SKILLS_SUPPLEMENT_2026_03_WEEK16.md) | Claude Code Skills 补充调研报告（第十六周），游戏客户端开发/Python开发/自动化测试/开发者工具完整覆盖 | 🆕 新增 |
+| [SKILLS_SUPPLEMENT_2026_03_WEEK17](./SKILLS_SUPPLEMENT_2026_03_WEEK17.md) | Claude Code Skills 补充调研报告（第十七周），ClawHub Top 30 Skills 排行榜，游戏/Python/测试/开发者工具完整覆盖 | 🆕 新增 |
+| [SKILLS_SURVEY_2026_03_V18](./SKILLS_SURVEY_2026_03_V18.md) | Claude Code Skills 调研报告 V18，游戏客户端开发/Python开发/自动化测试/开发者工具完整覆盖，ClawHub Top 25 Skills 排行榜 | ✅ 已完成 |
+| [SKILLS_SURVEY_2026_03_V19](./SKILLS_SURVEY_2026_03_V19.md) | Claude Code Skills 调研报告 V19，游戏客户端开发/Python开发/自动化测试/开发者工具完整覆盖，ClawHub Top 30 Skills 排行榜，Docker 工具/云服务/ML 专题 | 🆕 新增 |
+| [SKILLS_SURVEY_2026_03_WEEK20](./SKILLS_SURVEY_2026_03_WEEK20.md) | Claude Code Skills 调研报告（第二十周），游戏客户端开发/Python开发/自动化测试/开发者工具完整覆盖，ClawHub Top 30 Skills 排行榜，游戏测试/AI 驱动测试专题 | 🆕 新增 |
+| [SKILLS_SURVEY_2026_03_WEEK21](./SKILLS_SURVEY_2026_03_WEEK21.md) | Claude Code Skills 完整调研报告（第二十一周），游戏客户端开发/Python开发/游戏客户端自动化测试/开发者工具完整覆盖 | 🆕 新增 |
+| [SKILLS_SURVEY_2026_03_WEEK22](./SKILLS_SURVEY_2026_03_WEEK22.md) | Claude Code Skills 完整调研报告（第二十二周），ClawHub Top 30 Skills 排行榜，游戏/Python/测试/开发者工具完整覆盖 | 🆕 新增 |
+| [SKILLS_SURVEY_2026_03_WEEK23](./SKILLS_SURVEY_2026_03_WEEK23.md) | Claude Code Skills 完整调研报告（第二十三周），游戏客户端开发/Python开发/自动化测试/开发者工具完整覆盖，ClawHub Top 30 Skills 排行榜 | 🆕 新增 |
+| [SKILLS_SURVEY_2026_03_GAME_CLIENT_TEST](./SKILLS_SURVEY_2026_03_GAME_CLIENT_TEST.md) | Claude Code Skills 补充调研报告 - 游戏客户端自动化测试专题，游戏测试实践方案 (Web/移动端/性能)，Skills 缺口与建议 | 🆕 新增 |
+| [SKILLS_SURVEY_2026_03_GAME_PYTHON_TEST_DEVOPS](./SKILLS_SURVEY_2026_03_GAME_PYTHON_TEST_DEVOPS.md) | Claude Code Skills 完整调研报告 - 游戏客户端开发/Python 开发/游戏客户端自动化测试/开发者工具完整覆盖 | 🆕 新增 |
+| [SKILLS_SURVEY_2026_03_WEEK24](./SKILLS_SURVEY_2026_03_WEEK24.md) | Claude Code Skills 完整调研报告（第二十四周），2026年2-3月新增 Skills 完整分析，ClawHub Top 30 排行榜更新 | 🆕 新增 |
+| [SKILLS_SURVEY_2026_03_WEEK25](./SKILLS_SURVEY_2026_03_WEEK25.md) | Claude Code Skills 完整调研报告（第二十五周），ClawHub Top 30 Skills 排行榜，游戏/Python/测试/开发者工具完整覆盖 | 🆕 新增 |
+| [SKILLS_SURVEY_2026_03_WEEK26](./SKILLS_SURVEY_2026_03_WEEK26.md) | Claude Code Skills 完整调研报告（第二十六周），ClawHub Top 30 Skills 排行榜，游戏/Python/测试/开发者工具完整覆盖，最新 Skills 缺口分析 | 🆕 新增 |
+| [SKILLS_SURVEY_2026_03_WEEK27](./SKILLS_SURVEY_2026_03_WEEK27.md) | Claude Code Skills 完整调研报告（第二十七周），ClawHub Top 30 Skills 排行榜，游戏/Python/测试/开发者工具完整覆盖，本周更新亮点 | ✅ 已调研 |
+| [SKILLS_SURVEY_2026_03_WEEK27_SUPPLEMENT](./SKILLS_SURVEY_2026_03_WEEK27_SUPPLEMENT.md) | Claude Code Skills 补充调研报告（第二十七周），skills.sh 官方排行榜分析，Claude Code Game Studios 详解，Python 专业 Skills 包 | 🆕 新增 |
+| [claude-code-game-studios](./claude-code-game-studios.md) | Claude Code Game Studios 完整工作室架构，48 agents + 36 skills，Godot/Unity/Unreal 多引擎支持 | 🆕 新增 |
+| [ricko12vpl-python-skills](./ricko12vpl-python-skills.md) | Ricko12vPL Python Skills 专业技能包，8 个 Skills ~135 KB，Python/软件工程/机器学习/量化金融 | 🆕 新增 |
+| [SKILLS_SURVEY_2026_03_WEEK28](./SKILLS_SURVEY_2026_03_WEEK28.md) | Claude Code Skills 完整调研报告（第二十八周），GitHub 热门 Skills 搜索，游戏工作室/自学习系统/代码审查/安全评估，新增 16+ Skills | 🆕 新增 |
 
 ## 📝 文档规范
 
