@@ -56,6 +56,7 @@
 | [SKILLS_SURVEY_2026_03_WEEK23](./SKILLS_SURVEY_2026_03_WEEK23.md) | Claude Code Skills 完整调研报告（第二十三周），游戏客户端开发/Python开发/自动化测试/开发者工具完整覆盖，ClawHub Top 30 Skills 排行榜 | 🆕 新增 |
 | [SKILLS_SURVEY_2026_03_GAME_CLIENT_TEST](./SKILLS_SURVEY_2026_03_GAME_CLIENT_TEST.md) | Claude Code Skills 补充调研报告 - 游戏客户端自动化测试专题，游戏测试实践方案 (Web/移动端/性能)，Skills 缺口与建议 | 🆕 新增 |
 | [SKILLS_SURVEY_2026_03_GAME_PYTHON_TEST_DEVOPS](./SKILLS_SURVEY_2026_03_GAME_PYTHON_TEST_DEVOPS.md) | Claude Code Skills 完整调研报告 - 游戏客户端开发/Python 开发/游戏客户端自动化测试/开发者工具完整覆盖 | 🆕 新增 |
+| [SKILLS_SURVEY_2026_03_WEEK24](./SKILLS_SURVEY_2026_03_WEEK24.md) | Claude Code Skills 完整调研报告（第二十四周），2026年2-3月新增 Skills 完整分析，ClawHub Top 30 排行榜更新 | 🆕 新增 |
 
 ## 📝 文档规范
 
