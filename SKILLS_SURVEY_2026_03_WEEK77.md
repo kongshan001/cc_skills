@@ -25,14 +25,30 @@
 | 分类 | 核心 Skills | 适用引擎 |
 |------|-------------|----------|
 | 游戏开发编排器 | game-cog (1.134⭐) | 全引擎 |
-| Unity 开发 | unity-mcp, unity-developer, unity-ai-workflow-2026 | Unity |
+| Unity 开发 | unity-mcp (6580⭐), unity-developer, unity-ai-workflow-2026 | Unity |
 | Godot 开发 | godot-mcp (480⭐), godot-gdscript-patterns | Godot |
 | Unreal 开发 | unreal-engine-skills (27 Skills) | Unreal |
 | Roblox 开发 | roblox-game-skill | Roblox |
 | 游戏 AI | game-ai (3.133⭐ TOP 1) | 通用 |
 | 完整工作室 | Claude-Code-Game-Studios (31⭐) | 全引擎 |
+| RPG 冒险游戏 | Claude-Code-Game-Master (86⭐) | 持久世界 |
 
 ### 1.2 重点 Skills 深度分析
+
+#### 🎯 Claude-Code-Game-Master (⭐ 86) - RPG 冒险游戏新星
+
+**仓库**: https://github.com/Sstobo/Claude-Code-Game-Master
+
+**核心能力**:
+- RAG 技术驱动的故事情节
+- RPG 规则集 API 集成
+- 持久世界冒险
+- 书籍/世界改编游戏
+
+**适用场景**:
+- 互动小说游戏
+- 桌游电子化
+- 角色扮演冒险
 
 #### 🎯 Claude-Code-Game-Studios (⭐ 31+) - 完整游戏工作室
 
@@ -238,6 +254,25 @@ npm install -g playwright
 | CI/CD | cicd-pipeline, gitlab-cli-skills | 中 |
 | MCP | claude-code-mcp (1153⭐), mcp-adapter | 高 |
 | 云服务 | aws, azure, gcp | 中 |
+| 部署工具 | pinme (2970⭐), vercel-deploy | 高 |
+| 上下文工程 | planning-with-files (15292⭐), context-engineering-kit (575⭐) | 高 |
+| 安全工具 | skills-TrailOfBits (3274⭐) | 高 |
+
+### 4.2 GitHub 热门开发者工具 Skills (实时)
+
+| 仓库 | ⭐ | 说明 |
+|------|-----|------|
+| planning-with-files | 15292 | Manus 风格持久化规划 |
+| awesome-agent-skills | 9280 | 500+ Agent Skills 集合 |
+| humanizer | 7737 | 消除 AI 写作痕迹 |
+| skills (Trail of Bits) | 3274 | 安全研究技能 |
+| pinme | 2970 | 前端一键部署 |
+| Claudeception | 1926 | 自主技能提取学习 |
+| skill-codex | 753 | Codex 任务委托 |
+| claude-code-skills | 621 | 专业技能市场 |
+| context-engineering-kit | 575 | 上下文工程工具包 |
+| dotnet-skills | 461 | .NET 开发技能 |
+| solana-dev-skill | 375 | Solana 开发技能 |
 
 ### 4.2 重点 Skills
 
