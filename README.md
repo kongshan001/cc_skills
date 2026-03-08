@@ -47,6 +47,8 @@ cc_skills/
 
 | Skill 名称 | 描述 | 状态 |
 |-----------|------|------|
+| [skill-creator](./skill-creator/README.md) | Anthropic AgentSkills 创建工具，用于设计、构建和封装自定义技能包 | ✅ 已同步 |
+| [skills](./skills/README.md) | OpenAI Codex Skills 官方技能系统调研，30+ 精选技能 | ✅ 已调研 |
 | [developer-tools-skills](./developer-tools-skills/README.md) | 开发者工具 Skills，浏览器自动化、GitHub/GitLab 自动化、CI/CD 流水线 | ✅ 已调研 |
 | [compound-engineering](./compound-engineering/README.md) | 复合工程插件，9,782⭐，29 agents·22 commands·20 skills，完整 Plan→Work→Review→Compound 工作流 | ✅ 已调研 |
 | [superpowers](./superpowers/README.md) | Agentic Skills 完整工程工作流框架，68k⭐ | ✅ 已调研 |
