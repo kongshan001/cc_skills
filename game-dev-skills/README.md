@@ -8,6 +8,10 @@
 
 - [game-cog.md](./game-cog.md) - 游戏开发编排器 (DeepResearch Top 1, 评分 1.132)
 
+### 图形调试
+
+- [renderdoc-mcp.md](./renderdoc-mcp.md) - RenderDoc MCP 服务器 (AI 图形调试)
+
 ### Unity
 
 - [unity-ai-workflow-2026.md](./unity-ai-workflow-2026.md) - Unity 6.2+ AI 开发工作流 ⭐ 2026 新增
