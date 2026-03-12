@@ -8,6 +8,12 @@
 
 - [git-essentials.md](./git-essentials.md) - Git 基础 (评分 1.183)
 
+### Claude Code 技能系统
+
+- [developer-kit.md](./developer-kit.md) - 模块化开发者工具包，11个插件覆盖 Java/TypeScript/Python/PHP/AWS
+- [claude-skills.md](./claude-skills.md) - 167 个生产级技能集合
+- [token-optimizer.md](./token-optimizer.md) - 上下文 Token 优化工具
+
 ### 容器化
 
 - [docker-essentials.md](./docker-essentials.md) - Docker 基础 (评分 1.297)

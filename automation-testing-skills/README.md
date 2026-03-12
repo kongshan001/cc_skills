@@ -8,6 +8,7 @@
 
 - [playwright.md](./playwright.md) - Playwright 浏览器自动化 ⭐ 1.8k+
 - [playwright-mcp.md](./playwright-mcp.md) - Playwright MCP 服务器 (评分 3.581, TOP 2)
+- [playwright-bot-bypass.md](./playwright-bot-bypass.md) - 机器人检测绕过工具
 
 ### 测试运行器
 
