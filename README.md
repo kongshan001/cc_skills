@@ -2,7 +2,8 @@
 
 > 记录每个 Skill 的落地实践过程
 
-| [SKILLS_SURVEY_2026_03_PERMISSION_MODES](./SKILLS_SURVEY_2026_03_PERMISSION_MODES.md) | OpenClaw vs Claude Code 权限模式深度调研，对比 `dangerously-skip-permissions` 与 OpenClaw workspaceOnly、security、ask 等配置，分析安全模型差异，提供最佳实践与落地建议 | 🆕 新增 |
+| [permission-modes](./permission-modes.md) | OpenClaw vs Claude Code 权限模式深度调研，对比 `dangerously-skip-permissions` 与 OpenClaw workspaceOnly、security、ask 等配置，分析安全模型差异，提供最佳实践与落地建议 | 🆕 新增 |
+| [game-visual-effects](./game-visual-effects.md) | 游戏表现技术方案调研报告，2D地图/3D战斗场景的程序化实现，着色器/粒子系统/后处理技术 | 🆕 新增 |
 | [SKILLS_SURVEY_2026_03_WEEK77](./SKILLS_SURVEY_2026_03_WEEK77.md) | Claude Code Skills 深度调研报告（第七十七周），GitHub API 实时搜索热门 Skills，游戏客户端开发（Claude-Code-Game-Studios 31⭐/48 Agents 完整工作室/Game AI 3.133⭐ TOP 1）/Python开发（claudex 223⭐/pydantic-ai-skills 140⭐/python-executor 3.484⭐）/自动化测试（playwright-skill 1869⭐/agentic-qe 218⭐/ios-simulator-skill 567⭐）/开发者工具（git 1.342⭐/docker-essentials 1.297⭐/claude-code-mcp 1153⭐）完整覆盖，Skills.sh Top 10 排行榜 | 🆕 新增 |
 | [SKILLS_SURVEY_2026_03_WEEK76](./SKILLS_SURVEY_2026_03_WEEK76.md) | Claude Code Skills 深度调研报告（第七十六周），GitHub API 实时搜索热门 Skills，游戏客户端开发（Unity-MCP 6580⭐/Claude-Code-Game-Studios 30⭐/Game AI 3.133⭐ TOP 1）/Python开发（python-executor 3.484⭐ TOP 1/claudex 223⭐/pydantic-ai-skills 140⭐）/自动化测试（playwright 1.231⭐/agentic-qe 218⭐/ios-simulator-skill 567⭐）/开发者工具（git 1.342⭐/docker-essentials 1.297⭐/claude-code-mcp 1153⭐）完整覆盖，Skills.sh Top 10 排行榜 | 🆕 新增 |
 | [SKILLS_SURVEY_2026_03_WEEK75](./SKILLS_SURVEY_2026_03_WEEK75.md) | Claude Code Skills 深度调研报告（第七十五周），GitHub API 实时搜索热门 Skills，游戏客户端开发（Claude-Code-Game-Studios 30⭐/Unity-MCP 6580⭐/Godot-MCP 480⭐/Game Cog 1.134⭐）/Python开发（ai-guide 8952⭐/claudex 224⭐/pydantic-ai-skills 140⭐/120+ Skills）/自动化测试（playwright-skill 1869⭐/terraform-skill 1272⭐/agentic-qe 218⭐/180+ 测试 Skills）/开发者工具（everything-claude-code 60k⭐/awesome-claude-skills 40k⭐/superpowers 68k⭐）完整覆盖，ClawHub Top 30 Skills 排行榜，Skills 缺口分析与建议 | 🆕 新增 |
