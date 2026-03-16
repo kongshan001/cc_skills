@@ -4,8 +4,8 @@
 
 ## 📊 调研概览
 
-- **调研时间**: 2026-03-15
-- **技能数量**: 20 个热门技能
+- **调研时间**: 2026-03-16
+- **技能数量**: 18 个热门技能 (最新)
 - **调研目标**: 为每个技能生成独立调研报告，帮助用户选择合适的技能
 
 ## 🔧 技能列表
@@ -60,57 +60,95 @@
 cc_skills/
 ├── README.md                    # 项目说明和索引
 └── skills/                      # 技能调研报告
-    ├── openclaw-tavily-search.md
-    ├── openclaw-github-assistant.md
-    ├── agency-agents.md
-    ├── refund-assistant.md
-    ├── logistics-watcher.md
-    ├── membership-manager.md
-    ├── live-shopping-notes.md
-    ├── drission-agent.md
-    ├── market-news-analyst-en.md
-    ├── intelligent-conversation-analysis.md
-    ├── ip-advisor.md
-    ├── variant-design-skill.md
-    ├── web-to-pdf.md
-    ├── stock-cli.md
-    ├── ring-security.md
-    ├── catchclaw.md
-    ├── drission-sota-toolkit.md
-    └── ddzaishot.md
 ```
+
+## 🆕 最新热门技能 (2026-03-16)
+
+### 金融和投资
+| 技能名称 | 版本 | 描述 | 文档 |
+|---------|------|------|------|
+| [MX Stock Pick](skills/mx-stockpick.md) | 1.0.5 | A股/港股/美股智能选股，基于东方财富数据库 | [查看详情](skills/mx-stockpick.md) |
+| [MX Macro Data](skills/mx-macrodata.md) | 1.0.3 | 全球宏观经济数据查询 | [查看详情](skills/mx-macrodata.md) |
+| [MX Fin Search](skills/mx-finsearch.md) | 1.0.2 | 金融信息自然语言搜索 | [查看详情](skills/mx-finsearch.md) |
+
+### 会话和上下文管理
+| 技能名称 | 版本 | 描述 | 文档 |
+|---------|------|------|------|
+| [Session Memory Enhanced](skills/session-memory-enhanced.md) | 4.1.0 | 会话记忆增强，统一增强版 | [查看详情](skills/session-memory-enhanced.md) |
+| [Context Manager V2](skills/context-manager-v2.md) | 2.2.5 | 自动上下文管理，无缝会话切换 | [查看详情](skills/context-manager-v2.md) |
+
+### 开发和工具
+| 技能名称 | 版本 | 描述 | 文档 |
+|---------|------|------|------|
+| [Auto Document Generator](skills/auto-document-generator.md) | 1.0.0 | 自动代码文档生成 | [查看详情](skills/auto-document-generator.md) |
+| [Package Version Tracker](skills/package-version-tracker.md) | 1.0.1 | npm/PyPI 包版本追踪 | [查看详情](skills/package-version-tracker.md) |
+| [Sparkey](skills/sparkey.md) | 1.2.1 | SSH 临时访问管理 | [查看详情](skills/sparkey.md) |
+
+### 社交媒体和内容
+| 技能名称 | 版本 | 描述 | 文档 |
+|---------|------|------|------|
+| [Xiaohongshu Post](skills/xiaohongshu-post-antaeus.md) | 1.0.3 | 小红书自动发帖 | [查看详情](skills/xiaohongshu-post-antaeus.md) |
+| [X OpenClaw](skills/x-openclaw.md) | 1.0.0 | X/Twitter 帖子提取 | [查看详情](skills/x-openclaw.md) |
+| [Yuqing Bitable and Label](skills/yuqing-bitable-and-label.md) | 2.0.6 | 舆情数据同步与标签 | [查看详情](skills/yuqing-bitable-and-label.md) |
+
+### 通知和消息
+| 技能名称 | 版本 | 描述 | 文档 |
+|---------|------|------|------|
+| [Multi Platform Notifier](skills/multi-platform-notifier.md) | 1.0.0 | 企业微信/钉钉/飞书统一通知 | [查看详情](skills/multi-platform-notifier.md) |
+
+### OpenClaw 生态
+| 技能名称 | 版本 | 描述 | 文档 |
+|---------|------|------|------|
+| [OpenClaw Starter](skills/openclaw-starter.md) | 1.0.0 | OpenClaw 新手引导 | [查看详情](skills/openclaw-starter.md) |
+| [OpenClaw Win Install AI Assist](skills/openclaw-win-install-ai-assist.md) | 1.1.1 | Windows OpenClaw 安装指南 | [查看详情](skills/openclaw-win-install-ai-assist.md) |
+| [Clawy](skills/clawy.md) | 0.2.7 | AI Agent 头像生成 | [查看详情](skills/clawy.md) |
+
+### 电商和商业
+| 技能名称 | 版本 | 描述 | 文档 |
+|---------|------|------|------|
+| [Crypto Exchange](skills/crypto-exchange.md) | 1.3.1 | 加密货币交易所服务 | [查看详情](skills/crypto-exchange.md) |
+| [PartnerBoost Brand](skills/partnerboost-brand.md) | 1.0.2 | PartnerBoost 商家 API | [查看详情](skills/partnerboost-brand.md) |
+
+### 效率工具
+| 技能名称 | 版本 | 描述 | 文档 |
+|---------|------|------|------|
+| [Nini Pinboard Manager](skills/nini-pinboard-manager.md) | 0.2.1 | Pinboard 书签管理 | [查看详情](skills/nini-pinboard-manager.md) |
 
 ## 🚀 技能分类
 
-### 🔍 认证与搜索工具
-- OpenClaw Tavily Search
-- OpenClaw GitHub Assistant
-- CatchClaw
+### 💰 金融和投资
+- MX Stock Pick
+- MX Macro Data
+- MX Fin Search
+- Crypto Exchange
 
-### 🤖 AI 代理与企业级工具
-- Agency Agents
-- Drission Agent
-- Drission SOTA Toolkit
+### 🧠 会话和上下文管理
+- Session Memory Enhanced
+- Context Manager V2
 
-### 🛒 电商与消费助手
-- Refund Assistant
-- Membership Manager
-- Live Shopping Notes
-- Stock CLI
-- Ddzaishot
+### 🛠️ 开发和工具
+- Auto Document Generator
+- Package Version Tracker
+- Sparkey
+- Clawy
 
-### 📦 物流与监控
-- Logistics Watcher
-- Ring Security
-- QQ Watermark Remover
-- Telegram File Browser
+### 📱 社交媒体和内容
+- Xiaohongshu Post
+- X OpenClaw
+- Yuqing Bitable and Label
 
-### 💼 商业与行业工具
-- Market News Analyst EN
-- IP Advisor
-- Variant Design Skill
-- Web to PDF
-- Intelligent Conversation Analysis
+### 🔔 通知和消息
+- Multi Platform Notifier
+
+### ✨ OpenClaw 生态
+- OpenClaw Starter
+- OpenClaw Win Install AI Assist
+
+### 🛒 电商和商业
+- PartnerBoost Brand
+
+### 🔖 效率工具
+- Nini Pinboard Manager
 
 ## 📝 报告规范
 
@@ -141,4 +179,5 @@ cc_skills/
 
 ## 📅 更新日志
 
+- **2026-03-16**: 新增 18 个热门技能调研报告（金融投资、会话管理、开发工具等）
 - **2026-03-15**: 初始调研，完成 20 个热门技能的调研报告
