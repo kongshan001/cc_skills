@@ -1,183 +1,81 @@
-# ClawHub 热门技能调研
+# Claude Code Skills 调研报告
 
-欢迎来到 ClawHub 热门技能调研项目！本仓库收集和分析了 ClawHub 平台上最受欢迎的 AI 技能。
+> Claude Code 热门 Skills/Plugins 调研文档
 
-## 📊 调研概览
+本仓库收集了 Claude Code 热门 Skills 和插件的详细调研报告，帮助开发者了解和使用这些工具提升开发效率。
 
-- **调研时间**: 2026-03-16
-- **技能数量**: 18 个热门技能 (最新)
-- **调研目标**: 为每个技能生成独立调研报告，帮助用户选择合适的技能
+## 📚 文档索引
 
-## 🔧 技能列表
+| 类别 | 技能名称 | 描述 | 推荐安装 |
+|------|---------|------|---------|
+| **代码质量** | [pr-review-toolkit](skills/pr-review-toolkit.md) | 综合性的 Pull Request 审查工具包，包含 6 个专业审查代理 | 本地 |
+| **代码质量** | [code-review](skills/code-review.md) | 通用代码审查代理，快速检查代码质量问题 | 本地 |
+| **代码质量** | [test-writer-fixer](skills/test-writer-fixer.md) | 自动生成和修复测试用例 | 本地 |
+| **代码质量** | [api-tester](skills/api-tester.md) | API 测试用例生成和验证 | 本地 |
+| **深度思考** | [ultrathink](skills/ultrathink.md) | 深度思考模式，适合复杂问题分析 | 本地 |
+| **开发工具** | [python-expert](skills/python-expert.md) | Python 开发专家，支持 FastAPI/Django | 本地 |
+| **开发工具** | [frontend-developer](skills/frontend-developer.md) | 前端开发专家，支持 React/Vue/Angular | 本地 |
+| **开发工具** | [git-workflow](skills/git-workflow.md) | Git 工作流自动化（提交/PR/Issue） | 本地 |
+| **自动化运维** | [devops-automator](skills/devops-automator.md) | 自动化运维，支持 CI/CD/Docker/K8s | 本地/ECS |
 
-### 认证和搜索
-| 技能名称 | 版本 | 描述 | 文档 |
-|---------|------|------|------|
-| [OpenClaw Tavily Search](skills/openclaw-tavily-search.md) | 1.0.0 | Web search via Tavily API (alternative to Brave) | [查看详情](skills/openclaw-tavily-search.md) |
-| [OpenClaw GitHub Assistant](skills/openclaw-github-assistant.md) | 1.0.0 | Query and manage GitHub repositories | [查看详情](skills/openclaw-github-assistant.md) |
+## 📋 调研方向
 
-### AI 代理和企业级
-| 技能名称 | 版本 | 描述 | 文档 |
-|---------|------|------|------|
-| [Agency Agents](skills/agency-agents.md) | 1.0.0 | AI Agent 团队 - 61 个专业 Agent，8 大部门 | [查看详情](skills/agency-agents.md) |
-| [Drission Agent](skills/drission-agent.md) | 2.1.0 | Fortress Sovereign Edition. Highest-compliance web automation | [查看详情](skills/drission-agent.md) |
-| [Drission SOTA Toolkit](skills/drission-sota-toolkit.md) | 2.0.0 | Enterprise Sovereign Edition. Professional Web Intelligence & Automation | [查看详情](skills/drission-sota-toolkit.md) |
-| [CatchClaw](skills/catchclaw.md) | 3.2.0 | Search, install, and export agentars from the CatchClaw marketplace | [查看详情](skills/catchclaw.md) |
+根据 AGENTS.md 定义，本调研覆盖以下四大方向：
 
-### 电商和消费助手
-| 技能名称 | 版本 | 描述 | 文档 |
-|---------|------|------|------|
-| [Refund Assistant](skills/refund-assistant.md) | 1.0.0 | Guide users through refund and return decisions for ecommerce orders | [查看详情](skills/refund-assistant.md) |
-| [Membership Manager](skills/membership-manager.md) | 1.0.0 | Manage ecommerce and local-service memberships, benefit tracking | [查看详情](skills/membership-manager.md) |
-| [Live Shopping Notes](skills/live-shopping-notes.md) | 1.0.0 | Capture and summarize shopping notes during livestreams | [查看详情](skills/live-shopping-notes.md) |
-| [Stock CLI](skills/stock-cli.md) | 0.1.1 | 用于股票行情查询与分析的命令行技能 | [查看详情](skills/stock-cli.md) |
-| [Ddzaishot](skills/ddzaishot.md) | 1.0.0 | 斗地主牌局识别、自动记牌和AI出牌建议 | [查看详情](skills/ddzaishot.md) |
+1. **游戏客户端开发** - Unity/Godot/Unreal/WebGL 游戏引擎
+2. **Python 开发** - FastAPI/异步/测试/类型安全
+3. **自动化测试** - Playwright/E2E/移动端测试
+4. **开发者工具** - Docker/K8s/GitHub/CI/CD
 
-### 物流和监控
-| 技能名称 | 版本 | 描述 | 文档 |
-|---------|------|------|------|
-| [Logistics Watcher](skills/logistics-watcher.md) | 1.0.0 | Monitor package logistics status and identify delivery anomalies | [查看详情](skills/logistics-watcher.md) |
+## 📖 文档规范
 
-### 通讯和安全
-| 技能名称 | 版本 | 描述 | 文档 |
-|---------|------|------|------|
-| [Ring Security](skills/ring-security.md) | 2.3.2 | Monitor and manage Ring doorbells and security cameras | [查看详情](skills/ring-security.md) |
-| [QQ Watermark Remover](skills/qq-watermark-remover.md) | 1.0.0 | Intelligently detects and removes "豆包 AI 生成" watermarks from QQ videos | [查看详情](skills/qq-watermark-remover.md) |
-| [Telegram File Browser](skills/telegram-file-browser.md) | 0.1.1 | Build or improve Telegram inline-button file browser | [查看详情](skills/telegram-file-browser.md) |
+每个技能报告包含以下 8 个部分：
 
-### 商业和行业
-| 技能名称 | 版本 | 描述 | 文档 |
-|---------|------|------|------|
-| [Market News Analyst EN](skills/market-news-analyst-en.md) | 1.0.0 | This skill should be used when analyzing recent market news | [查看详情](skills/market-news-analyst-en.md) |
-| [IP Advisor](skills/ip-advisor.md) | 2.3.2 | 知识产权顾问。专利、版权、商业秘密、注册流程、保护策略 | [查看详情](skills/ip-advisor.md) |
-| [Variant Design Skill](skills/variant-design-skill.md) | 0.1.0 | Generates 3 distinct, high-quality UI design variants | [查看详情](skills/variant-design-skill.md) |
-| [Web to PDF](skills/web-to-pdf.md) | 1.0.0 | Convert any webpage to a clean, high-quality PDF document | [查看详情](skills/web-to-pdf.md) |
-| [Intelligent Conversation Analysis](skills/intelligent-conversation-analysis.md) | 1.0.0 | 该技能调用阿里云晓蜜 CCAI AIO，对客服通话或文字对话进行 AI 智能分析 | [查看详情](skills/intelligent-conversation-analysis.md) |
+1. **背景需求** - 为什么需要这个技能
+2. **目标** - 技能的核心目标
+3. **设计方案** - 架构设计和核心功能
+4. **本地部署** - 安装方式和要求
+5. **效果展示** - 使用示例和输出
+6. **优缺点分析** - 优势与劣势
+7. **平替对比** - 与类似工具的对比
+8. **落地过程** - 使用场景和最佳实践
 
-## 📁 目录结构
+## 🔧 安装方式
 
-```
-cc_skills/
-├── README.md                    # 项目说明和索引
-└── skills/                      # 技能调研报告
+### 通过 Claude Code 安装
+
+```bash
+/plugin install <skill-name>
 ```
 
-## 🆕 最新热门技能 (2026-03-16)
+### 手动安装
 
-### 金融和投资
-| 技能名称 | 版本 | 描述 | 文档 |
-|---------|------|------|------|
-| [MX Stock Pick](skills/mx-stockpick.md) | 1.0.5 | A股/港股/美股智能选股，基于东方财富数据库 | [查看详情](skills/mx-stockpick.md) |
-| [MX Macro Data](skills/mx-macrodata.md) | 1.0.3 | 全球宏观经济数据查询 | [查看详情](skills/mx-macrodata.md) |
-| [MX Fin Search](skills/mx-finsearch.md) | 1.0.2 | 金融信息自然语言搜索 | [查看详情](skills/mx-finsearch.md) |
+```bash
+# 克隆仓库
+git clone https://github.com/kongshan001/cc_skills.git
 
-### 会话和上下文管理
-| 技能名称 | 版本 | 描述 | 文档 |
-|---------|------|------|------|
-| [Session Memory Enhanced](skills/session-memory-enhanced.md) | 4.1.0 | 会话记忆增强，统一增强版 | [查看详情](skills/session-memory-enhanced.md) |
-| [Context Manager V2](skills/context-manager-v2.md) | 2.2.5 | 自动上下文管理，无缝会话切换 | [查看详情](skills/context-manager-v2.md) |
+# 安装到 Claude Code
+cp -r skills/<skill-name> ~/.claude/skills/
+```
 
-### 开发和工具
-| 技能名称 | 版本 | 描述 | 文档 |
-|---------|------|------|------|
-| [Auto Document Generator](skills/auto-document-generator.md) | 1.0.0 | 自动代码文档生成 | [查看详情](skills/auto-document-generator.md) |
-| [Package Version Tracker](skills/package-version-tracker.md) | 1.0.1 | npm/PyPI 包版本追踪 | [查看详情](skills/package-version-tracker.md) |
-| [Sparkey](skills/sparkey.md) | 1.2.1 | SSH 临时访问管理 | [查看详情](skills/sparkey.md) |
+## 📊 推荐安装评估
 
-### 社交媒体和内容
-| 技能名称 | 版本 | 描述 | 文档 |
-|---------|------|------|------|
-| [Xiaohongshu Post](skills/xiaohongshu-post-antaeus.md) | 1.0.3 | 小红书自动发帖 | [查看详情](skills/xiaohongshu-post-antaeus.md) |
-| [X OpenClaw](skills/x-openclaw.md) | 1.0.0 | X/Twitter 帖子提取 | [查看详情](skills/x-openclaw.md) |
-| [Yuqing Bitable and Label](skills/yuqing-bitable-and-label.md) | 2.0.6 | 舆情数据同步与标签 | [查看详情](skills/yuqing-bitable-and-label.md) |
+| 安装方式 | 说明 | 适用场景 |
+|---------|------|---------|
+| 本地 (Desktop/Laptop) | 安装在本地开发环境 | 日常开发、代码审查、测试生成 |
+| ECS 云服务器 | 安装在云服务器 | 自动化部署、CI/CD 配置、运维任务 |
 
-### 通知和消息
-| 技能名称 | 版本 | 描述 | 文档 |
-|---------|------|------|------|
-| [Multi Platform Notifier](skills/multi-platform-notifier.md) | 1.0.0 | 企业微信/钉钉/飞书统一通知 | [查看详情](skills/multi-platform-notifier.md) |
+## 🔗 相关资源
 
-### OpenClaw 生态
-| 技能名称 | 版本 | 描述 | 文档 |
-|---------|------|------|------|
-| [OpenClaw Starter](skills/openclaw-starter.md) | 1.0.0 | OpenClaw 新手引导 | [查看详情](skills/openclaw-starter.md) |
-| [OpenClaw Win Install AI Assist](skills/openclaw-win-install-ai-assist.md) | 1.1.1 | Windows OpenClaw 安装指南 | [查看详情](skills/openclaw-win-install-ai-assist.md) |
-| [Clawy](skills/clawy.md) | 0.2.7 | AI Agent 头像生成 | [查看详情](skills/clawy.md) |
-
-### 电商和商业
-| 技能名称 | 版本 | 描述 | 文档 |
-|---------|------|------|------|
-| [Crypto Exchange](skills/crypto-exchange.md) | 1.3.1 | 加密货币交易所服务 | [查看详情](skills/crypto-exchange.md) |
-| [PartnerBoost Brand](skills/partnerboost-brand.md) | 1.0.2 | PartnerBoost 商家 API | [查看详情](skills/partnerboost-brand.md) |
-
-### 效率工具
-| 技能名称 | 版本 | 描述 | 文档 |
-|---------|------|------|------|
-| [Nini Pinboard Manager](skills/nini-pinboard-manager.md) | 0.2.1 | Pinboard 书签管理 | [查看详情](skills/nini-pinboard-manager.md) |
-
-## 🚀 技能分类
-
-### 💰 金融和投资
-- MX Stock Pick
-- MX Macro Data
-- MX Fin Search
-- Crypto Exchange
-
-### 🧠 会话和上下文管理
-- Session Memory Enhanced
-- Context Manager V2
-
-### 🛠️ 开发和工具
-- Auto Document Generator
-- Package Version Tracker
-- Sparkey
-- Clawy
-
-### 📱 社交媒体和内容
-- Xiaohongshu Post
-- X OpenClaw
-- Yuqing Bitable and Label
-
-### 🔔 通知和消息
-- Multi Platform Notifier
-
-### ✨ OpenClaw 生态
-- OpenClaw Starter
-- OpenClaw Win Install AI Assist
-
-### 🛒 电商和商业
-- PartnerBoost Brand
-
-### 🔖 效率工具
-- Nini Pinboard Manager
-
-## 📝 报告规范
-
-每个技能的调研报告包含以下部分：
-
-1. **基本信息**: 名称、版本、作者、创建时间、更新时间
-2. **技能描述**: 技能的核心功能和用途
-3. **功能列表**: 详细的功能列表
-4. **安装方式**: 安装命令和步骤
-5. **推荐安装评估**: 本地环境 vs ECS 服务器环境的评估
-6. **依赖要求**: 需要的依赖和配置
-7. **使用场景**: 适合的使用场景
-8. **标签**: 相关标签信息
-
-## 🔗 相关链接
-
-- [ClawHub 官网](https://clawhub.com)
-- [GitHub 仓库](https://github.com/kongshan001/cc_skills)
-- [ClawHub Skills 仓库](https://github.com/kongshan001/cc_skills)
-
-## 📄 许可证
-
-本项目采用 MIT 许可证。
+- [awesome-claude-code-plugins](https://github.com/ccplugins/awesome-claude-code-plugins) - 精选 Claude Code 插件列表
+- [awesome-claude-code](https://github.com/LangGPT/awesome-claude-code) - Claude Code 资源精选
+- [claude-night-market](https://github.com/athola/claude-night-market) - 17 个生产级 Claude Code 插件
+- [Claude Code 官方文档](https://docs.claude.com/en/docs/claude-code/plugins)
 
 ## 🤝 贡献
 
-欢迎提交 Issue 和 Pull Request 来改进这份调研报告！
+欢迎提交 Pull Request 添加新的技能调研报告！
 
-## 📅 更新日志
+## 📝 许可证
 
-- **2026-03-16**: 新增 18 个热门技能调研报告（金融投资、会话管理、开发工具等）
-- **2026-03-15**: 初始调研，完成 20 个热门技能的调研报告
+MIT License
