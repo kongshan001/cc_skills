@@ -1,58 +1,82 @@
-# Test Runner Skill 调研报告
+# Test Runner
 
-> 测试运行器技能
-
-## 1. 技能概述
-
-| 项目 | 信息 |
-|------|------|
-| 名称 | test-runner |
-| 版本 | 1.0.0 |
-| 作者 | cmanfre7 |
-| 更新时间 | 2026-02-26 |
-
-## 2. 功能描述
+## 技能描述
 
 Write, run, and manage unit, integration, and E2E tests across TypeScript, Python, and Swift using recommended frameworks.
 
-## 3. 核心功能
+**所有者**: cmanfre7  
+**创建时间**: 2026-01-28  
+**最新版本**: 1.0.0  
+**ClawHub Slug**: `test-runner`
 
-- 🧪 单元测试 (Unit Tests)
-- 🔗 集成测试 (Integration Tests)
-- 🌐 E2E 测试 (End-to-End Tests)
-- 📦 多语言支持: TypeScript, Python, Swift
+## 功能列表
 
-## 4. 安装方式
+- 单元测试编写
+- 集成测试管理
+- E2E 测试运行
+- TypeScript 测试支持
+- Python 测试支持
+- Swift 测试支持
+- 测试框架推荐
+- 测试报告
+
+## 安装方式
 
 ```bash
 clawhub install test-runner
 ```
 
-## 5. 推荐安装评估
+或指定版本：
 
-### 本地安装 ⭐⭐⭐⭐⭐ (强烈推荐)
+```bash
+clawhub install test-runner --version 1.0.0
+```
 
-- **适用场景**: 开发时测试
-- **优势**: 
-  - 多语言测试支持
-  - 测试管理能力
-  - 框架推荐
-- **要求**: 需要对应语言的测试框架
+## 推荐安装评估
 
-### 阿里云 ECS ⭐⭐⭐⭐ (推荐)
+### 本地环境
+- ✅ **强烈推荐** - 测试驱动开发必备
+- 适合全栈开发者
+- 支持多种语言
+- 资源占用低
 
-- **适用场景**: CI/CD 流程
-- **优势**: 
-  - 自动化测试执行
-  - 适合持续集成
-- **注意**: 需要配置测试环境
+### ECS/云服务器
+- ✅ **强烈推荐** - CI/CD 流水线必备
+- 适合自动化测试
+- 需要相关运行时环境
+- 建议并行执行
 
-## 6. 支持的框架
+## 使用场景
 
-- **TypeScript**: Jest, Vitest, Mocha
-- **Python**: pytest, unittest
-- **Swift**: XCTest
+1. 单元测试编写
+2. 集成测试
+3. E2E 自动化测试
+4. 测试覆盖率分析
+5. CI/CD 集成
+6. 回归测试
 
----
+## 支持的测试框架
 
-*生成时间: 2026-03-14*
+### TypeScript
+- Jest
+- Vitest
+- Mocha
+
+### Python
+- pytest
+- unittest
+
+### Swift
+- XCTest
+- Quick/Nimble
+
+## 相关技能
+
+- api-test-automation - API 测试
+- github - GitHub 集成
+- web-development - Web 开发
+
+## 来源
+
+- **ClawHub**: https://clawhub.com/skills/test-runner
+- **搜索分数**: 1.242（测试类别高分）

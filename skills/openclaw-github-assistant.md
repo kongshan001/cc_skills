@@ -1,104 +1,73 @@
 # OpenClaw GitHub Assistant
 
-> 查询和管理 GitHub 仓库 - 列出仓库、检查 CI 状态、创建 Issue、搜索仓库和查看最近活动
+## 技能描述
 
-## 📋 基本信息
+Query and manage GitHub repositories - list repos, check CI status, create issues, search repos, and view recent activity.
 
-| 项目 | 内容 |
-|------|------|
-| **技能名称** | openclaw-github-assistant |
-| **版本** | 1.0.0+ |
-| **作者** | OpenClaw |
-| **许可证** | MIT-0 |
-| **评分** | ⭐ 3.0 |
-| **安装数** | 85 (当前) / 90 (总) |
+**所有者**: conorkenn  
+**创建时间**: 2026-02-11  
+**最新版本**: 2.0.1  
+**ClawHub Slug**: `openclaw-github-assistant`
 
-## 🎯 技能描述
+## 功能列表
 
-OpenClaw GitHub Assistant 是一个用于与 GitHub API 交互的技能，支持以下功能：
+- 仓库列表查询
+- CI 状态检查
+- Issue 创建和管理
+- 仓库搜索
+- 最近活动查看
+- OpenClaw 集成
+- 自动化工作流
 
-- 列出用户仓库
-- 检查 CI 状态
-- 创建 Issue
-- 搜索仓库
-- 查看最近活动
-- 创建仓库
-- 创建 Pull Request
-
-## 🛠️ 功能列表
-
-1. **仓库管理** - 列出、创建、克隆仓库
-2. **CI/CD 检查** - 查看 Actions 运行状态
-3. **Issue 管理** - 创建、查看、搜索 Issue
-4. **Pull Request** - 创建和管理 PR
-5. **代码搜索** - 搜索仓库和代码
-6. **活动追踪** - 查看最近提交和活动
-
-## 📦 安装方式
+## 安装方式
 
 ```bash
-# 使用 ClawHub 安装
 clawhub install openclaw-github-assistant
-
-# 或手动安装
-git clone https://github.com/openclaw/skills/openclaw-github-assistant ./skills/openclaw-github-assistant
 ```
 
-## 🔧 配置要求
-
-### 环境变量
-
-| 变量名 | 必需 | 说明 |
-|--------|------|------|
-| `GITHUB_TOKEN` | 是 | GitHub Personal Access Token |
-| `GITHUB_USERNAME` | 是 | GitHub 用户名 |
-
-### Token 权限要求
-
-建议使用最小权限原则：
-- **只读操作**: `public_repo` (仅公共仓库)
-- **读写操作**: `repo` (完整仓库权限)
-
-> ⚠️ 注意：`repo` 权限具有破坏性操作能力（创建/删除/修改仓库和 Issue），请谨慎使用。
-
-## 📊 推荐安装评估
-
-| 场景 | 推荐度 | 说明 |
-|------|--------|------|
-| **本地安装** | ⭐⭐⭐⭐⭐ | 强烈推荐，适合日常 GitHub 操作 |
-| **ECS 安装** | ⭐⭐⭐⭐⭐ | 完美支持，适合服务器自动化 |
-
-### 评分理由
-
-- ✅ 功能完整，覆盖常用 GitHub 操作
-- ✅ 安全评估通过，无恶意代码
-- ✅ 安装机制安全，无外部代码下载
-- ✅ 认证机制标准，使用官方 API
-- ✅ 适合自动化工作流
-
-## 🔐 安全评估
-
-- ✅ 目的和能力一致
-- ✅ 指令范围明确
-- ✅ 安装机制安全
-- ✅ 凭证要求合理
-
-## 📝 使用示例
+或指定版本：
 
 ```bash
-# 列出用户仓库
-gh repo list
-
-# 检查 CI 状态
-gh run list
-
-# 创建 Issue
-gh issue create --title "Bug report" --body "Description"
-
-# 搜索仓库
-gh search repos keyword
+clawhub install openclaw-github-assistant --version 2.0.1
 ```
 
----
+## 推荐安装评估
 
-*本报告由 OpenClaw 自动生成，更新时间: 2026-03-17*
+### 本地环境
+- ✅ **推荐** - OpenClaw 用户的 GitHub 助手
+- 适合自动化 GitHub 操作
+- 需要 GitHub Token
+- 资源占用低
+
+### ECS/云服务器
+- ✅ **推荐** - 适合 OpenClaw 服务器部署
+- 可用于自动化仓库管理
+- 需要配置 GitHub 访问权限
+- 适合机器人账户
+
+## 使用场景
+
+1. 仓库快速查询
+2. CI/CD 状态监控
+3. Issue 自动创建
+4. 代码仓库搜索
+5. 团队活动追踪
+6. OpenClaw 集成工作流
+
+## 特色功能
+
+- OpenClaw 原生集成
+- 版本 2.0.1 持续更新
+- 简化的 GitHub 操作
+- 自动化支持
+
+## 相关技能
+
+- github - GitHub CLI 技能
+- github-actions-generator - Actions 生成
+- github-trending - 趋势查看
+
+## 来源
+
+- **ClawHub**: https://clawhub.com/skills/openclaw-github-assistant
+- **搜索分数**: 2.631（GitHub 类别高分）

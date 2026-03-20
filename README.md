@@ -1,81 +1,132 @@
-# Claude Code Skills 调研报告
+# ClawHub 热门技能调研报告
 
-> Claude Code 热门 Skills/Plugins 调研文档
+> 本仓库包含 ClawHub 平台上热门技能的详细调研报告，涵盖 Docker、Python、Kubernetes、数据库、游戏开发、测试等多个领域。
 
-本仓库收集了 Claude Code 热门 Skills 和插件的详细调研报告，帮助开发者了解和使用这些工具提升开发效率。
+## 📊 调研概览
 
-## 📚 文档索引
+- **调研时间**: 2026-03-20
+- **技能数量**: 20 个热门技能
+- **数据来源**: ClawHub (https://clawhub.com)
+- **调研方法**: 使用 `clawhub search` 和 `clawhub inspect` 获取技能信息
 
-| 类别 | 技能名称 | 描述 | 推荐安装 |
-|------|---------|------|---------|
-| **代码质量** | [pr-review-toolkit](skills/pr-review-toolkit.md) | 综合性的 Pull Request 审查工具包，包含 6 个专业审查代理 | 本地 |
-| **代码质量** | [code-review](skills/code-review.md) | 通用代码审查代理，快速检查代码质量问题 | 本地 |
-| **代码质量** | [test-writer-fixer](skills/test-writer-fixer.md) | 自动生成和修复测试用例 | 本地 |
-| **代码质量** | [api-tester](skills/api-tester.md) | API 测试用例生成和验证 | 本地 |
-| **深度思考** | [ultrathink](skills/ultrathink.md) | 深度思考模式，适合复杂问题分析 | 本地 |
-| **开发工具** | [python-expert](skills/python-expert.md) | Python 开发专家，支持 FastAPI/Django | 本地 |
-| **开发工具** | [frontend-developer](skills/frontend-developer.md) | 前端开发专家，支持 React/Vue/Angular | 本地 |
-| **开发工具** | [git-workflow](skills/git-workflow.md) | Git 工作流自动化（提交/PR/Issue） | 本地 |
-| **自动化运维** | [devops-automator](skills/devops-automator.md) | 自动化运维，支持 CI/CD/Docker/K8s | 本地/ECS |
+## 📑 技能索引
 
-## 📋 调研方向
+### 🐳 Docker & 容器
 
-根据 AGENTS.md 定义，本调研覆盖以下四大方向：
+| 技能名称 | 描述 | 搜索分数 | 推荐度 | 报告链接 |
+|---------|------|---------|--------|---------|
+| **docker-essentials** | Docker 容器管理基础命令和工作流 | 3.719 | ⭐⭐⭐⭐⭐ | [查看报告](./skills/docker-essentials.md) |
+| **docker-sandbox** | 创建和管理 Docker 沙箱环境，安全执行代理代码 | 3.563 | ⭐⭐⭐⭐⭐ | [查看报告](./skills/docker-sandbox.md) |
+| **docker-compose** | 定义多容器应用，依赖处理和网络管理 | 3.547 | ⭐⭐⭐⭐⭐ | [查看报告](./skills/docker-compose.md) |
 
-1. **游戏客户端开发** - Unity/Godot/Unreal/WebGL 游戏引擎
-2. **Python 开发** - FastAPI/异步/测试/类型安全
-3. **自动化测试** - Playwright/E2E/移动端测试
-4. **开发者工具** - Docker/K8s/GitHub/CI/CD
+### 🐍 Python 开发
 
-## 📖 文档规范
+| 技能名称 | 描述 | 搜索分数 | 推荐度 | 报告链接 |
+|---------|------|---------|--------|---------|
+| **python-dataviz** | 专业数据可视化（matplotlib, seaborn, plotly） | 3.488 | ⭐⭐⭐⭐⭐ | [查看报告](./skills/python-dataviz.md) |
+| **python-script-generator** | Python 脚本和应用模板生成器 | 3.409 | ⭐⭐⭐⭐⭐ | [查看报告](./skills/python-script-generator.md) |
 
-每个技能报告包含以下 8 个部分：
+### 🧪 测试 & 自动化
 
-1. **背景需求** - 为什么需要这个技能
-2. **目标** - 技能的核心目标
-3. **设计方案** - 架构设计和核心功能
-4. **本地部署** - 安装方式和要求
-5. **效果展示** - 使用示例和输出
-6. **优缺点分析** - 优势与劣势
-7. **平替对比** - 与类似工具的对比
-8. **落地过程** - 使用场景和最佳实践
+| 技能名称 | 描述 | 搜索分数 | 推荐度 | 报告链接 |
+|---------|------|---------|--------|---------|
+| **api-test-automation** | REST/GraphQL API 测试自动化工具 | 2.968 | ⭐⭐⭐⭐⭐ | [查看报告](./skills/api-test-automation.md) |
+| **test-runner** | 单元、集成和 E2E 测试运行器 | 1.242 | ⭐⭐⭐⭐⭐ | [查看报告](./skills/test-runner.md) |
 
-## 🔧 安装方式
+### 🐙 GitHub & 版本控制
 
-### 通过 Claude Code 安装
+| 技能名称 | 描述 | 搜索分数 | 推荐度 | 报告链接 |
+|---------|------|---------|--------|---------|
+| **github** | GitHub CLI (gh) 集成，管理 Issues/PRs/CI | 2.833 | ⭐⭐⭐⭐⭐ | [查看报告](./skills/github.md) |
+| **openclaw-github-assistant** | OpenClaw GitHub 仓库管理助手 | 2.631 | ⭐⭐⭐⭐ | [查看报告](./skills/openclaw-github-assistant.md) |
+
+### 🌐 Web 开发
+
+| 技能名称 | 描述 | 搜索分数 | 推荐度 | 报告链接 |
+|---------|------|---------|--------|---------|
+| **web** | HTML/CSS/JavaScript 网站构建和部署 | 2.229 | ⭐⭐⭐⭐⭐ | [查看报告](./skills/web-development.md) |
+
+### ☸️ Kubernetes
+
+| 技能名称 | 描述 | 搜索分数 | 推荐度 | 报告链接 |
+|---------|------|---------|--------|---------|
+| **kubernetes** | K8s 最佳实践，避免常见错误 | 1.026 | ⭐⭐⭐⭐⭐ | [查看报告](./skills/kubernetes.md) |
+| **kubectl** | Kubernetes 集群管理和命令工具 | 1.085 | ⭐⭐⭐⭐⭐ | [查看报告](./skills/kubectl.md) |
+
+### 🗄️ 数据库
+
+| 技能名称 | 描述 | 搜索分数 | 推荐度 | 报告链接 |
+|---------|------|---------|--------|---------|
+| **sql-toolkit** | SQL 查询、设计、迁移和优化工具 | 1.163 | ⭐⭐⭐⭐⭐ | [查看报告](./skills/sql-toolkit.md) |
+| **database-operations** | 数据库操作和性能优化 | 1.112 | ⭐⭐⭐⭐⭐ | [查看报告](./skills/database-operations.md) |
+| **mysql** | MySQL 查询编写和优化 | 1.010 | ⭐⭐⭐⭐ | [查看报告](./skills/mysql.md) |
+| **postgresql** | PostgreSQL 查询和 Schema 设计 | 0.983 | ⭐⭐⭐⭐ | [查看报告](./skills/postgresql.md) |
+
+### 🎮 游戏开发
+
+| 技能名称 | 描述 | 搜索分数 | 推荐度 | 报告链接 |
+|---------|------|---------|--------|---------|
+| **godot-dev-guide** | Godot 4.x 完整开发指南 | 1.044 | ⭐⭐⭐⭐⭐ | [查看报告](./skills/godot-dev-guide.md) |
+| **game-cog** | AI 驱动的游戏设计推理工具 | 1.036 | ⭐⭐⭐⭐ | [查看报告](./skills/game-cog.md) |
+| **unity** | Unity 常见错误避免和优化 | 0.979 | ⭐⭐⭐⭐ | [查看报告](./skills/unity.md) |
+| **blender** | Blender 3D 建模和导出最佳实践 | 0.957 | ⭐⭐⭐⭐ | [查看报告](./skills/blender.md) |
+
+## 📝 报告格式
+
+每个技能报告包含以下内容：
+
+1. **技能描述** - 技能的基本介绍和用途
+2. **功能列表** - 技能提供的主要功能
+3. **安装方式** - 如何安装和使用该技能
+4. **推荐安装评估**
+   - 本地环境适用性
+   - ECS/云服务器适用性
+5. **使用场景** - 典型的应用场景
+6. **相关技能** - 相关的其他技能推荐
+7. **来源** - ClawHub 链接和搜索分数
+
+## 🚀 快速开始
+
+### 安装 ClawHub CLI
 
 ```bash
-/plugin install <skill-name>
+npm install -g clawhub
 ```
 
-### 手动安装
+### 安装技能
 
 ```bash
-# 克隆仓库
-git clone https://github.com/kongshan001/cc_skills.git
+# 安装任意技能
+clawhub install <skill-slug>
 
-# 安装到 Claude Code
-cp -r skills/<skill-name> ~/.claude/skills/
+# 例如安装 docker-essentials
+clawhub install docker-essentials
 ```
 
-## 📊 推荐安装评估
+### 查看技能详情
 
-| 安装方式 | 说明 | 适用场景 |
-|---------|------|---------|
-| 本地 (Desktop/Laptop) | 安装在本地开发环境 | 日常开发、代码审查、测试生成 |
-| ECS 云服务器 | 安装在云服务器 | 自动化部署、CI/CD 配置、运维任务 |
+```bash
+clawhub inspect <skill-slug>
+```
 
-## 🔗 相关资源
+## 📊 推荐度说明
 
-- [awesome-claude-code-plugins](https://github.com/ccplugins/awesome-claude-code-plugins) - 精选 Claude Code 插件列表
-- [awesome-claude-code](https://github.com/LangGPT/awesome-claude-code) - Claude Code 资源精选
-- [claude-night-market](https://github.com/athola/claude-night-market) - 17 个生产级 Claude Code 插件
-- [Claude Code 官方文档](https://docs.claude.com/en/docs/claude-code/plugins)
+- ⭐⭐⭐⭐⭐ **强烈推荐** - 必备技能，适用于大多数场景
+- ⭐⭐⭐⭐ **推荐** - 常用技能，特定场景下很有价值
+- ⭐⭐⭐ **可选** - 根据需求选择安装
 
-## 🤝 贡献
+## 🔗 相关链接
 
-欢迎提交 Pull Request 添加新的技能调研报告！
+- **ClawHub 官网**: https://clawhub.com
+- **ClawHub 技能市场**: https://clawhub.com/skills
+- **OpenClaw 文档**: https://docs.openclaw.ai
+- **GitHub 仓库**: https://github.com/kongshan001/cc_skills
 
-## 📝 许可证
+## 📄 License
 
 MIT License
+
+---
+
+**最后更新**: 2026-03-20  
+**维护者**: OpenClaw Agent
