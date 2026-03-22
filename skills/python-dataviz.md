@@ -1,83 +1,66 @@
 # Python Dataviz
 
-## 技能描述
+## 技能概述
 
-Professional data visualization using Python (matplotlib, seaborn, plotly). Create publication-quality static charts, statistical visualizations, and interactive dashboards.
+- **技能名称**: Python Dataviz
+- **Slug**: python-dataviz
+- **版本**: 1.0.0
+- **作者**: matthew-a-gordon
+- **创建时间**: 2026-02-15
+- **更新时间**: 2026-02-26
 
-**所有者**: matthew-a-gordon  
-**创建时间**: 2026-02-15  
-**最新版本**: 1.0.0  
-**ClawHub Slug**: `python-dataviz`
+## 背景需求
+
+数据可视化是数据分析的重要环节。Python 有 matplotlib、seaborn、plotly 等强大的可视化库，但学习和使用门槛较高。开发者需要专业指导来创建出版级别的图表。
+
+## 目标
+
+提供专业的 Python 数据可视化技能，帮助开发者创建高质量的静态图表、统计可视化和交互式图表。
 
 ## 功能列表
 
-- Matplotlib 专业级静态图表
-- Seaborn 统计可视化
-- Plotly 交互式仪表板
-- 发布质量图表生成
-- 统计分析可视化
-- 数据探索图表
-- 自定义主题和样式
-- 多子图布局
+1. **Matplotlib** - 创建静态图表
+2. **Seaborn** - 统计可视化
+3. **Plotly** - 交互式图表
+4. **出版级别图表** - 符合学术/出版标准
+5. **自定义样式** - 图表样式定制
 
 ## 安装方式
 
 ```bash
+# 安装依赖
+pip install matplotlib seaborn plotly pandas
+
+# 安装技能
 clawhub install python-dataviz
-```
-
-或指定版本：
-
-```bash
-clawhub install python-dataviz --version 1.0.0
-```
-
-## 依赖要求
-
-```bash
-pip install matplotlib seaborn plotly pandas numpy
 ```
 
 ## 推荐安装评估
 
-### 本地环境
-- ✅ **强烈推荐** - 数据分析和可视化的必备工具
-- 资源占用低
-- 需要 Python 3.7+
-- 适合数据科学家和分析师
+- **本地开发**: ⭐⭐⭐⭐⭐ 数据分析必备
+- **ECS 服务器**: ⭐⭐⭐ 适合有后端可视化需求的场景
 
-### ECS/云服务器
-- ✅ **推荐** - 适合生成报告和仪表板服务
-- 可集成到 Web 应用
-- 建议配合 Jupyter 或 Streamlit 使用
-- 注意字体和显示配置
+## 优缺点分析
 
-## 使用场景
+### 优点
+- 覆盖主流 Python 可视化库
+- 适合创建高质量图表
+- 支持多种图表类型
 
-1. 数据分析和探索
-2. 科研论文图表制作
-3. 商业报告可视化
-4. 交互式仪表板
-5. 统计分析结果展示
-6. 机器学习结果可视化
+### 缺点
+- 需要 Python 基础知识
+- 复杂图表需要更多学习
 
-## 支持的图表类型
+## 平替对比
 
-- 折线图、柱状图、散点图
-- 热力图、相关性矩阵
-- 箱线图、小提琴图
-- 3D 图表
-- 地理数据可视化
-- 时间序列图表
-- 多变量分析图表
+| 技能 | 评分 | 特点 |
+|------|------|------|
+| lsp-python | 3.424 | 更侧重代码质量检查 |
+| python-script-generator | 3.416 | 更侧重脚本生成 |
+| python-code-test | 3.341 | 更侧重代码测试 |
 
-## 相关技能
+## 落地过程
 
-- python-script-generator - Python 脚本生成
-- database-operations - 数据库操作
-- sql-toolkit - SQL 工具
-
-## 来源
-
-- **ClawHub**: https://clawhub.com/skills/python-dataviz
-- **搜索分数**: 3.488（Python 类别最高分）
+1. 安装 Python 可视化库: `pip install matplotlib seaborn plotly`
+2. 安装技能: `clawhub install python-dataviz`
+3. 参考示例创建可视化图表

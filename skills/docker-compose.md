@@ -1,87 +1,67 @@
 # Docker Compose
 
-## 技能描述
+## 技能概述
 
-Define multi-container applications with proper dependency handling, networking, and volume management.
+- **技能名称**: Docker Compose
+- **Slug**: docker-compose
+- **版本**: 1.0.0
+- **作者**: ivangdavila
+- **创建时间**: 2026-02-10
+- **更新时间**: 2026-02-26
 
-**所有者**: ivangdavila  
-**创建时间**: 2026-02-10  
-**最新版本**: 1.0.0  
-**ClawHub Slug**: `docker-compose`
+## 背景需求
+
+现代应用通常由多个容器组成，需要协调管理。Docker Compose 是定义和管理多容器应用的标准工具，但配置复杂。
+
+## 目标
+
+提供 Docker Compose 技能，帮助开发者定义多容器应用，实现正确的依赖处理、网络管理和卷管理。
 
 ## 功能列表
 
-- 多容器应用定义
-- 服务依赖管理
-- 网络配置
-- 卷管理
-- 环境变量管理
-- 服务编排
-- 开发环境标准化
-- 生产环境部署
+1. **多容器定义** - 定义多容器应用
+2. **依赖处理** - 容器启动顺序管理
+3. **网络管理** - 容器网络配置
+4. **卷管理** - 数据卷挂载和管理
+5. **服务编排** - 协调多个服务
 
 ## 安装方式
 
 ```bash
+# 安装 Docker Compose (如未安装)
+apt-get install docker-compose
+
+# 安装技能
 clawhub install docker-compose
-```
-
-或指定版本：
-
-```bash
-clawhub install docker-compose --version 1.0.0
 ```
 
 ## 推荐安装评估
 
-### 本地环境
-- ✅ **强烈推荐** - 本地开发环境标准化必备
-- 适合微服务开发
-- 需要 Docker 和 Docker Compose
-- 资源占用取决于服务数量
+- **本地开发**: ⭐⭐⭐⭐⭐ 本地开发必备
+- **ECS 服务器**: ⭐⭐⭐⭐⭐ 微服务部署必备
 
-### ECS/云服务器
-- ✅ **强烈推荐** - 生产环境部署常用工具
-- 适合容器化应用部署
-- 需要配置资源和网络
-- 建议配合 Docker Swarm 或 K8s
+## 优缺点分析
 
-## 使用场景
+### 优点
+- 多容器管理标准
+- 配置简单
+- 适合开发环境
 
-1. 本地开发环境搭建
-2. 微服务编排
-3. CI/CD 流水线
-4. 测试环境部署
-5. 生产环境部署（小型）
-6. 服务依赖管理
-7. 数据持久化配置
+### 缺点
+- 生产环境推荐使用 Kubernetes
+- 需要 Docker 基础
 
-## 常用配置
+## 平替对比
 
-```yaml
-version: '3.8'
-services:
-  web:
-    build: .
-    ports:
-      - "3000:3000"
-    depends_on:
-      - db
-  db:
-    image: postgres:13
-    volumes:
-      - db-data:/var/lib/postgresql/data
-volumes:
-  db-data:
-```
+| 技能 | 评分 | 特点 |
+|------|------|------|
+| docker-essentials | 3.721 | 更侧重基础 Docker |
+| docker-sandbox | 3.565 | 更侧重沙箱环境 |
+| docker-ctl | 3.550 | 更侧重控制操作 |
 
-## 相关技能
+## 落地过程
 
-- docker-essentials - Docker 基础
-- docker-sandbox - Docker 沙箱
-- kubernetes - 容器编排（高级）
-
-## 来源
-
-- **ClawHub**: https://clawhub.com/skills/docker-compose
-- **搜索分数**: 3.547（Docker 类别高分）
+1. 确保 Docker 和 Docker Compose 已安装
+2. 安装技能: `clawhub install docker-compose`
+3. 编写 docker-compose.yml
+4. 使用技能中的最佳实践管理多容器应用

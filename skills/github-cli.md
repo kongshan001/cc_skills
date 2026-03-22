@@ -1,161 +1,72 @@
-# GitHub CLI (gh)
+# GitHub CLI
 
-> 完整的 GitHub CLI 技能，提供 gh 命令的全面指南
+## 技能概述
 
-## 📋 基本信息
+- **技能名称**: GitHub CLI
+- **Slug**: github-cli
+- **版本**: 1.0.0
+- **作者**: tag-assistant
+- **创建时间**: 2026-02-15
+- **更新时间**: 2026-03-22
 
-| 项目 | 内容 |
-|------|------|
-| **技能名称** | github-cli |
-| **版本** | gh 2.66.1+ |
-| **作者** | tag-assistant |
-| **评分** | ⭐ 3.574 |
+## 背景需求
 
-## 🎯 技能描述
+GitHub CLI (gh) 是一个强大的命令行工具，但功能众多，命令复杂。开发者经常需要查阅文档才能正确使用各种功能。缺乏一个统一的参考指南。
 
-GitHub CLI (gh) 技能提供完整的 gh 命令使用指南，涵盖从认证到高级 GitHub 操作的各个方面。
+## 目标
 
-## 🛠️ 功能列表
+提供全面的 GitHub CLI 参考技能，帮助开发者快速查找和使用 gh 命令。
 
-### 1. 认证与配置
-- 交互式登录 (OAuth)
-- PAT 令牌登录
-- 企业 GitHub 登录
-- 多账户切换
-- 认证状态检查
+## 功能列表
 
-### 2. 仓库操作
-- 创建仓库 (交互式/命令行)
-- 克隆仓库
-- Fork 仓库
-- 查看仓库信息
-- 列出仓库
+1. **仓库操作** - 创建、克隆、 Fork 仓库
+2. **Issue 管理** - 创建、列表、关闭 Issue
+3. **PR 操作** - 创建、审查、合并 PR
+4. **Actions 管理** - 查看工作流、触发执行
+5. **Release 管理** - 创建、发布版本
+6. **Gist 操作** - 创建、管理代码片段
+7. **搜索功能** - 搜索仓库、代码、Issue
+8. **Projects v2** - 管理项目板
+9. **API 调用** - 执行自定义 API 请求
+10. **Secrets/Variables** - 管理仓库密钥
 
-### 3. Issue 管理
-- 创建 Issue
-- 查看 Issue 列表
-- Issue 标签管理
-- Issue 搜索
-
-### 4. Pull Request
-- 创建 PR
-- 查看 PR 状态
-- PR 审查
-- PR 合并
-
-### 5. GitHub Actions
-- 查看运行状态
-- 管理 Workflows
-- 触发 Workflow
-- 下载 artifacts
-
-### 6. Releases 管理
-- 创建 Release
-- 查看 Release
-- 下载 Release 资产
-
-### 7. Gists 操作
-- 创建 Gist
-- 列出 Gist
-- 编辑 Gist
-
-### 8. 搜索功能
-- 仓库搜索
-- 代码搜索
-- Issue 搜索
-- PR 搜索
-
-### 9. 项目管理 (Projects V2)
-- 项目列表
-- 项目项管理
-- GraphQL 支持
-
-### 10. API 调用
-- REST API
-- GraphQL API
-- 自定义请求
-
-## 📦 安装方式
+## 安装方式
 
 ```bash
-# macOS
+# 安装 GitHub CLI
 brew install gh
 
-# Linux
-sudo apt install gh
-
-# Windows
-winget install GitHub.cli
-
-# 或使用 ClawHub
+# 安装技能
 clawhub install github-cli
 ```
 
-## 🔧 配置要求
+## 推荐安装评估
 
-### 认证
-```bash
-# 交互式登录
-gh auth login
+- **本地开发**: ⭐⭐⭐⭐⭐ 非常适合
+- **ECS 服务器**: ⭐⭐⭐⭐ 适合
 
-# 使用令牌登录
-echo "$MY_TOKEN" | gh auth login --with-token
+## 优缺点分析
 
-# 检查认证状态
-gh auth status
-```
+### 优点
+- 功能最全面的 GitHub CLI 参考
+- 覆盖 gh 命令的各个方面
+- 持续更新
 
-### 推荐 scopes
+### 缺点
+- 主要是参考文档性质
+- 需要配合 gh CLI 使用
 
-| 功能 | 需要的 Scope |
-|------|-------------|
-| 基础仓库/PR/Issue 操作 | `repo` |
-| Gists | `gist` |
-| 读取组织成员 | `read:org` |
-| Projects V2 | `project` |
-| 删除仓库 | `delete_repo` |
-| Actions workflows | `workflow` |
+## 平替对比
 
-## 📊 推荐安装评估
+| 技能 | 评分 | 特点 |
+|------|------|------|
+| openclaw-github-assistant | 3.676 | 更侧重自动化操作 |
+| github-ops | 3.530 | 更侧重仓库操作 |
+| github-actions-generator | 3.461 | 更侧重 Actions 生成 |
 
-| 场景 | 推荐度 | 说明 |
-|------|--------|------|
-| **本地安装** | ⭐⭐⭐⭐⭐ | 强烈推荐，开发者必备 |
-| **ECS 安装** | ⭐⭐⭐⭐⭐ | 完美支持 CI/CD 自动化 |
+## 落地过程
 
-### 评分理由
-
-- ✅ 功能最全面的 GitHub CLI 指南
-- ✅ 包含 21 个主题的详细文档
-- ✅ 适合所有级别开发者
-- ✅ 支持企业版 GitHub
-- ✅ 完美集成 CI/CD 工作流
-
-## 💡 高级特性
-
-### JSON 输出与格式化
-```bash
-# JSON 输出
-gh repo view --json name,description,stargazerCount
-
-# jq 格式化
-gh repo view --json name,stargazerCount --jq '.stargazerCount'
-```
-
-### 环境变量
-```bash
-# 设置默认输出格式
-GH_TOKEN: GitHub Personal Access Token
-GH_REPO: 默认仓库 (owner/repo)
-GH_HOST: GitHub Enterprise 主机
-```
-
-### 常用技巧
-- 使用 `--repo` 或 `-R` 指定非当前目录的仓库
-- 使用 `--json` 获取结构化数据便于脚本处理
-- 使用 `--web` 在浏览器中打开
-- 使用 `--limit` 控制列表数量
-
----
-
-*本报告由 OpenClaw 自动生成，更新时间: 2026-03-17*
+1. 安装 GitHub CLI: `brew install gh` 或 `apt install gh`
+2. 认证: `gh auth login`
+3. 安装技能: `clawhub install github-cli`
+4. 开始使用各种 gh 命令参考

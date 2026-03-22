@@ -1,61 +1,66 @@
 # Docker Essentials
 
-## 技能描述
+## 技能概述
 
-Essential Docker commands and workflows for container management, image operations, and debugging.
+- **技能名称**: Docker Essentials
+- **Slug**: docker-essentials
+- **版本**: 1.0.0
+- **作者**: Arnarsson
+- **创建时间**: 2026-01-29
+- **更新时间**: 2026-02-26
 
-**所有者**: Arnarsson  
-**创建时间**: 2026-01-29  
-**最新版本**: 1.0.0  
-**ClawHub Slug**: `docker-essentials`
+## 背景需求
+
+Docker 是现代开发中不可或缺的工具，但命令众多，工作流程复杂。开发者经常需要查阅文档来正确使用容器管理、镜像操作和调试等功能。
+
+## 目标
+
+提供全面的 Docker 必备知识和命令参考，帮助开发者快速掌握容器管理。
 
 ## 功能列表
 
-- Docker 容器管理基础命令
-- 镜像操作（构建、拉取、推送）
-- 容器调试和日志查看
-- 网络配置
-- 卷管理
-- Docker Compose 集成
+1. **容器管理** - 启动、停止、重启、删除容器
+2. **镜像操作** - 拉取、构建、推送镜像
+3. **调试工具** - 容器日志、exec、inspect
+4. **网络管理** - 容器网络配置
+5. **卷管理** - 数据卷操作
 
 ## 安装方式
 
 ```bash
+# 安装 Docker (如未安装)
+apt-get install docker.io
+
+# 安装技能
 clawhub install docker-essentials
-```
-
-或指定版本：
-
-```bash
-clawhub install docker-essentials --version 1.0.0
 ```
 
 ## 推荐安装评估
 
-### 本地环境
-- ✅ **强烈推荐** - 适合本地开发和测试
-- 需要 Docker Desktop 或 Docker Engine 已安装
-- 资源占用中等
+- **本地开发**: ⭐⭐⭐⭐⭐ 非常适合
+- **ECS 服务器**: ⭐⭐⭐⭐⭐ 必备技能
 
-### ECS/云服务器
-- ✅ **推荐** - 适合生产环境容器管理
-- 需要 Docker 已安装
-- 建议配合 docker-compose 技能使用
+## 优缺点分析
 
-## 使用场景
+### 优点
+- 覆盖 Docker 核心功能
+- 适合快速查阅
+- 实用性强
 
-1. 日常 Docker 容器管理
-2. 镜像构建和发布
-3. 容器问题排查
-4. 开发环境标准化
+### 缺点
+- 主要是参考性质
+- 需要有 Docker 基础
 
-## 相关技能
+## 平替对比
 
-- docker-sandbox - Docker 沙箱环境
-- docker-compose - 多容器编排
-- docker-diag - Docker 诊断工具
+| 技能 | 评分 | 特点 |
+|------|------|------|
+| docker-sandbox | 3.565 | 更侧重沙箱环境 |
+| docker-ctl | 3.550 | 更侧重控制操作 |
+| docker-compose | 3.550 | 更侧重多容器编排 |
 
-## 来源
+## 落地过程
 
-- **ClawHub**: https://clawhub.com/skills/docker-essentials
-- **搜索分数**: 3.719（Docker 类别最高分）
+1. 确保 Docker 已安装并运行
+2. 安装技能: `clawhub install docker-essentials`
+3. 参考技能中的命令进行容器操作

@@ -1,23 +1,29 @@
 # OpenClaw GitHub Assistant
 
-## 技能描述
+## 技能概述
 
-Query and manage GitHub repositories - list repos, check CI status, create issues, search repos, and view recent activity.
+- **技能名称**: OpenClaw GitHub Assistant
+- **Slug**: openclaw-github-assistant
+- **版本**: 2.0.1
+- **作者**: conorkenn
+- **创建时间**: 2026-02-11
+- **更新时间**: 2026-03-22
 
-**所有者**: conorkenn  
-**创建时间**: 2026-02-11  
-**最新版本**: 2.0.1  
-**ClawHub Slug**: `openclaw-github-assistant`
+## 背景需求
+
+在日常开发中，开发者经常需要与 GitHub 进行交互，包括查看仓库列表、检查 CI 状态、创建 Issue、搜索仓库等操作。这些任务通常需要在浏览器和命令行之间切换，缺乏统一的自动化解决方案。
+
+## 目标
+
+为 OpenClaw 提供一个全面的 GitHub 助手技能，能够自动化完成常见的 GitHub 操作，减少手动操作成本。
 
 ## 功能列表
 
-- 仓库列表查询
-- CI 状态检查
-- Issue 创建和管理
-- 仓库搜索
-- 最近活动查看
-- OpenClaw 集成
-- 自动化工作流
+1. **仓库列表查询** - 列出用户或组织的仓库
+2. **CI 状态检查** - 查看仓库的 CI/CD 执行状态
+3. **Issue 管理** - 创建、查看、更新 GitHub Issues
+4. **仓库搜索** - 搜索 GitHub 仓库
+5. **最近活动查看** - 查看仓库的最新活动
 
 ## 安装方式
 
@@ -25,49 +31,32 @@ Query and manage GitHub repositories - list repos, check CI status, create issue
 clawhub install openclaw-github-assistant
 ```
 
-或指定版本：
-
-```bash
-clawhub install openclaw-github-assistant --version 2.0.1
-```
-
 ## 推荐安装评估
 
-### 本地环境
-- ✅ **推荐** - OpenClaw 用户的 GitHub 助手
-- 适合自动化 GitHub 操作
-- 需要 GitHub Token
-- 资源占用低
+- **本地开发**: ⭐⭐⭐⭐⭐ 非常适合，在本地机器上即可使用
+- **ECS 服务器**: ⭐⭐⭐⭐ 适合，需要配置 GitHub Token
 
-### ECS/云服务器
-- ✅ **推荐** - 适合 OpenClaw 服务器部署
-- 可用于自动化仓库管理
-- 需要配置 GitHub 访问权限
-- 适合机器人账户
+## 优缺点分析
 
-## 使用场景
+### 优点
+- 功能全面，覆盖常用 GitHub 操作
+- 安装简单，集成方便
+- 支持自动化操作，减少手动干预
 
-1. 仓库快速查询
-2. CI/CD 状态监控
-3. Issue 自动创建
-4. 代码仓库搜索
-5. 团队活动追踪
-6. OpenClaw 集成工作流
+### 缺点
+- 需要 GitHub API Token
+- 部分高级功能可能需要额外配置
 
-## 特色功能
+## 平替对比
 
-- OpenClaw 原生集成
-- 版本 2.0.1 持续更新
-- 简化的 GitHub 操作
-- 自动化支持
+| 技能 | 评分 | 特点 |
+|------|------|------|
+| github-cli | 3.596 | 更侧重 CLI 命令参考 |
+| github-ops | 3.530 | 更侧重仓库创建和 Release 管理 |
+| github-search | 3.491 | 更侧重仓库搜索功能 |
 
-## 相关技能
+## 落地过程
 
-- github - GitHub CLI 技能
-- github-actions-generator - Actions 生成
-- github-trending - 趋势查看
-
-## 来源
-
-- **ClawHub**: https://clawhub.com/skills/openclaw-github-assistant
-- **搜索分数**: 2.631（GitHub 类别高分）
+1. 安装技能: `clawhub install openclaw-github-assistant`
+2. 配置 GitHub Personal Access Token
+3. 根据需要调用相应功能
