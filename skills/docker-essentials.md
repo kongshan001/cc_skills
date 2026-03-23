@@ -1,66 +1,62 @@
 # Docker Essentials
 
-## 技能概述
+## 技能描述
 
-- **技能名称**: Docker Essentials
-- **Slug**: docker-essentials
-- **版本**: 1.0.0
-- **作者**: Arnarsson
-- **创建时间**: 2026-01-29
-- **更新时间**: 2026-02-26
-
-## 背景需求
-
-Docker 是现代开发中不可或缺的工具，但命令众多，工作流程复杂。开发者经常需要查阅文档来正确使用容器管理、镜像操作和调试等功能。
-
-## 目标
-
-提供全面的 Docker 必备知识和命令参考，帮助开发者快速掌握容器管理。
+Docker Essentials 是由 arnarsson 开发的 Docker 技能，提供容器管理、镜像操作和调试的常用命令和工作流程。
 
 ## 功能列表
 
-1. **容器管理** - 启动、停止、重启、删除容器
-2. **镜像操作** - 拉取、构建、推送镜像
-3. **调试工具** - 容器日志、exec、inspect
-4. **网络管理** - 容器网络配置
-5. **卷管理** - 数据卷操作
+### 容器生命周期
+- `docker run` - 运行容器（后台、端口映射、环境变量、卷挂载）
+- `docker ps` - 列出运行中/所有容器
+- `docker start/stop/restart` - 容器管理
+- `docker rm` - 容器删除
+
+### 容器检查与调试
+- `docker logs` - 查看日志（跟踪、尾随、戳记）
+- `docker exec` - 在容器中执行命令（交互shell、用户指定）
+- `docker inspect` - 容器详情检查
+
+### 镜像管理
+- `docker build` - 从 Dockerfile 构建
+- `docker pull/push` - 镜像拉取/推送
+- `docker tag` - 镜像标记
+- `docker rmi` - 镜像删除
+- `docker image prune` - 清理未使用镜像
+
+### Docker Compose
+- `docker-compose up/down` - 服务启动/停止
+- `docker-compose logs` - 查看服务日志
+- `docker-compose exec` - 在服务中执行命令
+- `docker-compose scale` - 服务扩展
+
+### 网络与存储
+- `docker network` - 网络管理
+- `docker volume` - 卷管理
+
+### 系统管理
+- `docker system df/prune` - 磁盘使用/清理
 
 ## 安装方式
 
 ```bash
-# 安装 Docker (如未安装)
-apt-get install docker.io
-
-# 安装技能
+# 使用 ClawHub 安装
 clawhub install docker-essentials
 ```
 
 ## 推荐安装评估
 
-- **本地开发**: ⭐⭐⭐⭐⭐ 非常适合
-- **ECS 服务器**: ⭐⭐⭐⭐⭐ 必备技能
-
-## 优缺点分析
-
-### 优点
-- 覆盖 Docker 核心功能
-- 适合快速查阅
-- 实用性强
-
-### 缺点
-- 主要是参考性质
-- 需要有 Docker 基础
-
-## 平替对比
-
-| 技能 | 评分 | 特点 |
+| 场景 | 推荐 | 说明 |
 |------|------|------|
-| docker-sandbox | 3.565 | 更侧重沙箱环境 |
-| docker-ctl | 3.550 | 更侧重控制操作 |
-| docker-compose | 3.550 | 更侧重多容器编排 |
+| 本地开发 | ✅ 推荐 | 日常容器操作必备 |
+| ECS/服务器 | ✅ 推荐 | 服务器运维必备技能 |
 
-## 落地过程
+### 本地部署
+- 开发环境容器管理
+- 本地多服务编排
+- 快速环境搭建
 
-1. 确保 Docker 已安装并运行
-2. 安装技能: `clawhub install docker-essentials`
-3. 参考技能中的命令进行容器操作
+### ECS 部署
+- 生产容器运维
+- 镜像构建与推送
+- 服务编排管理

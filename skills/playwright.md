@@ -1,71 +1,47 @@
-# Playwright Skill 调研报告
+# Playwright (Automation + MCP + Scraper)
 
-> 浏览器自动化测试技能
+## 技能描述
 
-## 1. 技能概述
+Playwright 是由 ivangdavila 开发的浏览器自动化技能，提供通过 Playwright MCP 进行网站导航、元素点击、表单填写、截图、数据提取和调试真实浏览器工作流程的能力。
 
-| 项目 | 信息 |
-|------|------|
-| 名称 | playwright |
-| 版本 | 1.0.3 |
-| 作者 | ivangdavila |
-| 更新时间 | 2026-03-11 |
+## 功能列表
 
-## 2. 功能描述
+### 核心功能
+- **浏览器导航**: 使用 browser_navigate 打开页面
+- **元素交互**: browser_click, browser_press, browser_type, browser_select_option
+- **数据提取**: browser_snapshot, browser_evaluate 用于检查和提取
+- **文件操作**: browser_choose_file 处理文件上传
+- **证据捕获**: screenshot, PDF, trace, download 捕获
 
-Browser automation via Playwright MCP. Navigate websites, click elements, fill forms, take screenshots, extract data, and debug real browser workflows.
+### 测试功能
+- `npx playwright test` - 运行测试套件
+- `npx playwright test --headed` - 有头模式运行
+- `npx playwright test --trace on` - 启用跟踪
+- `npx playwright codegen` - Bootstrap 选择器和流程
 
-## 3. 核心功能
+### MCP 路径
+- `npx @playwright/mcp --headless` - MCP 浏览器控制
 
-- 🌐 网页导航
-- 👆 元素点击
-- 📝 表单填写
-- 📸 截图
-- 🔍 数据提取
-- 🐛 浏览器调试
-
-## 4. 安装方式
+## 安装方式
 
 ```bash
+# 使用 ClawHub 安装
 clawhub install playwright
 ```
 
-## 5. 推荐安装评估
+## 推荐安装评估
 
-### 本地安装 ⭐⭐⭐⭐⭐ (强烈推荐)
+| 场景 | 推荐 | 说明 |
+|------|------|------|
+| 本地开发 | ✅ 推荐 | 适合本地 E2E 测试、调试、截图 |
+| ECS/服务器 | ⚠️ 谨慎 | 需要图形环境(Xvfb)，资源消耗较高 |
 
-- **适用场景**: 本地开发、调试、测试
-- **优势**: 
-  - 浏览器自动化能力强
-  - 支持 E2E 测试
-  - 可视化调试方便
-- **要求**: 需要安装 Playwright 浏览器驱动
+### 本地部署优势
+- 完整的浏览器环境支持
+- 适合开发调试
+- 快速反馈循环
 
-### 阿里云 ECS ⭐⭐⭐ (一般推荐)
-
-- **适用场景**: 自动化部署测试、CI/CD
-- **优势**: 
-  - 可集成到自动化流程
-  - 适合无头浏览器测试
-- **注意**: 
-  - 需要配置无头模式
-  - 服务器资源要求较高
-
-## 6. 使用示例
-
-```bash
-# 安装
-clawhub install playwright
-
-# 使用
-# 在 Claude Code 中使用 playwright skill 进行浏览器自动化
-```
-
-## 7. 依赖项
-
-- Playwright
-- 浏览器 (Chromium/Firefox/WebKit)
-
----
-
-*生成时间: 2026-03-14*
+### ECS 部署注意事项
+- 需要安装 xvfb 和浏览器依赖
+- 内存和 CPU 需求较高
+- 建议使用 Docker 容器化部署

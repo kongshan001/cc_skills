@@ -1,69 +1,62 @@
-# ClawHub 热门技能调研报告
+# Claude Code Skills 调研报告
 
-> Claude Code 热门 Skills 调研成果
+> 自动化调研 ClawHub 热门 Skills 并生成文档
 
 ## 索引表格
 
-| 类别 | 技能名称 | Slug | 评分 | 版本 | 推荐安装 |
-|------|----------|------|------|------|----------|
-| GitHub | OpenClaw GitHub Assistant | openclaw-github-assistant | 3.676 | 2.0.1 | 本地/ECS |
-| GitHub | GitHub CLI | github-cli | 3.596 | 1.0.0 | 本地 |
-| GitHub | GitHub Ops | github-ops | 3.530 | 1.0.0 | 本地/ECS |
-| Docker | Docker Essentials | docker-essentials | 3.721 | 1.0.0 | 本地/ECS |
-| Docker | Docker Sandbox | docker-sandbox | 3.565 | 1.0.0 | 本地/ECS |
-| Docker | Docker Compose | docker-compose | 3.550 | 1.0.0 | 本地/ECS |
-| DevOps | DevOps | devops | 3.713 | 1.0.0 | ECS |
-| DevOps | Senior DevOps | senior-devops | 3.554 | 2.1.1 | ECS |
-| DevOps | Azure DevOps | azure-devops | 3.482 | 1.0.0 | ECS |
-| Python | Python Dataviz | python-dataviz | 3.492 | 1.0.0 | 本地 |
-| Python | LSP Python | lsp-python | 3.424 | 1.1.0 | 本地 |
-| Web | Web Pilot | web-pilot | 3.517 | 1.0.0 | 本地/ECS |
-| Web | Web Development | web | 3.510 | 1.0.0 | 本地/ECS |
+| 技能名称 | 类别 | 描述 | 本地开发 | ECS/服务器 |
+|----------|------|------|----------|------------|
+| [playwright](skills/playwright.md) | 自动化测试 | 浏览器自动化、MCP、爬虫 | ✅ 推荐 | ⚠️ 需Xvfb |
+| [fastapi](skills/fastapi.md) | Python开发 | 生产级 Python API 框架 | ✅ 推荐 | ✅ 推荐 |
+| [docker-essentials](skills/docker-essentials.md) | 开发者工具 | Docker 容器管理命令 | ✅ 推荐 | ✅ 推荐 |
+| [k8s](skills/k8s.md) | 开发者工具 | Kubernetes 集群管理 | ⚠️ 需集群 | ✅ 推荐 |
+| [game-developer-skill](skills/game-developer-skill.md) | 游戏开发 | Unity/Unreal 游戏开发 | ✅ 推荐 | ❌ 不适用 |
+| [agency-agents-ai-specialists](skills/agency-agents-ai-specialists.md) | AI代理 | 50+ 专业AI代理人格 | ✅ 推荐 | ⚠️ 可选 |
+| [agent-orchestrator](skills/agent-orchestrator.md) | AI代理 | 多代理任务编排 | ✅ 推荐 | ⚠️ 需配置 |
+| [test-patterns](skills/test-patterns.md) | 自动化测试 | 跨语言测试模式 | ✅ 推荐 | ✅ 推荐 |
+| [mobile](skills/mobile.md) | 移动开发 | iOS/Android 开发最佳实践 | ✅ 推荐 | ❌ 不适用 |
+| [devops](skills/devops.md) | 开发者工具 | DevOps CI/CD 和运维 | ⚠️ 可选 | ✅ 推荐 |
+| [openclaw-unity-skill](skills/openclaw-unity-skill.md) | 游戏开发 | Unity 编辑器自动化控制 | ✅ 推荐 | ❌ 不适用 |
 
 ## 技能分类
 
-### GitHub 工具
-- [OpenClaw GitHub Assistant](./skills/openclaw-github-assistant.md) - GitHub 仓库管理和自动化
-- [GitHub CLI](./skills/github-cli.md) - GitHub CLI 全命令参考
-- [GitHub Ops](./skills/github-ops.md) - 自动化仓库操作和 Release 管理
-
-### Docker 容器
-- [Docker Essentials](./skills/docker-essentials.md) - Docker 核心命令和工作流
-- [Docker Sandbox](./skills/docker-sandbox.md) - 安全沙箱环境
-- [Docker Compose](./skills/docker-compose.md) - 多容器应用编排
-
-### DevOps 工具
-- [DevOps](./skills/devops.md) - 部署自动化和 CI/CD
-- [Senior DevOps](./skills/senior-devops.md) - 高级 DevOps 多云支持
-- [Azure DevOps](./skills/azure-devops.md) - Azure 平台 DevOps
+### 自动化测试
+- [playwright](skills/playwright.md) - 浏览器自动化测试
+- [test-patterns](skills/test-patterns.md) - 单元/集成/E2E测试
 
 ### Python 开发
-- [Python Dataviz](./skills/python-dataviz.md) - 数据可视化
-- [LSP Python](./skills/lsp-python.md) - Python 代码质量检查
+- [fastapi](skills/fastapi.md) - 异步API开发
 
-### Web 开发
-- [Web Pilot](./skills/web-pilot.md) - 网页搜索和内容抓取
-- [Web Development](./skills/web.md) - Web 开发最佳实践
+### 游戏开发
+- [game-developer-skill](skills/game-developer-skill.md) - Unity/Unreal游戏开发
+- [openclaw-unity-skill](skills/openclaw-unity-skill.md) - Unity编辑器控制
+
+### 开发者工具
+- [docker-essentials](skills/docker-essentials.md) - Docker容器管理
+- [k8s](skills/k8s.md) - Kubernetes集群管理
+- [devops](skills/devops.md) - DevOps运维实践
+
+### AI代理
+- [agency-agents-ai-specialists](skills/agency-agents-ai-specialists.md) - 专业AI代理集合
+- [agent-orchestrator](skills/agent-orchestrator.md) - 多代理编排
+
+### 移动开发
+- [mobile](skills/mobile.md) - 移动应用开发最佳实践
 
 ## 安装方式
 
 ```bash
-# 安装所有技能
-for skill in openclaw-github-assistant github-cli github-ops docker-essentials docker-sandbox docker-compose devops senior-devops azure-devops python-dataviz lsp-python web-pilot web; do
-    clawhub install $skill
-done
+# 安装单个技能
+clawhub install <skill-name>
+
+# 示例
+clawhub install playwright
+clawhub install fastapi
+clawhub install docker-essentials
 ```
-
-## 推荐安装评估说明
-
-- ⭐⭐⭐⭐⭐ 本地/ECS 必备 - 强烈推荐安装
-- ⭐⭐⭐⭐ 适合安装 - 推荐根据需求安装
-- ⭐⭐⭐ 可选安装 - 有特定需求时安装
 
 ## 贡献
 
-欢迎提交 Issue 和 PR 来完善这个技能列表。
-
-## 许可证
-
-MIT
+欢迎提交新的技能调研报告！请遵循以下格式：
+- 每个技能独立 MD 文件
+- 包含：技能描述、功能列表、安装方式、推荐安装评估
