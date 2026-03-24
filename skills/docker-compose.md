@@ -1,67 +1,53 @@
-# Docker Compose
+# Docker Compose 技能调研
 
-## 技能概述
+## 基本信息
 
-- **技能名称**: Docker Compose
-- **Slug**: docker-compose
-- **版本**: 1.0.0
-- **作者**: ivangdavila
-- **创建时间**: 2026-02-10
-- **更新时间**: 2026-02-26
+| 属性 | 值 |
+|------|-----|
+| **Slug** | docker-compose |
+| **名称** | Docker Compose |
+| **作者** | ivangdavila |
+| **版本** | 1.0.0 |
+| **评分** | 3.554 |
+| **创建时间** | 2026-02-10 |
+| **更新时间** | 2026-02-26 |
 
-## 背景需求
+## 技能描述
 
-现代应用通常由多个容器组成，需要协调管理。Docker Compose 是定义和管理多容器应用的标准工具，但配置复杂。
+Define multi-container applications with proper dependency handling, networking, and volume management.
 
-## 目标
-
-提供 Docker Compose 技能，帮助开发者定义多容器应用，实现正确的依赖处理、网络管理和卷管理。
+定义多容器应用程序，包含正确的依赖处理、网络和卷管理。
 
 ## 功能列表
 
-1. **多容器定义** - 定义多容器应用
-2. **依赖处理** - 容器启动顺序管理
-3. **网络管理** - 容器网络配置
-4. **卷管理** - 数据卷挂载和管理
-5. **服务编排** - 协调多个服务
+- 多容器应用定义
+- 依赖管理
+- 网络配置
+- 卷管理
+- 服务编排
 
 ## 安装方式
 
 ```bash
-# 安装 Docker Compose (如未安装)
-apt-get install docker-compose
-
-# 安装技能
 clawhub install docker-compose
 ```
 
 ## 推荐安装评估
 
-- **本地开发**: ⭐⭐⭐⭐⭐ 本地开发必备
-- **ECS 服务器**: ⭐⭐⭐⭐⭐ 微服务部署必备
+| 场景 | 推荐度 | 说明 |
+|------|--------|------|
+| **本地开发** | ⭐⭐⭐⭐⭐ | 强烈推荐，本地多服务开发必备 |
+| **ECS 服务器** | ⭐⭐⭐⭐⭐ | 微服务部署必备 |
 
-## 优缺点分析
+### 本地安装评估
 
-### 优点
-- 多容器管理标准
-- 配置简单
-- 适合开发环境
+- **适用人群**: 开发者、DevOps
+- **使用频率**: 高频
+- **依赖**: Docker + Docker Compose
+- **学习成本**: 低
 
-### 缺点
-- 生产环境推荐使用 Kubernetes
-- 需要 Docker 基础
+### ECS 安装评估
 
-## 平替对比
-
-| 技能 | 评分 | 特点 |
-|------|------|------|
-| docker-essentials | 3.721 | 更侧重基础 Docker |
-| docker-sandbox | 3.565 | 更侧重沙箱环境 |
-| docker-ctl | 3.550 | 更侧重控制操作 |
-
-## 落地过程
-
-1. 确保 Docker 和 Docker Compose 已安装
-2. 安装技能: `clawhub install docker-compose`
-3. 编写 docker-compose.yml
-4. 使用技能中的最佳实践管理多容器应用
+- **场景**: 微服务部署
+- **优势**: 一键部署多服务应用
+- **注意**: 生产环境需考虑 Swarm/K8s
