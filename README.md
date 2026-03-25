@@ -1,82 +1,98 @@
 # ClawHub 热门技能调研报告
 
-本仓库收集了 ClawHub 平台上最热门的 AI Agent Skills 调研报告。
-
-## 调研方法
-
-1. 使用 `clawhub search` 获取热门技能列表
-2. 使用 `clawhub inspect <slug>` 获取技能详细信息
-3. 为每个技能生成独立调研报告
+> 调研时间: 2026-03-25  
+> 来源: [ClawHub](https://clawhub.com)
 
 ## 技能索引
 
-| # | 技能 Slug | 名称 | 评分 | 分类 | 推荐场景 |
-|---|-----------|------|------|------|----------|
-| 1 | git-essentials | Git Essentials | 3.776 | 开发工具 | 本地/ECS |
-| 2 | docker-essentials | Docker Essentials | 3.723 | 容器化 | 本地/ECS |
-| 3 | test-runner | Test Runner | 3.662 | 测试 | 本地开发 |
-| 4 | git-workflows | Git Workflows | 3.717 | 开发工具 | 本地开发 |
-| 5 | docker-compose | Docker Compose | 3.554 | 容器化 | 本地/ECS |
-| 6 | test-master | Test Master | 3.609 | 测试 | 本地开发 |
-| 7 | docker-ctl | Docker Ctl | 3.552 | 容器化 | 本地/ECS |
-| 8 | test-patterns | Test Patterns | 3.565 | 测试 | 本地开发 |
-| 9 | code | Code | 3.641 | 开发工具 | 本地开发 |
-| 10 | git | Git | 3.679 | 开发工具 | 本地/ECS |
-| 11 | test-specialist | Test Specialist | 3.492 | 测试 | 本地开发 |
-| 12 | git-helper | Git Helper | 3.624 | 开发工具 | 本地/ECS |
-| 13 | explain-code | Explain Code | 3.539 | 开发工具 | 本地开发 |
-| 14 | test-generator | Test Generator | 3.440 | 测试 | 本地开发 |
-| 15 | python-script-generator | Python Script Generator | 3.423 | Python | 本地/ECS |
-| 16 | lsp-python | LSP Python | 3.427 | Python | 本地开发 |
-| 17 | game-developer-skill | Game Developer Skill | 3.425 | 游戏开发 | 本地开发 |
-| 18 | fullstack-developer | Fullstack Developer | 3.412 | 全栈 | 本地/ECS |
-| 19 | test-case-generator | Test Case Generator | 3.410 | 测试 | 本地开发 |
-| 20 | git-summary | Git Summary | 3.581 | 开发工具 | 本地/ECS |
+### 开发类技能
 
-## 分类统计
+| 技能名称 | 评分 | 类型 | 推荐环境 | 调研报告 |
+|---------|------|------|---------|---------|
+| cli-developer | 3.593 | CLI 开发 | 本地 ⭐⭐⭐⭐ | [查看](skills/cli-developer.md) |
+| csharp-developer | 3.335 | .NET 开发 | 本地 ⭐⭐⭐⭐⭐ | [查看](skills/csharp-developer.md) |
+| php-full-stack-developer | 3.504 | PHP 全栈 | ECS ⭐⭐⭐⭐⭐ | [查看](skills/php-full-stack-developer.md) |
+| python-script-generator | 3.427 | Python 脚本 | 本地 ⭐⭐⭐⭐⭐ | [查看](skills/python-script-generator.md) |
+| game-developer-skill | 3.428 | 游戏开发 | 本地 ⭐⭐⭐⭐ | [查看](skills/game-developer-skill.md) |
+| expert-frontend-developer | 3.161 | 前端开发 | 本地 ⭐⭐⭐⭐⭐ | [查看](skills/expert-frontend-developer.md) |
+| agency-frontend-developer | 2.907 | 代理前端 | 本地 ⭐⭐⭐⭐⭐ | [查看](skills/agency-frontend-developer.md) |
+| wpf-developer | 3.278 | WPF 桌面 | 本地 ⭐⭐⭐⭐⭐ | [查看](skills/wpf-developer.md) |
+| android-3d-developer | 2.247 | Android 3D | 本地 ⭐⭐⭐⭐ | [查看](skills/android-3d-developer.md) |
+| spec-developer | 3.032 | 规格开发 | 本地 ⭐⭐⭐⭐⭐ | [查看](skills/spec-developer.md) |
+| developer | 3.504 | 通用开发 | 本地 ⭐⭐⭐⭐⭐ | [查看](skills/developer.md) |
 
-### 开发工具类 (8)
-- git-essentials, git-workflows, git, git-helper, git-summary, code, explain-code
+### 自动化类技能
 
-### 测试类 (6)
-- test-runner, test-master, test-patterns, test-specialist, test-generator, test-case-generator
+| 技能名称 | 评分 | 类型 | 推荐环境 | 调研报告 |
+|---------|------|------|---------|---------|
+| automation-workflows | 3.773 | 工作流自动化 | ECS ⭐⭐⭐⭐ | [查看](skills/automation-workflows.md) |
+| ai-web-automation | 3.631 | Web 自动化 | 本地 ⭐⭐⭐⭐ | [查看](skills/ai-web-automation.md) |
+| agentic-workflow-automation | 3.545 | Agent 自动化 | ECS ⭐⭐⭐⭐⭐ | [查看](skills/agentic-workflow-automation.md) |
+| automation-tool | 3.427 | 通用自动化 | 本地 ⭐⭐⭐⭐⭐ | [查看](skills/automation-tool.md) |
+| productivity-automation-kit | 3.426 | 生产力工具 | 本地 ⭐⭐⭐⭐⭐ | [查看](skills/productivity-automation-kit.md) |
+| ai-ceo-automation | 3.406 | 高管自动化 | ECS ⭐⭐⭐⭐⭐ | [查看](skills/ai-ceo-automation.md) |
+| ai-automation-consulting | 3.439 | 自动化咨询 | 本地 ⭐⭐⭐⭐ | [查看](skills/ai-automation-consulting.md) |
+| afrexai-business-automation | 3.501 | 企业架构 | ECS ⭐⭐⭐⭐⭐ | [查看](skills/afrexai-business-automation.md) |
 
-### 容器化类 (3)
-- docker-essentials, docker-compose, docker-ctl
+## 技能分类
 
-### Python 类 (2)
-- python-script-generator, lsp-python
+### 按用途分类
 
-### 游戏开发类 (1)
-- game-developer-skill
+#### 🔧 开发工具
+- **cli-developer**: CLI 工具开发
+- **python-script-generator**: Python 脚本生成
+- **spec-developer**: 规格化开发
+- **developer**: 通用开发
 
-### 全栈类 (1)
-- fullstack-developer
+#### 🎮 游戏/图形
+- **game-developer-skill**: Unity/Unreal 游戏开发
+- **android-3d-developer**: Android 3D 开发
 
-## 安装方式
+#### 🌐 Web 开发
+- **expert-frontend-developer**: 专家级前端
+- **agency-frontend-developer**: 代理机构前端
+- **php-full-stack-developer**: PHP 全栈
+
+#### 🖥️ 桌面开发
+- **csharp-developer**: .NET/C# 开发
+- **wpf-developer**: WPF 桌面应用
+
+#### ⚙️ 自动化
+- **automation-workflows**: 无代码工作流
+- **ai-web-automation**: Web 自动化
+- **agentic-workflow-automation**: Agent 自动化
+- **automation-tool**: 通用自动化
+- **productivity-automation-kit**: 生产力工具包
+
+#### 💼 企业级
+- **ai-ceo-automation**: 高管自动化
+- **ai-automation-consulting**: 自动化咨询
+- **afrexai-business-automation**: 企业架构
+
+## 安装指南
 
 ```bash
-# 安装单个技能
-clawhub install <skill-slug>
+# 安装 ClawHub CLI
+npm i -g clawhub
 
-# 例如安装 git-essentials
-clawhub install git-essentials
+# 安装技能
+clawhub install <skill-name>
+
+# 示例
+clawhub install automation-workflows
+clawhub install python-script-generator
 ```
 
-## 报告结构
+## 推荐安装评估标准
 
-每个技能报告包含：
-1. 基本信息（名称、作者、版本、评分）
-2. 技能描述
-3. 功能列表
-4. 安装方式
-5. 推荐安装评估（本地/ECS）
+| 环境 | 适用场景 |
+|------|---------|
+| **本地** | 开发、测试、个人使用、桌面应用 |
+| **ECS** | 团队协作、CI/CD、生产环境、服务端任务 |
 
-## 更新日志
+## 贡献
 
-- 2026-03-24: 初始版本，包含 20 个热门技能调研报告
+欢迎提交 Issue 和 PR 来完善这份调研报告。
 
-## 相关链接
-
-- ClawHub: https://clawhub.com
-- OpenClaw: https://docs.openclaw.ai
+---
+*本报告由 OpenClaw 自动生成*
