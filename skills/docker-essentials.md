@@ -1,30 +1,18 @@
-# Docker Essentials 技能调研
+# Docker Essentials
 
-## 基本信息
+> Essential Docker commands and workflows for container management, image operations, and debugging.
 
-| 属性 | 值 |
-|------|-----|
-| **Slug** | docker-essentials |
-| **名称** | Docker Essentials |
-| **作者** | arnarsson |
-| **版本** | 1.0.0 |
-| **评分** | 3.723 |
-| **创建时间** | 2026-01-29 |
-| **更新时间** | 2026-02-26 |
+## 技能概述
 
-## 技能描述
-
-Essential Docker commands and workflows for container management, image operations, and debugging.
-
-必备的 Docker 命令和工作流，用于容器管理、镜像操作和故障排查。
+Docker Essentials 提供 Docker 容器管理的核心命令和工作流，包括镜像操作、容器调试等常用功能。
 
 ## 功能列表
 
 - 容器管理命令
-- 镜像操作
-- 容器调试
-- 网络配置
-- 卷管理
+- 镜像操作命令
+- 调试和排错命令
+- 容器生命周期管理
+- 网络和卷管理
 
 ## 安装方式
 
@@ -34,20 +22,26 @@ clawhub install docker-essentials
 
 ## 推荐安装评估
 
-| 场景 | 推荐度 | 说明 |
+| 环境 | 推荐度 | 说明 |
 |------|--------|------|
-| **本地开发** | ⭐⭐⭐⭐⭐ | 强烈推荐，容器化开发必备 |
-| **ECS 服务器** | ⭐⭐⭐⭐⭐ | 服务器运维必备技能 |
+| 本地 | ⭐⭐⭐⭐⭐ | 本地开发必备，容器调试方便 |
+| ECS | ⭐⭐⭐⭐ | 服务器容器管理必需 |
 
-### 本地安装评估
+## 使用示例
 
-- **适用人群**: 开发者、DevOps 工程师
-- **使用频率**: 中高频
-- **依赖**: 需安装 Docker Desktop 或 Docker Engine
-- **学习成本**: 中
+```bash
+# 列出容器
+clawhub docker-essentials ps
 
-### ECS 安装评估
+# 查看容器日志
+clawhub docker-essentials logs <container_id>
 
-- **场景**: 服务器部署、容器编排
-- **优势**: 快速部署和管理容器应用
-- **注意**: 需要 Docker 权限
+# 容器调试
+clawhub docker-essentials exec -it <container_id> sh
+```
+
+## 优缺点
+
+- ✅ 覆盖 Docker 日常操作
+- ✅ 调试命令实用
+- ❌ 功能相对基础
