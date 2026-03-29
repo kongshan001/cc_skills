@@ -1,47 +1,81 @@
 # Docker Essentials
 
-> Essential Docker commands and workflows for container management, image operations, and debugging.
+## 1. 背景需求
 
-## 技能概述
+Docker 是现代云原生开发的核心工具，但在日常使用中，开发者经常面临以下痛点：
+- 忘记常用命令语法
+- 容器调试困难（日志查看、进入容器）
+- 镜像构建效率低下
+- 网络和存储配置复杂
 
-Docker Essentials 提供 Docker 容器管理的核心命令和工作流，包括镜像操作、容器调试等常用功能。
+## 2. 目标
 
-## 功能列表
+提供一套完整的 Docker 命令和工作流速查指南，覆盖容器管理、镜像操作、调试排错等核心场景，让 AI 助手能快速准确地执行 Docker 相关任务。
 
-- 容器管理命令
-- 镜像操作命令
-- 调试和排错命令
-- 容器生命周期管理
+## 3. 设计方案
+
+**核心能力**：
+- 容器生命周期管理（创建、启动、停止、删除）
+- 镜像构建、拉取、推送操作
+- 日志查看和交互式终端进入
 - 网络和卷管理
+- Dockerfile 最佳实践
+- Docker Compose 基础操作
 
-## 安装方式
+**交互模式**：通过 SKILL.md 定义触发关键词和命令模板，AI 根据上下文选择合适的命令执行。
+
+## 4. 本地部署
 
 ```bash
 clawhub install docker-essentials
 ```
 
-## 推荐安装评估
+**依赖**：
+- Docker CLI (`docker`) 已安装
+- 无需额外配置
 
-| 环境 | 推荐度 | 说明 |
-|------|--------|------|
-| 本地 | ⭐⭐⭐⭐⭐ | 本地开发必备，容器调试方便 |
-| ECS | ⭐⭐⭐⭐ | 服务器容器管理必需 |
-
-## 使用示例
-
+**验证**：
 ```bash
-# 列出容器
-clawhub docker-essentials ps
-
-# 查看容器日志
-clawhub docker-essentials logs <container_id>
-
-# 容器调试
-clawhub docker-essentials exec -it <container_id> sh
+docker --version
 ```
 
-## 优缺点
+## 5. 效果展示
 
-- ✅ 覆盖 Docker 日常操作
-- ✅ 调试命令实用
-- ❌ 功能相对基础
+触发示例：
+- "帮我启动一个 nginx 容器"
+- "查看所有运行中的容器"
+- "进入某个容器排查问题"
+- "构建一个 Python 应用的镜像"
+
+执行效果：AI 自动生成并执行正确的 Docker 命令，返回结构化结果。
+
+## 6. 优缺点分析
+
+| 优点 | 缺点 |
+|------|------|
+| 命令覆盖全面 | 仅提供命令模板，无交互式引导 |
+| 开箱即用，零配置 | 不包含高级网络/安全配置 |
+| 适合快速查询和执行 | 对复杂场景（如 Swarm）支持有限 |
+| 调试命令实用（logs、exec） | 无状态管理能力 |
+
+## 7. 平替对比
+
+| 方案 | 特点 | 适用场景 |
+|------|------|----------|
+| Docker Essentials（当前） | 轻量命令速查，覆盖基础 | 日常快速操作 |
+| Docker Manager | 中文界面，容器管理更详细 | 需要图形化管理时 |
+| Docker Sandbox | 隔离安全执行环境 | 运行不可信代码 |
+| Docker Helper | 更全面，含 Dockerfile 生成 | 深度开发需求 |
+
+## 8. 落地过程
+
+**推荐安装评估**：
+- **本地开发机** ⭐⭐⭐⭐⭐ — 必装，Docker 已是标配
+- **ECS 云服务器** ⭐⭐⭐⭐⭐ — 运维必备，容器管理高频
+
+**使用建议**：
+1. 安装后 AI 可直接处理 Docker 相关请求
+2. 复杂场景结合 `docker-compose-generator` 使用
+3. 安全敏感场景建议配合 `docker-sandbox` 隔离
+
+**版本**：1.0.0 | **作者**：arnarsson | **更新**：2026-02-26

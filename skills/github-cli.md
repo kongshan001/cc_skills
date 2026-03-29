@@ -1,72 +1,98 @@
 # GitHub CLI
 
-## 技能概述
+## 1. 背景需求
 
-- **技能名称**: GitHub CLI
-- **Slug**: github-cli
-- **版本**: 1.0.0
-- **作者**: tag-assistant
-- **创建时间**: 2026-02-15
-- **更新时间**: 2026-03-22
+GitHub CLI (`gh`) 是官方命令行工具，但命令复杂难以记忆：
+- Repo 管理命令繁多
+- Issues 和 PRs 操作复杂
+- Actions 和 Releases 交互
+- Search 功能强大但参数多
+- API 调用需要构造
 
-## 背景需求
+需要一个完整的命令速查助手。
 
-GitHub CLI (gh) 是一个强大的命令行工具，但功能众多，命令复杂。开发者经常需要查阅文档才能正确使用各种功能。缺乏一个统一的参考指南。
+## 2. 目标
 
-## 目标
+提供全面的 GitHub CLI 参考：
+- Repos：创建、克隆、fork、列表
+- Issues：创建、评论、标签、状态
+- PRs：创建、审查、合并
+- Actions：运行、状态、日志
+- Releases：创建、发布、查看
+- Gists：创建、编辑
+- Search：代码、仓库、issues
+- Projects v2：看板管理
+- API：GraphQL/REST 调用
+- Secrets 和 variables：管理
+- Labels：管理
+- Codespaces：管理
 
-提供全面的 GitHub CLI 参考技能，帮助开发者快速查找和使用 gh 命令。
+## 3. 设计方案
 
-## 功能列表
+**命令分类速查**：
+```
+gh repo          # 仓库操作
+gh issue         # Issue 管理
+gh pr            # PR 管理
+gh action        # Actions 管理
+gh release       # 发布管理
+gh search        # 搜索
+gh api           # API 调用
+gh secret        # Secrets 管理
+```
 
-1. **仓库操作** - 创建、克隆、 Fork 仓库
-2. **Issue 管理** - 创建、列表、关闭 Issue
-3. **PR 操作** - 创建、审查、合并 PR
-4. **Actions 管理** - 查看工作流、触发执行
-5. **Release 管理** - 创建、发布版本
-6. **Gist 操作** - 创建、管理代码片段
-7. **搜索功能** - 搜索仓库、代码、Issue
-8. **Projects v2** - 管理项目板
-9. **API 调用** - 执行自定义 API 请求
-10. **Secrets/Variables** - 管理仓库密钥
+**认证管理**：登录、退出、状态检查。
 
-## 安装方式
+## 4. 本地部署
 
 ```bash
-# 安装 GitHub CLI
-brew install gh
-
-# 安装技能
 clawhub install github-cli
 ```
 
-## 推荐安装评估
+**依赖**：
+- gh CLI 已安装
 
-- **本地开发**: ⭐⭐⭐⭐⭐ 非常适合
-- **ECS 服务器**: ⭐⭐⭐⭐ 适合
+**验证**：
+```bash
+gh --version
+gh auth status
+```
 
-## 优缺点分析
+## 5. 效果展示
 
-### 优点
-- 功能最全面的 GitHub CLI 参考
-- 覆盖 gh 命令的各个方面
-- 持续更新
+触发示例：
+- "创建一个新的仓库"
+- "列出我所有的 PR"
+- "搜索最近的星标超过 100 的仓库"
 
-### 缺点
-- 主要是参考文档性质
-- 需要配合 gh CLI 使用
+执行效果：AI 生成正确的 gh 命令并执行。
 
-## 平替对比
+## 6. 优缺点分析
 
-| 技能 | 评分 | 特点 |
-|------|------|------|
-| openclaw-github-assistant | 3.676 | 更侧重自动化操作 |
-| github-ops | 3.530 | 更侧重仓库操作 |
-| github-actions-generator | 3.461 | 更侧重 Actions 生成 |
+| 优点 | 缺点 |
+|------|------|
+| 命令覆盖全面 | 需要学习命令格式 |
+| 减少查阅文档时间 | 不如 API 灵活 |
+| 交互式和脚本模式 | 复杂操作可能需要管道 |
+| 官方支持 | 版本更新可能改变行为 |
 
-## 落地过程
+## 7. 平替对比
 
-1. 安装 GitHub CLI: `brew install gh` 或 `apt install gh`
-2. 认证: `gh auth login`
-3. 安装技能: `clawhub install github-cli`
-4. 开始使用各种 gh 命令参考
+| 方案 | 特点 | 适用场景 |
+|------|------|----------|
+| GitHub CLI（当前） | 命令速查，官方工具 | 日常操作 |
+| OpenClaw GitHub Assistant | API 层集成 | AI 代理操作 |
+| GitHub API | 底层控制 | 复杂场景 |
+
+## 8. 落地过程
+
+**推荐安装评估**：
+- **本地开发机** ⭐⭐⭐⭐⭐ — 开发者必备
+- **ECS 云服务器** ⭐⭐⭐⭐ — 自动化脚本
+
+**使用建议**：
+1. 配合 GitHub token 使用
+2. 使用 `--json` 输出便于解析
+3. 常用命令可以 alias
+
+**版本**：1.0.0 | **作者**：tag-assistant | **更新**：2026-03-29
