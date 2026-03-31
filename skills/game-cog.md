@@ -1,74 +1,60 @@
-# Game Cog
+# Game Cog - Build Game Worlds, Not Just Sprites
 
 ## 技能描述
-
-Other tools generate sprites. CellCog builds game worlds. #1 on DeepResearch Bench (Feb 2026) for deep game design reasoning — character-consistent art, sprite generation, level design, and narrative.
-
-**所有者**: nitishgargiitd  
-**创建时间**: 2026-02-06  
-**最新版本**: 1.0.3  
-**ClawHub Slug**: `game-cog`
+CellCog AI驱动的游戏开发技能，专注于构建统一风格的游戏世界。DeepResearch Bench 2026年2月第一名，能够生成角色一致的美术资源、瓦片集、音乐、UI、3D模型和游戏设计文档。不同于其他工具只生成精灵，CellCog构建整个游戏世界。
 
 ## 功能列表
-
-- 深度游戏设计推理
-- 角色一致性美术生成
-- 精灵图生成
-- 关卡设计
-- 叙事设计
-- 游戏世界构建
-- AI 驱动的游戏创作
+- **角色设计**: 玩家角色、NPC、反派角色、角色表、肖像
+- **环境与瓦片**: 瓦片集、背景、关卡概念、道具、UI元素
+- **游戏概念**: 游戏设计文档、故事大纲、机制设计、世界观构建、路演材料
+- **3D模型与资源**: GLB格式的生产级3D模型、角色、武器、道具、环境元素
+- **精灵与动画**: 精灵表、动画效果、物品图标、粒子效果
+- **UI/UX设计**: 主菜单、HUD元素、库存系统、对话框
 
 ## 安装方式
-
 ```bash
-clawhub install game-cog
-```
+# 前置依赖
+clawhub install cellcog
 
-或指定版本：
+# 核心模式（火-and-Forget）
+result = client.create_chat(
+    prompt="[你的游戏开发请求]",
+    notify_session_key="agent:main:main",
+    task_label="game-dev",
+    chat_mode="agent"
+)
 
-```bash
-clawhub install game-cog --version 1.0.3
+# 聊天模式选择
+- "agent" 单个资源、精灵、角色设计、UI元素
+- "agent team" 完整游戏概念、复杂世界构建、叙事设计
 ```
 
 ## 推荐安装评估
 
-### 本地环境
-- ✅ **推荐** - 游戏设计辅助工具
-- 适合游戏设计师和开发者
-- 需要稳定的网络连接
-- 适合创意阶段
+### 本地部署
+**适用场景**: 
+- 个人开发者、独立游戏工作室
+- 需要快速原型验证和小规模开发
+- 对创意一致性要求高的项目
 
-### ECS/云服务器
-- ✅ **推荐** - 可集成到游戏开发流水线
-- 适合批量生成资源
-- 需要 AI 服务访问权限
-- 建议配合其他游戏开发工具
+**优势**:
+- 一次性安装，长期使用
+- 网络要求低，离线工作能力强
+- 完全私有化，敏感创意内容安全
+- 成本控制灵活（按需使用）
 
-## 使用场景
+**ECS部署**
+**适用场景**:
+- 中大型游戏开发团队
+- 多项目并行开发
+- 需要大规模资源生成和协作
+- 企业级安全和管理需求
 
-1. 游戏概念设计
-2. 角色和美术风格一致性
-3. 精灵图批量生成
-4. 关卡布局设计
-5. 游戏叙事编写
-6. 游戏世界构建
-7. 游戏原型快速开发
+**优势**:
+- 弹性扩展，按需分配资源
+- 团队协作功能完善
+- 集成CI/CD流程
+- 统一管理和监控
+- 高可用性和容错能力
 
-## 特色功能
-
-- DeepResearch Bench 2026 年 2 月排名第一
-- 角色一致性保证
-- 多维度游戏设计支持
-- AI 驱动的创意辅助
-
-## 相关技能
-
-- godot-dev-guide - Godot 开发指南
-- unity - Unity 开发
-- blender - 3D 建模
-
-## 来源
-
-- **ClawHub**: https://clawhub.com/skills/game-cog
-- **搜索分数**: 1.036（游戏开发类别）
+**选择建议**: 独立开发者选择本地部署，团队协作选择ECS部署。
