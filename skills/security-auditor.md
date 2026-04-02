@@ -1,121 +1,77 @@
-# Security Auditor
+# Security Auditor - 安全审计技能
 
-> 全面的安全审计和安全编码专家 - 基于 OWASP Top 10 框架
-
-## 📋 基本信息
+## 基本信息
 
 | 项目 | 内容 |
 |------|------|
-| **技能名称** | security-auditor |
+| **名称** | Security Auditor |
+| **Slug** | security-auditor |
 | **版本** | 1.0.0 |
 | **作者** | jgarrison929 |
-| **许可证** | MIT |
-| **评分** | ⭐ 3.0+ |
+| **创建时间** | 2026-02-02 |
+| **更新时间** | 2026-03-13 |
 
-## 🎯 技能描述
+## 技能描述
 
-Security Auditor 是全面的安全审计和安全编码专家，基于 Dave Poon 的 buildwithclaude 改编。专注于安全审计、漏洞检测和 OWASP 合规。
+Use when reviewing code for security vulnerabilities, implementing authentication flows, auditing OWASP Top 10, configuring CORS/CSP headers, handling secrets, input validation, SQL injection prevention, XSS protection, or any security-related code review.
 
-## 🛠️ 功能列表
+安全审计技能，用于代码安全漏洞审查、身份验证流程实现、OWASP Top 10 审计、CORS/CSP 配置、Secrets 处理、输入验证、SQL 注入防护、XSS 防护等。
 
-### 1. 安全审计流程
-- 代码和架构全面审计
-- OWASP Top 10 漏洞识别
-- 安全认证和授权流程设计
-- 输入验证和加密机制实施
-- 安全测试和监控策略创建
+## 功能列表
 
-### 2. 核心原则
-- 防御深度 (多层安全)
-- 最小权限原则
-- 永不信任用户输入
-- 安全失败设计
-- 定期依赖扫描和更新
-- 注重实际修复
-
-### 3. OWASP Top 10 检查清单
-
-#### A01:2021 - 访问控制失效
-- 每个端点验证认证
-- 每个数据访问验证授权
-- CORS 配置特定来源
-- 目录列表禁用
-- 敏感端点限速
-- JWT 令牌每次请求验证
-
-#### A02:2021 - 加密失败
-- 密码使用 bcrypt (12+ 轮) 或 argon2 哈希
-- 静态数据加密 (AES-256)
-- 强制 TLS/HTTPS
-- 源代码和日志中无 secrets
-
-#### A03:2021 - 注入
-- 参数化查询
-- ORM/准备语句
+- 代码安全漏洞审查
+- 身份验证流程实现
+- OWASP Top 10 审计
+- CORS/CSP 配置
+- Secrets 处理
 - 输入验证
+- SQL 注入防护
+- XSS 防护
+- 安全代码审查
 
-## 📦 安装方式
+## 安装方式
 
 ```bash
 # 使用 ClawHub 安装
+npx clawhub@latest install security-auditor
+
+# 或全局安装 ClawHub 后安装
+npm i -g clawhub
 clawhub install security-auditor
 ```
 
-## 📊 推荐安装评估
+## 推荐安装评估
 
-| 场景 | 推荐度 | 说明 |
-|------|--------|------|
-| **本地安装** | ⭐⭐⭐⭐⭐ | 强烈推荐，安全审计必备 |
-| **ECS 安装** | ⭐⭐⭐⭐⭐ | 完美支持，安全合规 |
+### 本地安装 ⭐⭐⭐⭐⭐
+- 适合场景：本地代码审查、开发阶段安全检查
+- 优势：即时反馈、快速修复
+- 要求：Node.js 环境
 
-### 评分理由
+### ECS 安装 ⭐⭐⭐⭐⭐
+- 适合场景：CI/CD 流水线、自动化安全扫描
+- 优势：可集成到自动化流程
+- 要求：ECS 实例
 
-- ✅ 基于 OWASP Top 10 的完整审计框架
-- ✅ 大量代码示例 (好/坏对比)
-- ✅ 实用的安全修复建议
-- ✅ 适合所有类型项目
+## 优缺点分析
 
-## 🛡️ 安全检查项
+### 优点
+- 覆盖 OWASP Top 10
+- 多场景安全支持
+- 适合开发流程集成
 
-### 认证与授权
-```javascript
-// ❌ 错误: 无授权检查
-app.delete('/api/posts/:id', async (req, res) => {
-  await db.post.delete({ where: { id: req.params.id } })
-  res.json({ success: true })
-})
+### 缺点
+- 需要安全知识背景
+- 自动化扫描可能有误报
 
-// ✅ 正确: 验证所有权
-app.delete('/api/posts/:id', authenticate, async (req, res) => {
-  const post = await db.post.findUnique({ where: { id: req.params.id } })
-  if (!post) return res.status(404).json({ error: 'Not found' })
-  if (post.authorId !== req.user.id && req.user.role !== 'admin') {
-    return res.status(403).json({ error: 'Forbidden' })
-  }
-  await db.post.delete({ where: { id: req.params.id } })
-  res.json({ success: true })
-})
-```
+## 平替对比
 
-### 加密
-```javascript
-// ❌ 错误: 存储明文密码
-await db.user.create({ data: { password: req.body.password } })
+| 技能 | 对比 |
+|------|------|
+| secure-api-calls | secure-api-calls 专注调用安全，security-auditor 专注代码审计 |
 
-// ✅ 正确: Bcrypt 哈希
-import bcrypt from 'bcryptjs'
-const hashedPassword = await bcrypt.hash(req.body.password, 12)
-await db.user.create({ data: { password: hashedPassword } })
-```
+## 落地过程
 
-## 📋 审计报告结构
-
-1. **执行摘要**
-2. **漏洞清单** (按严重程度)
-3. **修复建议**
-4. **最佳实践建议**
-5. **后续步骤**
-
----
-
-*本报告由 OpenClaw 自动生成，更新时间: 2026-03-17*
+1. 安装 ClawHub: `npm i -g clawhub`
+2. 安装技能: `clawhub install security-auditor`
+3. 配置扫描规则和范围
+4. 开始安全代码审查

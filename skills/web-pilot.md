@@ -1,61 +1,72 @@
-# Web Pilot
+# Web Pilot - 网页导航技能
 
-## 技能概述
+## 基本信息
 
-- **技能名称**: Web Pilot
-- **Slug**: web-pilot
-- **版本**: 1.0.0
-- **作者**: LiranUdi
-- **创建时间**: 2026-02-17
-- **更新时间**: 2026-03-22
+| 项目 | 内容 |
+|------|------|
+| **名称** | Web Pilot |
+| **Slug** | web-pilot |
+| **版本** | 1.0.0 |
+| **作者** | liranudi |
+| **创建时间** | 2026-02-17 |
+| **更新时间** | 2026-04-02 |
 
-## 背景需求
+## 技能描述
 
-在 AI 助手中进行网络搜索和内容抓取通常需要 API Key（如 Google、Bing）。开发者需要一个无需 API Key 即可进行网页搜索和内容提取的解决方案。
+Search the web and read page contents without API keys. Use when you need to search via DuckDuckGo/Brave/Google (multi-page), extract readable text from URLs...
 
-## 目标
-
-提供无需 API Key 的网页搜索和内容抓取功能，支持多搜索引擎（DuckDuckGo/Brave/Google）和 URL 内容提取。
+网页导航技能，无需 API 密钥即可搜索网页并读取页面内容。支持 DuckDuckGo/Brave/Google 搜索。
 
 ## 功能列表
 
-1. **网页搜索** - 支持多个搜索引擎
-2. **内容提取** - 从 URL 提取可读文本
-3. **多引擎支持** - DuckDuckGo、Brave、Google
-4. **无需 API Key** - 降低使用门槛
+- 网页搜索 (DuckDuckGo/Brave/Google)
+- 网页内容提取
+- 多页面搜索
+- 无需 API 密钥
 
 ## 安装方式
 
 ```bash
+# 使用 ClawHub 安装
+npx clawhub@latest install web-pilot
+
+# 或全局安装 ClawHub 后安装
+npm i -g clawhub
 clawhub install web-pilot
 ```
 
 ## 推荐安装评估
 
-- **本地开发**: ⭐⭐⭐⭐⭐ 必备技能
-- **ECS 服务器**: ⭐⭐⭐⭐⭐ 非常有帮助
+### 本地安装 ⭐⭐⭐⭐
+- 适合场景：本地研究、信息收集
+- 优势：无需 API 成本、灵活搜索
+- 要求：网络访问
+
+### ECS 安装 ⭐⭐⭐⭐⭐
+- 适合场景：服务器端数据抓取、研究自动化
+- 优势：可定时任务、批量处理
+- 要求：ECS 有网络访问
 
 ## 优缺点分析
 
 ### 优点
-- 无需 API Key
-- 支持多个搜索引擎
-- 易于集成
+- 无需 API 密钥
+- 多搜索引擎支持
+- 免费使用
 
 ### 缺点
-- 可能受到搜索限制
+- 可能受搜索引擎限制
 - 稳定性依赖第三方服务
 
 ## 平替对比
 
-| 技能 | 评分 | 特点 |
-|------|------|------|
-| web | 3.510 | 更侧重 Web 开发 |
-| web-content-fetcher | 3.491 | 更侧重内容抓取 |
-| web-learner | 3.425 | 更侧重学习功能 |
+| 技能 | 对比 |
+|------|------|
+| web_search | 需要 Brave API，web-pilot 无需密钥 |
 
 ## 落地过程
 
-1. 安装技能: `clawhub install web-pilot`
-2. 直接调用搜索和抓取功能
-3. 集成到工作流程中
+1. 安装 ClawHub: `npm i -g clawhub`
+2. 安装技能: `clawhub install web-pilot`
+3. 根据 SKILL.md 配置搜索引擎
+4. 开始搜索和抓取任务

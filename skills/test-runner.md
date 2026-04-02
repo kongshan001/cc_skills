@@ -1,85 +1,76 @@
-# Test Runner
+# Test Runner - 测试运行器
 
-## 1. 背景需求
+## 基本信息
 
-测试是代码质量的保障，但测试执行和分析常常繁琐：
-- 多框架（TypeScript/Python/Swift）切换
-- 测试报告不直观
-- 覆盖度数据难获取
-- CI 集成复杂
-
-需要一个统一的测试运行和管理工具。
-
-## 2. 目标
-
-跨语言的测试编写、运行、管理：
-- 单元测试、集成测试、E2E 测试
-- TypeScript（Jest/Vitest）
-- Python（pytest/unittest）
-- Swift（XCTest）
-- 测试报告和覆盖度分析
-- 测试选择和过滤
-
-## 3. 设计方案
-
-**支持的测试栈**：
-| 语言 | 框架 |
+| 项目 | 内容 |
 |------|------|
-| TypeScript | Jest, Vitest |
-| Python | pytest, unittest |
-| Swift | XCTest |
+| **名称** | Test Runner |
+| **Slug** | test-runner |
+| **版本** | 1.0.0 |
+| **作者** | cmanfre7 |
+| **创建时间** | 2026-01-28 |
+| **更新时间** | 2026-02-26 |
 
-**能力**：
-- 测试发现和执行
-- 过滤（文件、标签、关键字）
-- 覆盖率报告
-- 失败重跑
-- CI 友好输出
+## 技能描述
 
-## 4. 本地部署
+Write, run, and manage unit, integration, and E2E tests across TypeScript, Python, and Swift using recommended frameworks.
+
+测试运行器，支持为 TypeScript、Python 和 Swift 编写、运行和管理单元测试、集成测试和 E2E 测试。
+
+## 功能列表
+
+- 单元测试 (Unit Testing)
+- 集成测试 (Integration Testing)
+- E2E 测试 (End-to-End Testing)
+- TypeScript 测试支持
+- Python 测试支持
+- Swift 测试支持
+
+## 安装方式
 
 ```bash
+# 使用 ClawHub 安装
+npx clawhub@latest install test-runner
+
+# 或全局安装 ClawHub 后安装
+npm i -g clawhub
 clawhub install test-runner
 ```
 
-**依赖**：
-- 对应语言的测试框架
-- Node.js/Python 环境
+## 推荐安装评估
 
-**验证**：
-```bash
-# 对应框架的测试命令
-```
+### 本地安装 ⭐⭐⭐⭐⭐
+- 适合场景：本地开发环境、快速反馈循环
+- 优势：即时测试反馈、支持 TDD
+- 要求：Node.js / Python / Swift 环境
 
-## 5. 效果展示
+### ECS 安装 ⭐⭐⭐⭐
+- 适合场景：CI/CD 流水线、自动化测试
+- 优势：可集成到持续集成流程
+- 要求：ECS 需配置对应语言环境
 
-触发示例：
-- "运行项目所有测试"
-- "只运行最近修改的文件的测试"
-- "生成测试覆盖率报告"
+## 优缺点分析
 
-执行效果：AI 执行测试并返回报告。
+### 优点
+- 多语言支持
+- 覆盖多种测试类型
+- 适合主流测试框架
 
-## 6. 优缺点分析
+### 缺点
+- 需要配置各语言测试环境
+- 某些框架可能有依赖冲突
 
-| 优点 | 缺点 |
+## 平替对比
+
+| 技能 | 对比 |
 |------|------|
-| 多语言支持 | 不如专用工具深入 |
-| 统一界面 | 特定功能可能有限 |
-| CI 友好 | 配置需要适配项目 |
+| code | Code 包含完整流程，test-runner 专注测试 |
+| database-operations | 专注数据库，test-runner 专注测试 |
 
-## 7. 平替对比
+## 落地过程
 
-| 方案 | 特点 | 适用场景 |
-|------|------|----------|
-| Test Runner（当前） | 多语言统一 | 混合项目 |
-| pytest | Python 专用 | Python 项目 |
-| Jest | JS/TS 专用 | JS 项目 |
-
-## 8. 落地过程
-
-**推荐安装评估**：
-- **本地开发机** ⭐⭐⭐⭐ — 多语言项目必备
-- **ECS 云服务器** ⭐⭐⭐⭐ — CI 测试
-
-**版本**：1.0.0 | **作者**：cmanfre7 | **更新**：2026-02-26
+1. 准备测试环境 (Node.js/Python/Swift)
+2. 安装 ClawHub: `npm i -g clawhub`
+3. 安装技能: `clawhub install test-runner`
+4. 根据 SKILL.md 配置测试框架
+5. 开始编写和运行测试

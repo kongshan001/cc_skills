@@ -1,78 +1,77 @@
-# Database Operations
+# Database Operations - 数据库操作技能
+
+## 基本信息
+
+| 项目 | 内容 |
+|------|------|
+| **名称** | Database Operations |
+| **Slug** | database-operations |
+| **版本** | 1.0.0 |
+| **作者** | jgarrison929 |
+| **创建时间** | 2026-02-02 |
+| **更新时间** | 2026-02-26 |
 
 ## 技能描述
 
 Use when designing database schemas, writing migrations, optimizing SQL queries, fixing N+1 problems, creating indexes, setting up PostgreSQL, configuring EF Core, implementing caching, partitioning tables, or any database performance question.
 
-**所有者**: jgarrison929  
-**创建时间**: 2026-02-02  
-**最新版本**: 1.0.0  
-**ClawHub Slug**: `database-operations`
+数据库操作技能，用于数据库模式设计、迁移编写、SQL 查询优化、修复 N+1 问题、创建索引、PostgreSQL 设置、EF Core 配置、实现缓存、表分区等。
 
 ## 功能列表
 
-- 数据库 Schema 设计
-- 迁移脚本编写
+- 数据库模式设计
+- 迁移编写
 - SQL 查询优化
 - N+1 问题修复
-- 索引创建和优化
-- PostgreSQL 配置
-- Entity Framework Core 配置
+- 索引创建
+- PostgreSQL 设置
+- EF Core 配置
 - 缓存实现
 - 表分区
-- 性能调优
 
 ## 安装方式
 
 ```bash
+# 使用 ClawHub 安装
+npx clawhub@latest install database-operations
+
+# 或全局安装 ClawHub 后安装
+npm i -g clawhub
 clawhub install database-operations
-```
-
-或指定版本：
-
-```bash
-clawhub install database-operations --version 1.0.0
 ```
 
 ## 推荐安装评估
 
-### 本地环境
-- ✅ **强烈推荐** - 数据库开发必备
-- 适合后端开发者和 DBA
-- 支持多种数据库
-- 资源占用低
+### 本地安装 ⭐⭐⭐⭐
+- 适合场景：本地开发、数据库学习
+- 优势：本地实验、快速反馈
+- 要求：Node.js 环境 + 数据库客户端
 
-### ECS/云服务器
-- ✅ **强烈推荐** - 生产数据库管理必备
-- 适合性能优化和维护
-- 需要数据库访问权限
-- 建议在非生产环境测试
+### ECS 安装 ⭐⭐⭐⭐⭐
+- 适合场景：生产数据库管理、数据库性能优化
+- 优势：可连接生产数据库、批量操作
+- 要求：ECS 实例 + 数据库连接
 
-## 使用场景
+## 优缺点分析
 
-1. 数据库设计
-2. 性能问题排查
-3. 查询优化
-4. 迁移管理
-5. 缓存策略
-6. 大数据表分区
-7. EF Core 配置
+### 优点
+- 多种数据库支持
+- 覆盖开发和运维场景
+- 性能优化能力强
 
-## 支持的技术
+### 缺点
+- 需要数据库环境
+- 某些操作需要 DBA 权限
 
-- PostgreSQL
-- MySQL
-- SQL Server
-- Entity Framework Core
-- Redis (缓存)
+## 平替对比
 
-## 相关技能
+| 技能 | 对比 |
+|------|------|
+| test-runner | 专注测试，database-operations 专注数据库 |
 
-- sql-toolkit - SQL 工具
-- pg - PostgreSQL 专项
-- mysql - MySQL 专项
+## 落地过程
 
-## 来源
-
-- **ClawHub**: https://clawhub.com/skills/database-operations
-- **搜索分数**: 1.112（数据库类别高分）
+1. 安装 ClawHub: `npm i -g clawhub`
+2. 安装技能: `clawhub install database-operations`
+3. 配置数据库连接
+4. 开始数据库操作和优化
