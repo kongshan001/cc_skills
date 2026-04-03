@@ -17,6 +17,14 @@
 | 9 | Database Operations | database-operations | 1.0.0 | jgarrison929 | 数据库操作，模式设计/迁移/优化 | 本地/ECS |
 | 10 | imap-smtp-email | imap-smtp-email | 0.0.10 | gzlicanyi | 邮件收发，IMAP/SMTP 协议支持 | 本地/ECS |
 | 11 | Self-Improving | self-improving | 1.2.16 | ivangdavila | 自我改进技能，反思/批评/学习/记忆 | 本地/ECS |
+| 12 | Python Script Generator | python-script-generator | 1.0.0 | sunshine-del-ux | Python 脚本和应用模板生成 | 本地/ECS |
+| 13 | Python Code Test | python-code-test | 1.0.3 | zhouhh2017 | 代码功能测试，生成测试用例 | 本地/ECS |
+| 14 | Automation Workflows | automation-workflows | 0.1.0 | jk-0001 | 自动化工作流设计与实现 | 本地/ECS |
+| 15 | AI Web Automation | ai-web-automation | 1.0.0 | arthasking123 | 网页自动化，表单/爬虫/测试 | ECS |
+| 16 | Security Audit Toolkit | security-audit-toolkit | 1.0.0 | gitgoodordietrying | 安全审计工具包，依赖扫描/OWASP | 本地/ECS |
+| 17 | Docker Essentials | docker-essentials | - | - | Docker 容器化管理 | 本地/ECS |
+| 18 | Database Design | database-design | - | - | 数据库设计与规范 | 本地/ECS |
+| 19 | Database Designer | database-designer | - | - | 灵活 SQLite 模式设计 | 本地 |
 
 ## 调研方法
 
@@ -45,6 +53,8 @@ npx clawhub@latest install <slug>
 - [Test Runner](skills/test-runner.md) - 测试运行器
 - [Database Operations](skills/database-operations.md) - 数据库操作
 - [Security Auditor](skills/security-auditor.md) - 安全审计
+- [Python Script Generator](skills/python-script-generator.md) - Python 脚本生成
+- [Python Code Test](skills/python-code-test.md) - 代码测试
 
 ### AI 能力
 - [AI Image Generation](skills/image-generation.md) - AI 图像生成
@@ -56,6 +66,13 @@ npx clawhub@latest install <slug>
 - [imap-smtp-email](skills/imap-smtp-email.md) - 邮件收发
 - [Secure API Calls](skills/secure-api-calls.md) - 安全 API
 - [Self-Improving](skills/self-improving.md) - 自我改进
+- [Automation Workflows](skills/automation-workflows.md) - 自动化工作流
+- [AI Web Automation](skills/ai-web-automation.md) - 网页自动化
+
+### 基础设施
+- [Docker Essentials](skills/docker-essentials.md) - Docker 管理
+- [Kubernetes](skills/kubernetes.md) - K8s 编排
+- [Database Design](skills/database-design.md) - 数据库设计
 
 ## 贡献
 
