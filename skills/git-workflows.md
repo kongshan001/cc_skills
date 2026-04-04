@@ -1,56 +1,61 @@
-# Git Workflows 技能调研
+# Git Workflows
 
-## 基本信息
+## 背景需求
 
-| 属性 | 值 |
-|------|-----|
-| **Slug** | git-workflows |
-| **名称** | Git Workflows |
-| **作者** | gitgoodordietrying |
-| **版本** | 1.0.0 |
-| **评分** | 3.717 |
-| **创建时间** | 2026-02-03 |
-| **更新时间** | 2026-02-26 |
+当需要执行高级 Git 操作（如变基、调试、并行开发、环境恢复）时，基础命令不够用。复杂工作流需要更专业的工具支持。
 
-## 技能描述
+## 目标
 
-Advanced git operations beyond add/commit/push. Use when rebasing, bisecting bugs, using worktrees for parallel development, recovering with reflog, managing subtrees/submodules, resolving merge conflicts, cherry-picking across branches, or working with monorepos.
+提供高级 Git 操作能力，支持复杂开发场景。
 
-高级 Git 操作，超越基础的 add/commit/push。用于变基、bug 二分查找、使用工作树并行开发、通过 reflog 恢复、管理子仓库/子模块、解决合并冲突、跨分支 cherry-pick 或处理巨型仓库。
+## 设计方案
 
-## 功能列表
+### 核心功能
+- **变基**：交互式变基、压缩提交
+- **调试**：git bisect 定位 bug
+- **并行开发**：git worktree 多分支同时开发
+- **恢复**：reflog 恢复误操作
+- **子模块**：subtree/submodule 管理
+- **冲突解决**：merge conflict 处理
+- **精选**：cherry-pick 跨分支
+- **大型项目管理**：monorepo 支持
 
-- 变基 (Rebase) 操作
-- Bug 二分查找 (Bisect)
-- 工作树管理 (Worktree)
-- Reflog 恢复
-- 子仓库/子模块管理
-- 合并冲突解决
-- Cherry-pick 跨分支操作
-- 巨型仓库 (Monorepo) 支持
-
-## 安装方式
+## 本地部署
 
 ```bash
 clawhub install git-workflows
 ```
 
-## 推荐安装评估
+## 效果展示
 
-| 场景 | 推荐度 | 说明 |
-|------|--------|------|
-| **本地开发** | ⭐⭐⭐⭐⭐ | 强烈推荐，高级 Git 用户必备 |
-| **ECS 服务器** | ⭐⭐⭐⭐ | 适合团队协作复杂工作流 |
+技能提供：
+- 高级版本控制操作
+- 多分支并行开发
+- 项目恢复与回滚
+- Monorepo 支持
 
-### 本地安装评估
+## 优缺点分析
 
-- **适用人群**: 中高级开发者
-- **使用频率**: 中频
-- **依赖**: Git
-- **学习成本**: 高
+| 优点 | 缺点 |
+|------|------|
+| 功能全面 | 学习曲线较高 |
+| 适合高级用户 | 需要一定 Git 基础 |
+| 活跃维护 | |
 
-### ECS 安装评估
+## 平替对比
 
-- **场景**: 复杂项目协作
-- **优势**: 处理复杂分支策略
-- **注意**: 需要理解 Git 原理
+| 技能 | 特点 |
+|------|------|
+| git-essentials | 基础操作 |
+| git-helper | 常用操作速查 |
+| git-cli | 基础 CLI |
+
+## 落地过程
+
+1. 安装：`clawhub install git-workflows`
+2. 使用场景：
+   - 整理提交历史：交互式变基
+   - 定位 Bug：git bisect
+   - 同时开发多特性：git worktree
+
+**推荐安装**：本地开发环境 ⭐⭐⭐⭐⭐

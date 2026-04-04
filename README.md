@@ -22,16 +22,22 @@
 | 14 | Automation Workflows | automation-workflows | 0.1.0 | jk-0001 | 自动化工作流设计与实现 | 本地/ECS |
 | 15 | AI Web Automation | ai-web-automation | 1.0.0 | arthasking123 | 网页自动化，表单/爬虫/测试 | ECS |
 | 16 | Security Audit Toolkit | security-audit-toolkit | 1.0.0 | gitgoodordietrying | 安全审计工具包，依赖扫描/OWASP | 本地/ECS |
-| 17 | Docker Essentials | docker-essentials | - | - | Docker 容器化管理 | 本地/ECS |
-| 18 | Database Design | database-design | - | - | 数据库设计与规范 | 本地/ECS |
-| 19 | Database Designer | database-designer | - | - | 灵活 SQLite 模式设计 | 本地 |
+| 17 | Git Essentials | git-essentials | 1.0.0 | arnarsson | 基础 Git 命令和工作流 | 本地/ECS |
+| 18 | Git Workflows | git-workflows | 1.0.0 | gitgoodordietrying | 高级 Git 操作，变基/调试/并行开发 | 本地/ECS |
+| 19 | Git Helper | git-helper | 1.0.0 | xejrax | 常用 Git 操作速查 | 本地 |
+| 20 | Docker Essentials | docker-essentials | 1.0.0 | arnarsson | 容器管理、镜像操作、调试 | 本地/ECS |
+| 21 | Docker Helper | docker-helper | 2.0.0 | ckchzh | Dockerfile/Compose 生成、调试优化 | 本地/ECS |
+| 22 | Docker Sandbox | docker-sandbox | 1.0.0 | gitgoodordietrying | 安全沙箱环境，隔离执行 | 本地/ECS |
+| 23 | Test Master | test-master | 0.1.0 | veeramanikandanr48 | 测试策略和自动化框架 | 本地/ECS |
+| 24 | K8s Debug | k8s-debug | 0.1.0 | qq280948982 | K8s 故障诊断，Pod/网络/存储问题 | ECS |
 
 ## 调研方法
 
-1. 使用 `clawhub list` 获取已安装技能列表
+1. 使用 `clawhub search` 搜索热门技能关键词（docker, git, python, test）
 2. 使用 `clawhub inspect <slug>` 获取每个技能详细信息
 3. 为每个技能生成独立 MD 文件
 4. 更新本 README.md 索引
+5. 推送到 GitHub 仓库
 
 ## 安装方式
 
@@ -48,13 +54,31 @@ npx clawhub@latest install <slug>
 
 ## 技能分类
 
-### 开发和测试
-- [Code](skills/code.md) - 编码工作流
+### 版本控制 (Git)
+- [Git Essentials](skills/git-essentials.md) - 基础 Git 命令
+- [Git Workflows](skills/git-workflows.md) - 高级 Git 操作
+- [Git Helper](skills/git-helper.md) - Git 操作速查
+
+### 容器化 (Docker)
+- [Docker Essentials](skills/docker-essentials.md) - 容器基础管理
+- [Docker Helper](skills/docker-helper.md) - Dockerfile/Compose 辅助
+- [Docker Sandbox](skills/docker-sandbox.md) - 安全沙箱
+
+### 测试
 - [Test Runner](skills/test-runner.md) - 测试运行器
+- [Test Master](skills/test-master.md) - 测试策略
+- [Python Code Test](skills/python-code-test.md) - Python 代码测试
+
+### Python 开发
+- [Python Script Generator](skills/python-script-generator.md) - 脚本模板生成
+
+### Kubernetes
+- [K8s Debug](skills/k8s-debug.md) - 故障诊断
+
+### 开发工具
+- [Code](skills/code.md) - 编码工作流
 - [Database Operations](skills/database-operations.md) - 数据库操作
 - [Security Auditor](skills/security-auditor.md) - 安全审计
-- [Python Script Generator](skills/python-script-generator.md) - Python 脚本生成
-- [Python Code Test](skills/python-code-test.md) - 代码测试
 
 ### AI 能力
 - [AI Image Generation](skills/image-generation.md) - AI 图像生成
@@ -69,11 +93,6 @@ npx clawhub@latest install <slug>
 - [Automation Workflows](skills/automation-workflows.md) - 自动化工作流
 - [AI Web Automation](skills/ai-web-automation.md) - 网页自动化
 
-### 基础设施
-- [Docker Essentials](skills/docker-essentials.md) - Docker 管理
-- [Kubernetes](skills/kubernetes.md) - K8s 编排
-- [Database Design](skills/database-design.md) - 数据库设计
-
 ## 贡献
 
 欢迎提交新的技能调研报告！
@@ -83,6 +102,6 @@ npx clawhub@latest install <slug>
 3. 更新本 README.md 索引
 4. 提交 PR
 
-##  License
+## License
 
 MIT

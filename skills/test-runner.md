@@ -1,76 +1,58 @@
-# Test Runner - 测试运行器
+# Test Runner
 
-## 基本信息
+## 背景需求
 
-| 项目 | 内容 |
-|------|------|
-| **名称** | Test Runner |
-| **Slug** | test-runner |
-| **版本** | 1.0.0 |
-| **作者** | cmanfre7 |
-| **创建时间** | 2026-01-28 |
-| **更新时间** | 2026-02-26 |
+现代开发涉及多种测试类型（单元测试、集成测试、E2E 测试）和多种语言/框架，开发者需要一个统一的测试运行和 管理工具。
 
-## 技能描述
+## 目标
 
-Write, run, and manage unit, integration, and E2E tests across TypeScript, Python, and Swift using recommended frameworks.
+支持跨语言、跨框架的测试编写、运行和管理。
 
-测试运行器，支持为 TypeScript、Python 和 Swift 编写、运行和管理单元测试、集成测试和 E2E 测试。
+## 设计方案
 
-## 功能列表
+### 支持的测试类型
+- **单元测试**：TypeScript, Python, Swift
+- **集成测试**：跨模块测试
+- **E2E 测试**：端到端测试
 
-- 单元测试 (Unit Testing)
-- 集成测试 (Integration Testing)
-- E2E 测试 (End-to-End Testing)
-- TypeScript 测试支持
-- Python 测试支持
-- Swift 测试支持
+### 支持框架
+- Jest, Mocha (TypeScript)
+- pytest, unittest (Python)
+- XCTest (Swift)
 
-## 安装方式
+## 本地部署
 
 ```bash
-# 使用 ClawHub 安装
-npx clawhub@latest install test-runner
-
-# 或全局安装 ClawHub 后安装
-npm i -g clawhub
 clawhub install test-runner
 ```
 
-## 推荐安装评估
+## 效果展示
 
-### 本地安装 ⭐⭐⭐⭐⭐
-- 适合场景：本地开发环境、快速反馈循环
-- 优势：即时测试反馈、支持 TDD
-- 要求：Node.js / Python / Swift 环境
-
-### ECS 安装 ⭐⭐⭐⭐
-- 适合场景：CI/CD 流水线、自动化测试
-- 优势：可集成到持续集成流程
-- 要求：ECS 需配置对应语言环境
+技能提供：
+- 测试用例生成
+- 测试执行与报告
+- 覆盖率分析
+- 测试策略建议
 
 ## 优缺点分析
 
-### 优点
-- 多语言支持
-- 覆盖多种测试类型
-- 适合主流测试框架
-
-### 缺点
-- 需要配置各语言测试环境
-- 某些框架可能有依赖冲突
+| 优点 | 缺点 |
+|------|------|
+| 多语言支持 | 需额外配置 |
+| 统一入口 | 某些框架支持不完整 |
+| 活跃维护 | |
 
 ## 平替对比
 
-| 技能 | 对比 |
+| 技能 | 特点 |
 |------|------|
-| code | Code 包含完整流程，test-runner 专注测试 |
-| database-operations | 专注数据库，test-runner 专注测试 |
+| test-master | 测试策略和自动化框架 |
+| test-patterns | 测试模式最佳实践 |
+| test-generator | 测试用例生成 |
 
 ## 落地过程
 
-1. 准备测试环境 (Node.js/Python/Swift)
-2. 安装 ClawHub: `npm i -g clawhub`
-3. 安装技能: `clawhub install test-runner`
-4. 根据 SKILL.md 配置测试框架
-5. 开始编写和运行测试
+1. 安装：`clawhub install test-runner`
+2. 使用：调用技能执行测试
+
+**推荐安装**：本地开发环境 ⭐⭐⭐⭐☆
