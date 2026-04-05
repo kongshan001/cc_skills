@@ -1,59 +1,52 @@
 # Python Script Generator
 
-## 背景需求
+> Python 脚本生成器 - 生成专业 Python 应用模板
 
-Python 开发者经常需要快速生成项目模板（CLI 工具、Flask/FastAPI Web 应用、爬虫等），手动创建项目结构耗时且容易出错。
+## 基本信息
 
-## 目标
+| 属性 | 值 |
+|------|-----|
+| Slug | python-script-generator |
+| 作者 | sunshine-del-ux |
+| 版本 | 1.0.0 |
+| 更新时间 | 2026-04-05 |
+| 评分 | 3.450 ⭐ |
+| 标签 | cli, generator, python, script |
 
-一键生成专业 Python 脚本和应用模板，提升开发效率。
+## 技能描述
 
-## 设计方案
+生成专业的 Python 脚本和应用模板，支持 CLI 工具、Flask API、FastAPI、Django Command、Scraper 等，一键生成完整项目代码。
 
-### 支持模板类型
-- CLI 工具
-- Flask API
-- FastAPI
-- Django Command
-- Scraper（爬虫）
-- 完整项目代码
+Generate professional Python scripts and application templates, supporting CLI tools, Flask API, FastAPI, Django Command, Scraper, etc., one-click generation of complete project code.
 
-### 触发词
-- python generator, cli, script generation
+## 功能列表
 
-## 本地部署
+- ✅ CLI 工具生成
+- ✅ Flask API 模板生成
+- ✅ FastAPI 模板生成
+- ✅ Django Command 生成
+- ✅ Scraper 爬虫模板生成
+- ✅ 完整项目代码生成
+
+## 安装方式
 
 ```bash
 clawhub install python-script-generator
 ```
 
-## 效果展示
+## 推荐安装评估
 
-技能提供：
-- 多种项目模板一键生成
-- 完整项目结构（requirements.txt, setup.py）
-- 最佳实践代码规范
-- 中文支持
+### 本地环境 ⭐⭐⭐⭐⭐
+- 适合快速项目搭建
+- 适合学习项目结构
 
-## 优缺点分析
+### ECS 服务器 ⭐⭐⭐⭐
+- 适合自动化项目创建
+- 适合模板化开发
 
-| 优点 | 缺点 |
-|------|------|
-| 模板丰富 | 某些模板可能不适用于生产环境 |
-| 中文界面友好 | 更新频率一般 |
-| 一键生成完整代码 | |
+## 适用场景
 
-## 平替对比
-
-| 技能 | 特点 |
-|------|------|
-| python-code-guide-skill | PEP8 代码规范 |
-| skill-python-env | Python 环境管理 |
-| python-code-test | 测试相关 |
-
-## 落地过程
-
-1. 安装：`clawhub install python-script-generator`
-2. 使用：描述需求，自动生成对应模板代码
-
-**推荐安装**：本地开发环境 ⭐⭐⭐⭐☆
+- 快速启动新项目
+- 项目模板生成
+- 学习项目结构
+- 自动化开发流程
