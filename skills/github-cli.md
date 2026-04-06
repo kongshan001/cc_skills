@@ -1,98 +1,130 @@
 # GitHub CLI
 
-## 1. 背景需求
+> 全面的 GitHub CLI (gh) 参考指南
 
-GitHub CLI (`gh`) 是官方命令行工具，但命令复杂难以记忆：
-- Repo 管理命令繁多
-- Issues 和 PRs 操作复杂
-- Actions 和 Releases 交互
-- Search 功能强大但参数多
-- API 调用需要构造
+## 基本信息
 
-需要一个完整的命令速查助手。
+| 属性 | 值 |
+|------|-----|
+| **Slug** | `github-cli` |
+| **作者** | 社区 |
+| **版本** | gh 2.66.1+ |
+| **标签** | github, cli, gh, devops |
 
-## 2. 目标
+## 功能列表
 
-提供全面的 GitHub CLI 参考：
-- Repos：创建、克隆、fork、列表
-- Issues：创建、评论、标签、状态
-- PRs：创建、审查、合并
-- Actions：运行、状态、日志
-- Releases：创建、发布、查看
-- Gists：创建、编辑
-- Search：代码、仓库、issues
-- Projects v2：看板管理
-- API：GraphQL/REST 调用
-- Secrets 和 variables：管理
-- Labels：管理
-- Codespaces：管理
+### 认证与配置
+- OAuth 交互登录
+- PAT 令牌登录
+- 多账户切换
+- 作用域管理
 
-## 3. 设计方案
+### 仓库操作
+- 创建/克隆/分叉
+- 查看/编辑/删除
+- 同步 (fork ↔ upstream)
 
-**命令分类速查**：
-```
-gh repo          # 仓库操作
-gh issue         # Issue 管理
-gh pr            # PR 管理
-gh action        # Actions 管理
-gh release       # 发布管理
-gh search        # 搜索
-gh api           # API 调用
-gh secret        # Secrets 管理
-```
+### Issue 管理
+- 创建/列表/查看
+- 编辑/关闭/重新打开
+- 评论/标签/分配
 
-**认证管理**：登录、退出、状态检查。
+### Pull Request
+- 创建/列表/查看
+- 合并 (merge/squash/rebase)
+- 审查/评论
+- 检查 CI 状态
 
-## 4. 本地部署
+### GitHub Actions
+- Workflow 运行列表/查看
+- 重新运行/取消
+- 下载 artifacts
 
+### Releases
+- 创建/列表/下载
+- 编辑/删除
+
+### 高级功能
+- Projects V2 (GraphQL)
+- API (REST & GraphQL)
+- Codespaces
+- Secrets & Variables
+
+## 安装方式
+
+### macOS
 ```bash
-clawhub install github-cli
+brew install gh
 ```
 
-**依赖**：
-- gh CLI 已安装
-
-**验证**：
+### Ubuntu/Debian
 ```bash
+sudo apt install gh
+```
+
+### 验证
+```bash
+gh auth login
 gh --version
-gh auth status
 ```
 
-## 5. 效果展示
+## 推荐安装评估
 
-触发示例：
-- "创建一个新的仓库"
-- "列出我所有的 PR"
-- "搜索最近的星标超过 100 的仓库"
+### 本地环境 ⭐⭐⭐⭐⭐
+- 开发日常使用
+- CI/CD 脚本
 
-执行效果：AI 生成正确的 gh 命令并执行。
+### ECS 环境 ⭐⭐⭐⭐⭐
+- 自动化部署
+- 脚本化管理
 
-## 6. 优缺点分析
+## 常用命令速查
 
-| 优点 | 缺点 |
+```bash
+# 认证
+gh auth login
+
+# 仓库
+gh repo create my-project --public --clone
+gh repo clone owner/repo
+gh repo fork
+
+# Issue
+gh issue create --title "Bug" --body "描述"
+gh issue list --label bug
+gh issue close 123
+
+# PR
+gh pr create --fill
+gh pr list
+gh pr merge 123 --squash
+gh pr checks 123
+
+# Actions
+gh run list
+gh run view 12345
+gh run rerun 12345
+
+# API
+gh api repos/{owner}/{repo}
+gh api graphql -f query='...'
+```
+
+## 优缺点分析
+
+### ✅ 优点
+- 完整覆盖 GitHub 操作
+- 支持 REST/GraphQL API
+- 强大的 JSON 输出和 JQ 过滤
+
+### ⚠️ 局限
+- 学习曲线较陡
+- 需要熟悉命令行
+
+## 替代方案
+
+| 方案 | 特点 |
 |------|------|
-| 命令覆盖全面 | 需要学习命令格式 |
-| 减少查阅文档时间 | 不如 API 灵活 |
-| 交互式和脚本模式 | 复杂操作可能需要管道 |
-| 官方支持 | 版本更新可能改变行为 |
-
-## 7. 平替对比
-
-| 方案 | 特点 | 适用场景 |
-|------|------|----------|
-| GitHub CLI（当前） | 命令速查，官方工具 | 日常操作 |
-| OpenClaw GitHub Assistant | API 层集成 | AI 代理操作 |
-| GitHub API | 底层控制 | 复杂场景 |
-
-## 8. 落地过程
-
-**推荐安装评估**：
-- **本地开发机** ⭐⭐⭐⭐⭐ — 开发者必备
-- **ECS 云服务器** ⭐⭐⭐⭐ — 自动化脚本
-
-**使用建议**：
-1. 配合 GitHub token 使用
-2. 使用 `--json` 输出便于解析
-3. 常用命令可以 alias
-
-**版本**：1.0.0 | **作者**：tag-assistant | **更新**：2026-03-29
+| GitHub Web UI | 可视化操作 |
+| hub CLI | 较老，功能较少 |
+| GitHub SDK | 程序化访问 |

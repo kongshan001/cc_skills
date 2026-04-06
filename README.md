@@ -6,31 +6,40 @@
 
 | # | 技能名称 | Slug | 评分 | 分类 | 推荐安装 |
 |---|---------|------|------|------|----------|
-| 1 | Test Runner | test-runner | 3.671 ⭐ | 测试 | 本地/ECS |
-| 2 | Test Master | test-master | 3.622 ⭐ | 测试 | 本地/ECS |
-| 3 | Test Patterns | test-patterns | 3.572 ⭐ | 测试 | 本地/ECS |
-| 4 | Skill Test | skill-test | 3.503 ⭐ | 工具 | 本地 |
-| 5 | Test Generator | test-generator | 3.482 ⭐ | 测试 | 本地/ECS |
-| 6 | Test Sentinel | test-sentinel | 3.430 ⭐ | 测试 | ECS |
-| 7 | Python Executor | python-executor | 3.529 ⭐ | Python | 本地/ECS |
-| 8 | Python Script Generator | python-script-generator | 3.450 ⭐ | Python | 本地/ECS |
-| 9 | LSP Python | lsp-python | 3.437 ⭐ | Python | 本地 |
-| 10 | Python Code Test | python-code-test | 3.371 ⭐ | Python | 本地/ECS |
-| 11 | Friendly Python | friendly-python | 3.232 ⭐ | Python | 本地 |
-| 12 | E2E Test Orchestrator | e2e-test-orchestrator | 3.340 ⭐ | 测试 | ECS |
-| 13 | Text Game Arcade Universe V3 | text-game-arcade-universe-v3 | 3.354 ⭐ | 游戏 | 本地 |
-| 14 | Identity Guess Game | identity-guess-game | 3.297 ⭐ | 游戏 | 本地/ECS |
+| 1 | Docker Essentials | docker-essentials | 3.734 ⭐ | DevOps | 本地/ECS |
+| 2 | Agentic Coding | agentic-coding | 3.590 ⭐ | 开发流程 | 本地 |
+| 3 | Vibe Coding | vibe-coding | 3.500 ⭐ | 开发流程 | 本地 |
+| 4 | E2E Testing Patterns | e2e-testing-patterns | 3.596 ⭐ | 测试 | 本地/ECS |
+| 5 | Python Executor | python-executor | 3.530 ⭐ | Python | 本地/ECS |
+| 6 | LSP Python | lsp-python | 3.437 ⭐ | Python | 本地 |
+| 7 | GitHub CLI | github-cli | 3.632 ⭐ | DevOps | 本地/ECS |
+| 8 | OpenClaw GitHub Assistant | openclaw-github-assistant | 3.701 ⭐ | DevOps | 本地/ECS |
 
 ## 分类统计
 
-### 🧪 测试类 (8)
-- test-runner, test-master, test-patterns, skill-test, test-generator, test-sentinel, e2e-test-orchestrator, python-code-test
+### 🐳 DevOps 类 (3)
+- docker-essentials, github-cli, openclaw-github-assistant
 
-### 🐍 Python 开发类 (5)
-- python-executor, python-script-generator, lsp-python, python-code-test, friendly-python
+### 🧪 测试类 (1)
+- e2e-testing-patterns
 
-### 🎮 游戏类 (2)
-- text-game-arcade-universe-v3, identity-guess-game
+### 🐍 Python 开发类 (2)
+- python-executor, lsp-python
+
+### ⚙️ 开发流程类 (2)
+- agentic-coding, vibe-coding
+
+## 热门搜索关键词
+
+基于 ClawHub 搜索热度：
+
+| 关键词 | Top 技能 |
+|--------|----------|
+| python | python-executor, lsp-python, friendly-python |
+| coding | agentic-coding, vibe-coding, coding-agent |
+| docker | docker-essentials, docker-sandbox, docker-compose |
+| github | openclaw-github-assistant, github-cli, github-workflow |
+| testing | e2e-testing-patterns, vitest-testing, e2e-testing |
 
 ## 安装方式
 
@@ -39,17 +48,35 @@
 clawhub install <slug>
 
 # 示例
-clawhub install test-runner
-clawhub install python-script-generator
+clawhub install docker-essentials
+clawhub install python-executor
+clawhub install e2e-testing-patterns
 ```
 
 ## 本地部署 vs ECS 部署
 
 | 技能 | 本地 | ECS | 说明 |
 |------|------|-----|------|
-| 测试类技能 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | 通用性强，两端都适合 |
-| Python 开发类 | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ | 本地开发调试更方便 |
-| 游戏类 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ | 休闲为主，本地更适合 |
+| docker-essentials | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | 通用性强，两端都适合 |
+| python-executor | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | 沙箱执行，本地/服务器均可 |
+| lsp-python | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | 代码检查，本地更方便 |
+| e2e-testing-patterns | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | CI/CD 场景更多在 ECS |
+| github-cli | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | 日常工具，两端都需要 |
+| agentic-coding | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ | 需要持久化，本地更合适 |
+| vibe-coding | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ | 快速原型，本地迭代更快 |
+
+## 技能文件
+
+所有技能调研报告保存在 `skills/` 目录：
+
+- [Docker Essentials](skills/docker-essentials.md)
+- [Agentic Coding](skills/agentic-coding.md)
+- [Vibe Coding](skills/vibe-coding.md)
+- [E2E Testing Patterns](skills/e2e-testing-patterns.md)
+- [Python Executor](skills/python-executor.md)
+- [LSP Python](skills/lsp-python.md)
+- [GitHub CLI](skills/github-cli.md)
+- [OpenClaw GitHub Assistant](skills/openclaw-github-assistant.md)
 
 ## 贡献
 
