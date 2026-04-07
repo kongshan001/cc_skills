@@ -1,31 +1,21 @@
 # Test Patterns
 
-> 测试模式 - 跨语言和框架的测试编写与运行
-
-## 基本信息
-
-| 属性 | 值 |
-|------|-----|
-| Slug | test-patterns |
-| 作者 | gitgoodordietrying |
-| 版本 | 1.0.0 |
-| 更新时间 | 2026-04-05 |
-| 评分 | 3.572 ⭐ |
+> 多语言测试模式和最佳实践
 
 ## 技能描述
 
-Write and run tests across languages and frameworks. Use when setting up test suites, writing unit/integration/E2E tests, measuring coverage, mocking dependencies, or debugging test failures. Covers Node.js (Jest/Vitest), Python (pytest), Go, Rust, and Bash.
-
-跨语言和框架编写和运行测试。适用于设置测试套件、编写单元/集成/E2E 测试、测量覆盖率、模拟依赖项或调试测试失败。覆盖 Node.js (Jest/Vitest)、Python (pytest)、Go、Rust 和 Bash。
+Test Patterns 提供 Node.js、Python、Go、Rust、Bash 等语言的测试模式和最佳实践指南，包括单元测试、集成测试、模拟和覆盖率。
 
 ## 功能列表
 
-- ✅ 单元测试 (Jest/Vitest, pytest, Go, Rust, Bash)
-- ✅ 集成测试
-- ✅ E2E 测试
-- ✅ 测试覆盖率分析
-- ✅ 依赖 mocking
-- ✅ 测试失败调试
+- Node.js 测试（Jest, Mocha）
+- Python 测试（pytest）
+- Go 测试
+- Rust 测试
+- Bash 脚本测试
+- 测试模拟（Mocking）
+- 测试覆盖率配置
+- 临时数据库设置
 
 ## 安装方式
 
@@ -35,17 +25,19 @@ clawhub install test-patterns
 
 ## 推荐安装评估
 
-### 本地环境 ⭐⭐⭐⭐⭐
-- 适合多语言项目测试
-- 适合学习测试模式
+| 环境 | 推荐度 | 说明 |
+|------|--------|------|
+| 本地开发 | ⭐⭐⭐⭐⭐ | 开发必备 |
+| CI/CD | ⭐⭐⭐⭐⭐ | 自动化测试必备 |
+| ECS/服务器 | ⭐⭐⭐ | 服务器端测试 |
 
-### ECS 服务器 ⭐⭐⭐⭐⭐
-- 适合跨平台测试
-- 适合 CI/CD 集成
+## 使用前提
 
-## 适用场景
+- 对应语言的运行时（node, python3, go, cargo, bash）
+- 已配置测试框架
 
-- 多语言项目测试
-- 测试套件搭建
-- 测试最佳实践学习
-- 测试覆盖率提升
+## 注意事项
+
+- 运行测试会执行仓库代码，可能包含网络调用或数据库交互
+- 建议在隔离环境运行测试
+- 安装依赖会拉取第三方代码
