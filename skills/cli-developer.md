@@ -1,17 +1,26 @@
-# CLI Developer
+# Cli Developer
 
-> 命令行开发工具
+> CLI 工具开发技能
 
-## 技能描述
+## 概述
 
-专业CLI开发者技能，提供命令行工具开发支持。
+**Slug:** cli-developer  
+**Owner:** veeramanikandanr48  
+**版本:** 0.1.0  
+**更新时间:** 2026-02-26
 
 ## 功能列表
 
-- CLI 应用架构设计
-- 参数解析与命令设计
-- 交互式 CLI 构建
-- 帮助文档生成
+- CLI 工具构建
+- 参数解析 (argument parsing)
+- 交互式提示 (interactive prompts)
+- 进度指示器 (progress indicators)
+- Shell 补全 (shell completions)
+- CLI 设计指南
+
+## 使用场景
+
+当用户需要构建 CLI 工具、实现参数解析、添加交互式提示时使用。
 
 ## 安装方式
 
@@ -21,12 +30,21 @@ clawhub install cli-developer
 
 ## 推荐安装评估
 
-- **本地环境**: ⭐⭐⭐⭐⭐ 适合本地快速开发 CLI 工具
-- **ECS**: ⭐⭐⭐⭐ 远程开发场景
+| 场景 | 推荐 | 说明 |
+|------|------|------|
+| 本地开发 | ✅ 推荐 | 轻量级技能，本地即可使用 |
+| ECS 服务器 | ✅ 推荐 | 无外部依赖，适合服务器环境 |
 
-## 使用示例
+## 优缺点分析
 
-```bash
-# 创建新 CLI 项目
-[触发 cli-developer]
-```
+**优点:**
+- 专注 CLI 开发领域，覆盖完整工具链
+- 无外部 API 依赖
+
+**缺点:**
+- 功能相对单一，适合 CLI 专项开发
+
+## 平替对比
+
+- 可使用 OpenClaw 内置的 exec 工具进行基础 CLI 开发
+- 该技能提供更专业的 CLI 设计模式和最佳实践

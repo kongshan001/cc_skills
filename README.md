@@ -1,111 +1,75 @@
 # Claude Code Skills 调研报告
 
-> ClawHub 热门技能调研 - 自动化生成
+> 基于 ClawHub 热门技能的完整调研
 
-## 索引
+## 调研说明
 
-| # | 技能名称 | Slug | 评分 | 分类 | 推荐安装 |
-|---|---------|------|------|------|----------|
-| 1 | Docker Essentials | docker-essentials | 3.735 ⭐ | DevOps | 本地/ECS |
-| 2 | Docker Compose | docker-compose | 3.569 ⭐ | DevOps | 本地/ECS |
-| 3 | Docker Sandbox | docker-sandbox | 3.575 ⭐ | DevOps | 本地/ECS |
-| 4 | GitHub CLI | github-cli | 3.634 ⭐ | DevOps | 本地/ECS |
-| 5 | GitHub Actions Generator | github-actions-generator | 3.508 ⭐ | DevOps | 本地 |
-| 6 | OpenClaw GitHub Assistant | openclaw-github-assistant | 3.702 ⭐ | DevOps | 本地/ECS |
-| 7 | Test Runner | test-runner | 3.672 ⭐ | 测试 | 本地/ECS |
-| 8 | Test Master | test-master | 3.623 ⭐ | 测试 | 本地/ECS |
-| 9 | Test Patterns | test-patterns | 3.572 ⭐ | 测试 | 本地/ECS |
-| 10 | Python Executor | python-executor | 3.531 ⭐ | Python | 本地/ECS |
-| 11 | LSP Python | lsp-python | 3.439 ⭐ | Python | 本地 |
-| 12 | Agentic Coding | agentic-coding | 3.590 ⭐ | 开发流程 | 本地 |
-| 13 | Vibe Coding | vibe-coding | 3.500 ⭐ | 开发流程 | 本地 |
+本调研报告分析了 ClawHub 平台 Top 20 热门技能，为每个技能生成详细分析报告，包含功能描述、使用场景、安装方式和部署评估。
 
-## 分类统计
+## 技能列表
 
-### 🐳 DevOps 类 (5)
-- docker-essentials, docker-compose, docker-sandbox, github-cli, github-actions-generator, openclaw-github-assistant
+| 技能名称 | 描述 | 版本 | 适用场景 | GitHub 仓库 |
+|---------|------|------|----------|------------|
+| [cli-developer](./skills/cli-developer.md) | CLI 工具开发技能 | 0.1.0 | 命令行工具开发 | - |
+| [mcp-adapter](./skills/mcp-adapter.md) | Model Context Protocol 适配器 | 0.1.0 | MCP 服务器集成 | - |
+| [tools-ui](./skills/tools-ui.md) | 工具生命周期 UI 组件 | 0.1.5 | React 工具界面开发 | - |
+| [wechat-toolkit](./skills/wechat-toolkit.md) | 微信公众号工具包 | 1.0.3 | 公众号内容管理 | - |
+| [ydc-ai-sdk-integration](./skills/ydc-ai-sdk-integration.md) | You.com + Vercel AI SDK 集成 | 1.0.0 | AI SDK 集成开发 | - |
+| [meow-finder](./skills/meow-finder.md) | AI 工具发现 CLI | 1.0.0 | AI 工具查找 | - |
+| [webmcp](./skills/webmcp.md) | 网页 MCP 自动化 | 1.0.0 | 网页自动化 | - |
+| [web-mcp](./skills/web-mcp.md) | Next.js/React WebMCP 实现 | 1.0.0 | 前端 MCP 实现 | - |
+| [tool-call-retry](./skills/tool-call-retry.md) | 工具调用自动重试 | 1.0.1 | 错误处理与重试 | - |
+| [gizmolab-tools](./skills/gizmolab-tools.md) | 区块链开发者工具 | 1.0.0 | Web3 开发 | - |
+| [devtopia](./skills/devtopia.md) | AI 工具管理与编排 | 1.0.1 | AI 工具生态 | - |
+| [social-auto-tool-builder](./skills/social-auto-tool-builder.md) | 社交媒体自动化工具构建 | 1.1.0 | 社交媒体自动化 | - |
+| [tool-master](./skills/tool-master.md) | 工具使用大师 | 0.1.1 | 工具查找系统 | - |
+| [tooldyn](./skills/tooldyn.md) | 意图驱动的工具选择 | 1.0.0 | 智能工具推荐 | - |
+| [openclaw-cursor-agent](./skills/openclaw-cursor-agent.md) | Cursor CLI 编码任务管理 | 1.0.0 | 长期编码任务 | - |
+| [ai-dev-runtime](./skills/ai-dev-runtime.md) | AI 开发运行时工具 | 0.5.0 | 开发工具集 | - |
+| [dev](./skills/dev.md) | 全栈网页开发助手 | 1.0.0 | Web 开发 | - |
+| [webperf](./skills/webperf.md) | Web 性能测量与调试 | 0.1.0 | 性能优化 | - |
+| [nexsolve-ai](./skills/nexsolve-ai.md) | 需求广场 AI 开发者平台 | 1.0.2 | 需求连接平台 | - |
+| [mcp-review](./skills/mcp-review.md) | MCP Server 工具实现审查 | 1.0.0 | 工具设计审查 | - |
 
-### 🧪 测试类 (3)
-- test-runner, test-master, test-patterns
+## 调研统计
 
-### 🐍 Python 开发类 (2)
-- python-executor, lsp-python
+- **总技能数量:** 20 个
+- **更新时间:** 2026-04-08
+- **涵盖领域:**
+  - 开发工具 (8个)
+  - AI 工具 (6个) 
+  - 前端工具 (3个)
+  - 区块链工具 (1个)
+  - 社交媒体工具 (1个)
+  - 性能工具 (1个)
 
-### ⚙️ 开发流程类 (2)
-- agentic-coding, vibe-coding
+## 部署建议
 
-## 热门搜索关键词
+### 本地开发推荐
+✅ **强推荐:** cli-developer, meow-finder, tool-master, tooldyn, webperf
+✅ **推荐:** mcp-adapter, tool-call-retry, gizmolab-tools, devtopia, ai-dev-runtime, dev, mcp-review
 
-基于 ClawHub 搜索热度：
+### ECS 服务器推荐
+✅ **强推荐:** mcp-adapter, wechat-toolkit, ydc-ai-sdk-integration, social-auto-tool-builder, openclaw-cursor-agent
+✅ **推荐:** tools-ui, devtopia, ai-dev-runtime, dev, webperf
 
-| 关键词 | Top 技能 |
-|--------|----------|
-| docker | docker-essentials, docker-sandbox, docker-compose, docker-ctl |
-| github | openclaw-github-assistant, github-cli, github-workflow, github-actions-generator |
-| test | test-runner, test-master, test-patterns, test-generator |
-| python | python-executor, lsp-python, friendly-python |
-| coding | agentic-coding, vibe-coding, coding-agent |
+## 部署注意事项
 
-## 安装方式
+1. **外部依赖:** 部分技能需要外部 API 或服务支持
+2. **环境要求:** 前端相关技能需要 JavaScript 环境
+3. **网络访问:** 某些技能需要网络连接到特定服务
+4. **权限配置:** 社交媒体相关工具需要相应平台 API 权限
 
-```bash
-# 安装单个技能
-clawhub install <slug>
+## 后续维护
 
-# 示例
-clawhub install docker-essentials
-clawhub install python-executor
-clawhub install test-runner
-```
+建议定期更新技能调研：
+- 监控技能版本更新
+- 关注新增热门技能
+- 跟踪领域发展趋势
+- 更新部署建议
 
-## 本地部署 vs ECS 部署
+---
 
-| 技能 | 本地 | ECS | 说明 |
-|------|------|-----|------|
-| docker-essentials | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | 通用性强，两端都适合 |
-| docker-compose | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | 多容器部署必备 |
-| docker-sandbox | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ | 安全隔离运行不受信任代码 |
-| github-cli | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | 日常工具，两端都需要 |
-| github-actions-generator | ⭐⭐⭐ | ⭐⭐⭐ | 快速生成 CI 工作流 |
-| openclaw-github-assistant | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | 集成 GitHub 操作 |
-| test-runner | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | 多框架测试运行 |
-| test-master | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ | 测试策略和自动化 |
-| test-patterns | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ | 多语言测试模式 |
-| python-executor | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | 远程 Python 沙箱 |
-| lsp-python | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | 代码检查和格式化 |
-| agentic-coding | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ | 需要持久化，本地更合适 |
-| vibe-coding | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ | 快速原型，本地迭代更快 |
-
-## 技能文件
-
-所有技能调研报告保存在 `skills/` 目录：
-
-### DevOps
-- [Docker Essentials](skills/docker-essentials.md)
-- [Docker Compose](skills/docker-compose.md)
-- [Docker Sandbox](skills/docker-sandbox.md)
-- [GitHub CLI](skills/github-cli.md)
-- [GitHub Actions Generator](skills/github-actions-generator.md)
-- [OpenClaw GitHub Assistant](skills/openclaw-github-assistant.md)
-
-### 测试
-- [Test Runner](skills/test-runner.md)
-- [Test Master](skills/test-master.md)
-- [Test Patterns](skills/test-patterns.md)
-
-### Python
-- [Python Executor](skills/python-executor.md)
-- [LSP Python](skills/lsp-python.md)
-
-### 开发流程
-- [Agentic Coding](skills/agentic-coding.md)
-- [Vibe Coding](skills/vibe-coding.md)
-
-## 贡献
-
-欢迎提交 PR 添加更多技能调研报告！
-
-## 来源
-
-- ClawHub: https://clawhub.com
-- 技能仓库: https://github.com/kongshan001/cc_skills
+*生成时间: 2026-04-08*
+*调研工具: ClawHub CLI*
+*数据源: https://clawhub.com*
