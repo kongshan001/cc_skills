@@ -8,68 +8,77 @@
 
 ## 技能列表
 
-| 技能名称 | 描述 | 版本 | 适用场景 | GitHub 仓库 |
-|---------|------|------|----------|------------|
-| [cli-developer](./skills/cli-developer.md) | CLI 工具开发技能 | 0.1.0 | 命令行工具开发 | - |
-| [mcp-adapter](./skills/mcp-adapter.md) | Model Context Protocol 适配器 | 0.1.0 | MCP 服务器集成 | - |
-| [tools-ui](./skills/tools-ui.md) | 工具生命周期 UI 组件 | 0.1.5 | React 工具界面开发 | - |
-| [wechat-toolkit](./skills/wechat-toolkit.md) | 微信公众号工具包 | 1.0.3 | 公众号内容管理 | - |
-| [ydc-ai-sdk-integration](./skills/ydc-ai-sdk-integration.md) | You.com + Vercel AI SDK 集成 | 1.0.0 | AI SDK 集成开发 | - |
-| [meow-finder](./skills/meow-finder.md) | AI 工具发现 CLI | 1.0.0 | AI 工具查找 | - |
-| [webmcp](./skills/webmcp.md) | 网页 MCP 自动化 | 1.0.0 | 网页自动化 | - |
-| [web-mcp](./skills/web-mcp.md) | Next.js/React WebMCP 实现 | 1.0.0 | 前端 MCP 实现 | - |
-| [tool-call-retry](./skills/tool-call-retry.md) | 工具调用自动重试 | 1.0.1 | 错误处理与重试 | - |
-| [gizmolab-tools](./skills/gizmolab-tools.md) | 区块链开发者工具 | 1.0.0 | Web3 开发 | - |
-| [devtopia](./skills/devtopia.md) | AI 工具管理与编排 | 1.0.1 | AI 工具生态 | - |
-| [social-auto-tool-builder](./skills/social-auto-tool-builder.md) | 社交媒体自动化工具构建 | 1.1.0 | 社交媒体自动化 | - |
-| [tool-master](./skills/tool-master.md) | 工具使用大师 | 0.1.1 | 工具查找系统 | - |
-| [tooldyn](./skills/tooldyn.md) | 意图驱动的工具选择 | 1.0.0 | 智能工具推荐 | - |
-| [openclaw-cursor-agent](./skills/openclaw-cursor-agent.md) | Cursor CLI 编码任务管理 | 1.0.0 | 长期编码任务 | - |
-| [ai-dev-runtime](./skills/ai-dev-runtime.md) | AI 开发运行时工具 | 0.5.0 | 开发工具集 | - |
-| [dev](./skills/dev.md) | 全栈网页开发助手 | 1.0.0 | Web 开发 | - |
-| [webperf](./skills/webperf.md) | Web 性能测量与调试 | 0.1.0 | 性能优化 | - |
-| [nexsolve-ai](./skills/nexsolve-ai.md) | 需求广场 AI 开发者平台 | 1.0.2 | 需求连接平台 | - |
-| [mcp-review](./skills/mcp-review.md) | MCP Server 工具实现审查 | 1.0.0 | 工具设计审查 | - |
+### 第一批：开发工具与基础设施
+
+| 技能名称 | 描述 | 版本 | 适用场景 | 报告链接 |
+|---------|------|------|----------|---------|
+| docker-essentials | Docker 基础命令与工作流 | 1.0.0 | 容器管理、镜像操作、调试 | [📄](./skills/docker-essentials.md) |
+| docker-sandbox | Docker 沙箱环境管理 | 1.0.0 | 安全隔离执行、不受信任代码运行 | [📄](./skills/docker-sandbox.md) |
+| python-executor | Python 代码安全执行 | 0.1.5 | 快速原型开发、数据分析 | [📄](./skills/python-executor.md) |
+| lsp-python | Python LSP 集成 | 1.1.0 | 代码质量检查、补全、诊断 | [📄](./skills/lsp-python.md) |
+| python-code-test | Python 测试自动生成 | 1.0.3 | 自动生成测试用例、执行测试 | [📄](./skills/python-code-test.md) |
+| openclaw-github-assistant | GitHub 仓库管理助手 | 2.0.1 | 仓库管理、CI 状态、Issue | [📄](./skills/openclaw-github-assistant.md) |
+| github-cli | GitHub CLI 全面参考 | 1.0.0 | gh 命令查询、PR/Issue/Actions | [📄](./skills/github-cli.md) |
+| github-search | GitHub 仓库深度搜索 | 1.0.0 | 技术调研、开源项目发现 | [📄](./skills/github-search.md) |
+
+### 第二批：部署与 API
+
+| 技能名称 | 描述 | 版本 | 适用场景 | 报告链接 |
+|---------|------|------|----------|---------|
+| vercel-deploy | Vercel 部署管理 | 1.0.0 | 前端应用部署、环境变量管理 | [📄](./skills/vercel-deploy.md) |
+| deploy-agent | C.R.A.B 多步骤部署 | 1.1.0 | 全栈应用安全部署流程 | [📄](./skills/deploy-agent.md) |
+| web-deploy | 多平台 Web 部署 | 1.0.0 | Vercel/Railway/GitHub Pages | [📄](./skills/web-deploy.md) |
+| secure-api-calls | 安全 API 调用 | 1.0.3 | 凭证保护、零信任 API 调用 | [📄](./skills/secure-api-calls.md) |
+| api-generator | API 代码生成器 | 2.0.0 | REST/GraphQL/OpenAPI 生成 | [📄](./skills/api-generator.md) |
+| api-doc-writer | API 文档助手 | 1.0.1 | REST API 文档编写 | [📄](./skills/api-doc-writer.md) |
+
+### 第三批：云服务与游戏
+
+| 技能名称 | 描述 | 版本 | 适用场景 | 报告链接 |
+|---------|------|------|----------|---------|
+| hetzner-cloud | Hetzner Cloud CLI | 1.0.0 | 服务器/网络/防火墙管理 | [📄](./skills/hetzner-cloud.md) |
+| cloud-storage | 多云存储管理 | 1.0.1 | 跨云提供商文件管理 | [📄](./skills/cloud-storage.md) |
+| cloud-architect | 云架构设计 | 0.1.0 | 架构设计、迁移规划、成本优化 | [📄](./skills/cloud-architect.md) |
+| text-game-arcade-universe-v3 | 综合文字游戏大厅 | 1.0.0 | 17+ 种 ASCII 棋牌/益智游戏 | [📄](./skills/text-game-arcade-universe-v3.md) |
+| identity-guess-game | 身份猜猜猜 | 1.0.0 | 多人互动推理游戏 | [📄](./skills/identity-guess-game.md) |
 
 ## 调研统计
 
-- **总技能数量:** 20 个
-- **更新时间:** 2026-04-08
+- **总技能数量:** 19 个
+- **更新时间:** 2026-04-09
 - **涵盖领域:**
-  - 开发工具 (8个)
-  - AI 工具 (6个) 
-  - 前端工具 (3个)
-  - 区块链工具 (1个)
-  - 社交媒体工具 (1个)
-  - 性能工具 (1个)
+  - Docker/容器 (2个)
+  - Python 开发 (3个)
+  - GitHub 工具 (3个)
+  - 部署工具 (3个)
+  - API 工具 (3个)
+  - 云服务 (3个)
+  - 游戏 (2个)
 
 ## 部署建议
 
-### 本地开发推荐
-✅ **强推荐:** cli-developer, meow-finder, tool-master, tooldyn, webperf
-✅ **推荐:** mcp-adapter, tool-call-retry, gizmolab-tools, devtopia, ai-dev-runtime, dev, mcp-review
+### 本地开发推荐 ⭐⭐⭐⭐⭐
+- **必装:** docker-essentials, lsp-python, python-code-test, openclaw-github-assistant, github-cli, github-search, secure-api-calls
+- **推荐:** python-executor, vercel-deploy, web-deploy, api-generator, text-game-arcade-universe-v3
 
-### ECS 服务器推荐
-✅ **强推荐:** mcp-adapter, wechat-toolkit, ydc-ai-sdk-integration, social-auto-tool-builder, openclaw-cursor-agent
-✅ **推荐:** tools-ui, devtopia, ai-dev-runtime, dev, webperf
+### ECS 服务器推荐 ⭐⭐⭐⭐⭐
+- **必装:** docker-essentials, docker-sandbox, openclaw-github-assistant, deploy-agent, hetzner-cloud, cloud-storage, secure-api-calls
+- **推荐:** python-code-test, cloud-architect, api-generator
 
-## 部署注意事项
+## 快速安装
 
-1. **外部依赖:** 部分技能需要外部 API 或服务支持
-2. **环境要求:** 前端相关技能需要 JavaScript 环境
-3. **网络访问:** 某些技能需要网络连接到特定服务
-4. **权限配置:** 社交媒体相关工具需要相应平台 API 权限
-
-## 后续维护
-
-建议定期更新技能调研：
-- 监控技能版本更新
-- 关注新增热门技能
-- 跟踪领域发展趋势
-- 更新部署建议
+```bash
+# 安装所有推荐技能
+clawhub install docker-essentials docker-sandbox
+clawhub install python-executor lsp-python python-code-test
+clawhub install openclaw-github-assistant github-cli github-search
+clawhub install vercel-deploy deploy-agent web-deploy
+clawhub install secure-api-calls api-generator api-doc-writer
+clawhub install hetzner-cloud cloud-storage cloud-architect
+```
 
 ---
 
-*生成时间: 2026-04-08*
-*调研工具: ClawHub CLI*
+*生成时间: 2026-04-09*
+*调研工具: ClawHub CLI v0.6.0*
 *数据源: https://clawhub.com*

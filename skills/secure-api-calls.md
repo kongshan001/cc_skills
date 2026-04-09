@@ -1,73 +1,67 @@
-# Secure API Calls - 安全 API 调用技能
+# Secure API Calls
 
-## 基本信息
+## 技能概述
 
-| 项目 | 内容 |
-|------|------|
-| **名称** | Secure API Calls (Keychains) |
-| **Slug** | secure-api-calls |
-| **版本** | 1.0.3 |
-| **作者** | smarcombes |
-| **创建时间** | 2026-02-18 |
-| **更新时间** | 2026-04-02 |
+- **Slug**: secure-api-calls
+- **名称**: Secure API Calls
+- **作者**: smarcombes
+- **版本**: 1.0.3
+- **更新时间**: 2026-04-09
 
-## 技能描述
+## 背景需求
+
+在调用 API 时，凭证（如 API keys、tokens）容易泄露，造成安全风险。需要一种安全的方式来调用 API 而不暴露凭证。
+
+## 目标
 
 Call any API without leaking credentials. Keychains proxies requests and injects real tokens server-side — your agent never sees them.
 
-安全 API 调用技能，Keychains 代理请求并在服务器端注入真实令牌，Agent 永远不会看到凭据。
-
 ## 功能列表
 
-- 凭据保护
-- API 代理调用
-- 服务器端令牌注入
-- Zero Trust 架构
+- 安全 API 调用
+- 凭证隔离
+- Keychains 代理
+- 服务端 token 注入
 - OAuth 支持
+- 零信任架构
 
 ## 安装方式
 
 ```bash
-# 使用 ClawHub 安装
-npx clawhub@latest install secure-api-calls
-
-# 或全局安装 ClawHub 后安装
-npm i -g clawhub
 clawhub install secure-api-calls
 ```
 
 ## 推荐安装评估
 
-### 本地安装 ⭐⭐⭐⭐
-- 适合场景：本地开发、安全测试
-- 优势：保护本地 API 密钥
-- 要求： Node.js 环境
+- **本地开发**: ⭐⭐⭐⭐⭐ 强烈推荐
+- **ECS 服务器**: ⭐⭐⭐⭐⭐ 强烈推荐
 
-### ECS 安装 ⭐⭐⭐⭐⭐
-- 适合场景：生产环境、团队协作
-- 优势：集中凭据管理、安全审计
-- 要求：ECS 实例
+**理由**: 安全是开发中的重要考量，此技能可以有效保护 API 凭证不被泄露。
 
 ## 优缺点分析
 
 ### 优点
-- 零信任安全模型
-- 凭据永不暴露
-- 支持多种认证方式
+
+1. 保护 API 凭证
+2. 零信任安全架构
+3. 支持 OAuth
+4. 服务端 token 注入
 
 ### 缺点
-- 需要配置 Keychain 服务
-- 有一定的学习成本
+
+1. 需要额外的基础设施
+2. 配置复杂度
 
 ## 平替对比
 
-| 技能 | 对比 |
+| 技能 | 特点 |
 |------|------|
-| security-auditor | 安全审计 vs 安全调用 |
+| api-generator | 更侧重 API 生成 |
+| api-doc-writer | 更侧重文档编写 |
 
 ## 落地过程
 
-1. 安装 ClawHub: `npm i -g clawhub`
-2. 安装技能: `clawhub install secure-api-calls`
-3. 配置 Keychain 服务和凭据
-4. 通过代理进行安全 API 调用
+1. 执行 `clawhub install secure-api-calls`
+2. 配置 Keychains 服务
+3. 注册 API 凭证
+4. 通过技能安全调用 API

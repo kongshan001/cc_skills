@@ -1,20 +1,28 @@
 # Docker Sandbox
 
-> Docker 沙箱环境创建和管理
+## 技能概述
 
-## 技能描述
+- **Slug**: docker-sandbox
+- **名称**: Docker Sandbox
+- **作者**: gitgoodordietrying
+- **版本**: 1.0.0
+- **更新时间**: 2026-02-28
 
-Docker Sandbox 提供安全的容器化代码执行环境，用于隔离运行不受信任的代码。支持工作区挂载、网络策略配置等。
+## 背景需求
+
+在运行不受信任的代码、探索软件包或隔离 Agent 工作负载时，需要一个安全的沙箱环境来保护主机系统。
+
+## 目标
+
+Create and manage Docker sandboxed VM environments for safe agent execution. Use when running untrusted code, exploring packages, or isolating agent workloads. Supports Claude, Codex, Copilot, Gemini, and Kiro agents with network proxy controls.
 
 ## 功能列表
 
-- 创建隔离的 Docker 沙箱
-- 工作区挂载（virtiofs）
-- Docker socket 暴露配置
-- 网络策略配置
-- 代理环境变量设置
-- 沙箱快照和模板管理
-- 持久化配置
+- 创建隔离的 Docker 沙箱环境
+- 管理沙箱生命周期
+- 支持多种 Agent (Claude, Codex, Copilot, Gemini, Kiro)
+- 网络代理控制
+- 安全隔离执行
 
 ## 安装方式
 
@@ -24,21 +32,34 @@ clawhub install docker-sandbox
 
 ## 推荐安装评估
 
-| 环境 | 推荐度 | 说明 |
-|------|--------|------|
-| 本地开发 | ⭐⭐⭐⭐ | 需要安全隔离时使用 |
-| ECS/服务器 | ⭐⭐⭐⭐ | 运行不受信任代码时使用 |
+- **本地开发**: ⭐⭐⭐⭐⭐ 强烈推荐
+- **ECS 服务器**: ⭐⭐⭐⭐⭐ 强烈推荐
 
-## 安全注意事项
+**理由**: 对于运行不受信任的代码或需要隔离环境的场景至关重要。适合安全要求高的开发环境。
 
-⚠️ **重要安全警告：**
+## 优缺点分析
 
-- 挂载主机路径和暴露 Docker socket (`/run/docker.sock`) 会削弱隔离效果
-- 避免挂载敏感主机路径
-- 不需要时不暴露 Docker socket
-- 如需更强隔离，考虑使用独立 VM
+### 优点
 
-## 使用前提
+1. 提供强大的安全隔离
+2. 支持多种主流 Agent
+3. 可控制网络访问
+4. 适合测试不受信任的代码
 
-- Docker CLI
-- 理解容器安全机制
+### 缺点
+
+1. 需要 Docker 环境
+2. 有一定的资源开销
+
+## 平替对比
+
+| 技能 | 特点 |
+|------|------|
+| docker-essentials | 更侧重基础命令 |
+| docker-compose | 专注于容器编排 |
+
+## 落地过程
+
+1. 执行 `clawhub install docker-sandbox`
+2. 配置网络代理策略
+3. 在需要隔离执行时激活此技能

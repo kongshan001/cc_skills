@@ -1,48 +1,72 @@
 # GitHub CLI
 
-> GitHub CLI (gh) 命令行参考
+## 技能概述
 
-## 技能描述
+- **Slug**: github-cli
+- **名称**: Github Cli
+- **作者**: tag-assistant
+- **版本**: 1.0.0
+- **更新时间**: 2026-04-09
 
-GitHub CLI 技能提供 gh 命令的完整参考，包括认证、仓库管理、Issue、PR、Actions 等操作。
+## 背景需求
+
+GitHub CLI (gh) 是强大的命令行工具，但命令众多难以记忆。需要一个全面的参考指南。
+
+## 目标
+
+Comprehensive GitHub CLI (gh) reference. Covers repos, issues, PRs, Actions, releases, gists, search, projects v2, API, secrets/variables, labels, codespaces.
 
 ## 功能列表
 
-- gh 认证配置
-- 仓库创建/克隆/列表
-- Issue 管理（创建、列表、评论）
-- Pull Request 创建和审查
-- GitHub Actions 查看和触发
-- 代码搜索
-- 提交历史查看
+- 仓库操作参考
+- Issue 管理
+- PR 管理
+- Actions 工作流
+- Release 管理
+- Gist 操作
+- 搜索功能
+- Projects v2
+- API 调用
+- Secrets/Variables 管理
+- Labels 管理
+- Codespaces 管理
 
 ## 安装方式
 
 ```bash
-# macOS
-brew install gh
-
-# Ubuntu/Debian
-sudo apt install gh
-
-# 或使用 clawhub
 clawhub install github-cli
 ```
 
 ## 推荐安装评估
 
-| 环境 | 推荐度 | 说明 |
-|------|--------|------|
-| 本地开发 | ⭐⭐⭐⭐⭐ | Git 操作必备 |
-| CI/CD | ⭐⭐⭐⭐⭐ | 自动化脚本必备 |
-| ECS/服务器 | ⭐⭐⭐⭐ | 服务器 Git 操作 |
+- **本地开发**: ⭐⭐⭐⭐⭐ 强烈推荐
+- **ECS 服务器**: ⭐⭐⭐⭐⭐ 强烈推荐
 
-## 使用前提
+**理由**: GitHub CLI 是开发者必备工具，此技能提供全面的命令参考。
 
-- 已安装 gh CLI
-- GitHub Personal Access Token (PAT)
+## 优缺点分析
 
-## 注意事项
+### 优点
 
-- 示例中使用 GH_TOKEN 等环境变量，注意保护令牌
-- `gh auth token` 会暴露令牌到终端输出
+1. 全面的 gh 命令参考
+2. 提高命令行效率
+3. 覆盖几乎所有 GitHub 功能
+4. 减少查阅文档时间
+
+### 缺点
+
+1. 需要安装 gh CLI
+2. 需要 GitHub 认证
+
+## 平替对比
+
+| 技能 | 特点 |
+|------|------|
+| openclaw-github-assistant | 更侧重仓库管理 |
+| github-search | 更侧重搜索功能 |
+
+## 落地过程
+
+1. 执行 `clawhub install github-cli`
+2. 安装 gh CLI (如未安装)
+3. 激活技能查询命令
