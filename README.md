@@ -1,84 +1,74 @@
-# Claude Code Skills 调研报告
+# ClawHub热门技能调研报告
 
-> 基于 ClawHub 热门技能的完整调研
+> 调研时间：2026-04-10
+> 调研方式：clawhub CLI 搜索 + inspect
 
-## 调研说明
+## 调研概述
 
-本调研报告分析了 ClawHub 平台 Top 20 热门技能，为每个技能生成详细分析报告，包含功能描述、使用场景、安装方式和部署评估。
+通过 clawhub CLI 对热门技能进行检索调研，覆盖 Docker、Python、Playwright、Kubernetes、游戏开发、数据库等方向。
 
-## 技能列表
+## 热门技能列表
 
-### 第一批：开发工具与基础设施
+| 排名 | 技能Slug | 名称 | 得分 | 类别 |
+|------|----------|------|------|------|
+| 1 | docker-essentials | Docker Essentials | 3.737 | 容器 |
+| 2 | docker-sandbox | Docker Sandbox | 3.577 | 容器 |
+| 3 | docker-compose | Docker Compose | 3.572 | 容器 |
+| 4 | docker-ctl | Docker Ctl | 3.563 | 容器 |
+| 5 | python-executor | Python Executor | 3.534 | Python |
+| 6 | python-script-generator | Python Script Generator | 3.455 | Python |
+| 7 | playwright-mcp | Playwright MCP | 3.654 | 自动化测试 |
+| 8 | playwright-scraper-skill | Playwright Scraper Skill | 3.640 | 自动化测试 |
+| 9 | playwright-browser-automation | Playwright Browser Automation | 3.557 | 自动化测试 |
+| 10 | kubernetes-devops | Kubernetes | 3.554 | DevOps |
+| 11 | database-designer | Database Designer | 3.481 | 数据库 |
+| 12 | flexible-database-design | Flexible Database Design | 3.485 | 数据库 |
+| 13 | text-game-arcade-universe-v3 | 文字游戏大厅 | 3.371 | 游戏 |
 
-| 技能名称 | 描述 | 版本 | 适用场景 | 报告链接 |
-|---------|------|------|----------|---------|
-| docker-essentials | Docker 基础命令与工作流 | 1.0.0 | 容器管理、镜像操作、调试 | [📄](./skills/docker-essentials.md) |
-| docker-sandbox | Docker 沙箱环境管理 | 1.0.0 | 安全隔离执行、不受信任代码运行 | [📄](./skills/docker-sandbox.md) |
-| python-executor | Python 代码安全执行 | 0.1.5 | 快速原型开发、数据分析 | [📄](./skills/python-executor.md) |
-| lsp-python | Python LSP 集成 | 1.1.0 | 代码质量检查、补全、诊断 | [📄](./skills/lsp-python.md) |
-| python-code-test | Python 测试自动生成 | 1.0.3 | 自动生成测试用例、执行测试 | [📄](./skills/python-code-test.md) |
-| openclaw-github-assistant | GitHub 仓库管理助手 | 2.0.1 | 仓库管理、CI 状态、Issue | [📄](./skills/openclaw-github-assistant.md) |
-| github-cli | GitHub CLI 全面参考 | 1.0.0 | gh 命令查询、PR/Issue/Actions | [📄](./skills/github-cli.md) |
-| github-search | GitHub 仓库深度搜索 | 1.0.0 | 技术调研、开源项目发现 | [📄](./skills/github-search.md) |
+## 详细报告
 
-### 第二批：部署与 API
+### 容器与DevOps
 
-| 技能名称 | 描述 | 版本 | 适用场景 | 报告链接 |
-|---------|------|------|----------|---------|
-| vercel-deploy | Vercel 部署管理 | 1.0.0 | 前端应用部署、环境变量管理 | [📄](./skills/vercel-deploy.md) |
-| deploy-agent | C.R.A.B 多步骤部署 | 1.1.0 | 全栈应用安全部署流程 | [📄](./skills/deploy-agent.md) |
-| web-deploy | 多平台 Web 部署 | 1.0.0 | Vercel/Railway/GitHub Pages | [📄](./skills/web-deploy.md) |
-| secure-api-calls | 安全 API 调用 | 1.0.3 | 凭证保护、零信任 API 调用 | [📄](./skills/secure-api-calls.md) |
-| api-generator | API 代码生成器 | 2.0.0 | REST/GraphQL/OpenAPI 生成 | [📄](./skills/api-generator.md) |
-| api-doc-writer | API 文档助手 | 1.0.1 | REST API 文档编写 | [📄](./skills/api-doc-writer.md) |
+- [docker-essentials](skills/docker-essentials.md) - Docker 基础命令和工作流
+- [docker-sandbox](skills/docker-sandbox.md) - 安全的沙箱容器环境
+- [docker-compose](skills/docker-compose.md) - 多容器应用编排
+- [docker-ctl](skills/docker-ctl.md) - 容器检查和管理
+- [kubernetes-devops](skills/kubernetes-devops.md) - K8s YAML清单生成
 
-### 第三批：云服务与游戏
+### Python开发
 
-| 技能名称 | 描述 | 版本 | 适用场景 | 报告链接 |
-|---------|------|------|----------|---------|
-| hetzner-cloud | Hetzner Cloud CLI | 1.0.0 | 服务器/网络/防火墙管理 | [📄](./skills/hetzner-cloud.md) |
-| cloud-storage | 多云存储管理 | 1.0.1 | 跨云提供商文件管理 | [📄](./skills/cloud-storage.md) |
-| cloud-architect | 云架构设计 | 0.1.0 | 架构设计、迁移规划、成本优化 | [📄](./skills/cloud-architect.md) |
-| text-game-arcade-universe-v3 | 综合文字游戏大厅 | 1.0.0 | 17+ 种 ASCII 棋牌/益智游戏 | [📄](./skills/text-game-arcade-universe-v3.md) |
-| identity-guess-game | 身份猜猜猜 | 1.0.0 | 多人互动推理游戏 | [📄](./skills/identity-guess-game.md) |
+- [python-executor](skills/python-executor.md) - Python代码执行器
+- [python-script-generator](skills/python-script-generator.md) - Python脚本生成器
 
-## 调研统计
+### 自动化测试
 
-- **总技能数量:** 19 个
-- **更新时间:** 2026-04-09
-- **涵盖领域:**
-  - Docker/容器 (2个)
-  - Python 开发 (3个)
-  - GitHub 工具 (3个)
-  - 部署工具 (3个)
-  - API 工具 (3个)
-  - 云服务 (3个)
-  - 游戏 (2个)
+- [playwright-mcp](skills/playwright-mcp.md) - Playwright MCP服务器
+- [playwright-scraper-skill](skills/playwright-scraper-skill.md) - 网页爬虫技能
 
-## 部署建议
+### 数据库
 
-### 本地开发推荐 ⭐⭐⭐⭐⭐
-- **必装:** docker-essentials, lsp-python, python-code-test, openclaw-github-assistant, github-cli, github-search, secure-api-calls
-- **推荐:** python-executor, vercel-deploy, web-deploy, api-generator, text-game-arcade-universe-v3
+- [database-designer](skills/database-designer.md) - 数据库设计器
+- [flexible-database-design](skills/flexible-database-design.md) - 灵活数据库设计
 
-### ECS 服务器推荐 ⭐⭐⭐⭐⭐
-- **必装:** docker-essentials, docker-sandbox, openclaw-github-assistant, deploy-agent, hetzner-cloud, cloud-storage, secure-api-calls
-- **推荐:** python-code-test, cloud-architect, api-generator
+### 游戏开发
 
-## 快速安装
+- [text-game-arcade-universe-v3](skills/text-game-arcade-universe-v3.md) - 文字游戏大厅
 
-```bash
-# 安装所有推荐技能
-clawhub install docker-essentials docker-sandbox
-clawhub install python-executor lsp-python python-code-test
-clawhub install openclaw-github-assistant github-cli github-search
-clawhub install vercel-deploy deploy-agent web-deploy
-clawhub install secure-api-calls api-generator api-doc-writer
-clawhub install hetzner-cloud cloud-storage cloud-architect
-```
+## 推荐安装
+
+### 本地开发环境推荐
+
+- docker-essentials
+- python-executor
+- python-script-generator
+- database-designer
+
+### ECS/服务器推荐
+
+- docker-sandbox
+- kubernetes-devops
+- docker-compose
 
 ---
 
-*生成时间: 2026-04-09*
-*调研工具: ClawHub CLI v0.6.0*
-*数据源: https://clawhub.com*
+*持续更新中...*

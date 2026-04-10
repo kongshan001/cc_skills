@@ -1,25 +1,22 @@
-# Database Designer - 数据库设计器
+# Database Designer
 
-## 基本信息
-
-| 项目 | 内容 |
-|------|------|
-| **名称** | Database Designer |
-| **Slug** | database-designer |
-| **作者** | - |
-| **更新时间** | 2026 |
+> 技能Slug: database-designer  
+> 版本: 2.1.1  
+> 作者: alirezarezvani  
+> 更新时间: 2026-03-10
 
 ## 技能描述
 
-Flexible Database Design – SQLite flexible schema & knowledge base skill. Design flexible schemas for SQLite with knowledge base integration.
+Database Designer - POWERFUL Tier Skill
+
+强大的数据库设计技能，支持 schema 设计和优化。
 
 ## 功能列表
 
-- 灵活模式设计
-- SQLite 优化
-- 知识库集成
-- 模式演进
-- 数据迁移
+- 数据库 schema 设计
+- 表结构优化
+- 索引建议
+- 关系建模
 
 ## 安装方式
 
@@ -29,5 +26,6 @@ clawhub install database-designer
 
 ## 推荐安装评估
 
-- **本地环境**: ⭐⭐⭐⭐⭐ 
-- **ECS**: ⭐⭐⭐⭐
+### 本地开发环境 ✅ 推荐
+
+### ECS/服务器 ✅ 推荐

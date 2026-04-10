@@ -1,65 +1,71 @@
 # Docker Sandbox
 
-## 技能概述
+> 技能Slug: docker-sandbox  
+> 版本: 1.0.0  
+> 作者: gitgoodordietrying  
+> 更新时间: 2026-02-28
 
-- **Slug**: docker-sandbox
-- **名称**: Docker Sandbox
-- **作者**: gitgoodordietrying
-- **版本**: 1.0.0
-- **更新时间**: 2026-02-28
-
-## 背景需求
-
-在运行不受信任的代码、探索软件包或隔离 Agent 工作负载时，需要一个安全的沙箱环境来保护主机系统。
-
-## 目标
+## 技能描述
 
 Create and manage Docker sandboxed VM environments for safe agent execution. Use when running untrusted code, exploring packages, or isolating agent workloads. Supports Claude, Codex, Copilot, Gemini, and Kiro agents with network proxy controls.
 
+创建和管理 Docker 沙箱 VM 环境，用于安全执行不信任的代码、探索软件包或隔离 agent 工作负载。支持多种 AI 代理并提供网络代理控制。
+
 ## 功能列表
 
-- 创建隔离的 Docker 沙箱环境
-- 管理沙箱生命周期
-- 支持多种 Agent (Claude, Codex, Copilot, Gemini, Kiro)
+- 沙箱 VM 环境创建
+- 不信任代码安全运行
+- 软件包探索隔离
+- 多代理支持 (Claude, Codex, Copilot, Gemini, Kiro)
 - 网络代理控制
-- 安全隔离执行
 
 ## 安装方式
 
 ```bash
+# 使用 clawhub 安装
 clawhub install docker-sandbox
+
+# 或使用 npx
+npx clawhub@latest install docker-sandbox
 ```
 
 ## 推荐安装评估
 
-- **本地开发**: ⭐⭐⭐⭐⭐ 强烈推荐
-- **ECS 服务器**: ⭐⭐⭐⭐⭐ 强烈推荐
+### 本地开发环境 ⚠️ 谨慎使用
 
-**理由**: 对于运行不受信任的代码或需要隔离环境的场景至关重要。适合安全要求高的开发环境。
+- 需要 Docker 运行权限
+- 适合测试不信任的代码
+- 建议配合网络控制使用
 
-## 优缺点分析
+### ECS/服务器 ✅ 推荐
 
-### 优点
+- 生产环境安全测试
+- 隔离不信任的 workloads
+- 多租户场景
 
-1. 提供强大的安全隔离
-2. 支持多种主流 Agent
-3. 可控制网络访问
-4. 适合测试不受信任的代码
+## 适用场景
 
-### 缺点
+1. 运行第三方/不信任的代码
+2. 探索新软件包的安全性
+3. 隔离 AI agent 的工作负载
+4. 多代理并发测试环境
 
-1. 需要 Docker 环境
-2. 有一定的资源开销
+## 安全考虑
 
-## 平替对比
+- 建议配置网络隔离
+- 限制资源使用 (CPU/内存)
+- 定期清理沙箱环境
+- 监控异常行为
 
-| 技能 | 特点 |
-|------|------|
-| docker-essentials | 更侧重基础命令 |
-| docker-compose | 专注于容器编排 |
+## 替代技能对比
 
-## 落地过程
+| 技能 | 特点 | 适用场景 |
+|------|------|----------|
+| docker-sandbox | 沙箱安全隔离 | 安全测试 |
+| docker-essentials | 基础命令 | 日常开发 |
 
-1. 执行 `clawhub install docker-sandbox`
-2. 配置网络代理策略
-3. 在需要隔离执行时激活此技能
+## 落地建议
+
+1. 配置资源限制防止资源耗尽
+2. 设置网络策略隔离
+3. 定期审计沙箱日志
