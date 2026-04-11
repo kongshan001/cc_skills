@@ -1,74 +1,44 @@
-# ClawHub热门技能调研报告
+# ClawHub 热门技能调研
 
-> 调研时间：2026-04-10
-> 调研方式：clawhub CLI 搜索 + inspect
+> 自动化调研 ClawHub 热门 Skills 并生成文档
 
-## 调研概述
+## 目录
 
-通过 clawhub CLI 对热门技能进行检索调研，覆盖 Docker、Python、Playwright、Kubernetes、游戏开发、数据库等方向。
+| # | 技能名称 | Slug | 版本 | 分类 |
+|---|----------|------|------|------|
+| 1 | Web Content Fetcher | web-content-fetcher | 1.0.1 | Web |
+| 2 | Web Browsing | web-browsing | 1.0.0 | Web |
+| 3 | Web Learner | web-learner | 1.0.0 | Web |
+| 4 | Scrape Web | scrape-web | 1.0.0 | Web |
+| 5 | Web Screenshot | web-screenshot | 1.1.3 | Web |
+| 6 | Web Tools Guide | web-tools-guide | 1.0.1 | Web |
+| 7 | Docker Essentials | docker-essentials | 1.0.0 | DevOps |
+| 8 | Docker Sandbox | docker-sandbox | 1.0.0 | DevOps |
+| 9 | Docker Compose | docker-compose | 1.0.0 | DevOps |
+| 10 | Docker Ctl | docker-ctl | 1.0.0 | DevOps |
+| 11 | Docker Helper | docker-helper | 2.0.0 | DevOps |
 
-## 热门技能列表
+## 分类统计
 
-| 排名 | 技能Slug | 名称 | 得分 | 类别 |
-|------|----------|------|------|------|
-| 1 | docker-essentials | Docker Essentials | 3.737 | 容器 |
-| 2 | docker-sandbox | Docker Sandbox | 3.577 | 容器 |
-| 3 | docker-compose | Docker Compose | 3.572 | 容器 |
-| 4 | docker-ctl | Docker Ctl | 3.563 | 容器 |
-| 5 | python-executor | Python Executor | 3.534 | Python |
-| 6 | python-script-generator | Python Script Generator | 3.455 | Python |
-| 7 | playwright-mcp | Playwright MCP | 3.654 | 自动化测试 |
-| 8 | playwright-scraper-skill | Playwright Scraper Skill | 3.640 | 自动化测试 |
-| 9 | playwright-browser-automation | Playwright Browser Automation | 3.557 | 自动化测试 |
-| 10 | kubernetes-devops | Kubernetes | 3.554 | DevOps |
-| 11 | database-designer | Database Designer | 3.481 | 数据库 |
-| 12 | flexible-database-design | Flexible Database Design | 3.485 | 数据库 |
-| 13 | text-game-arcade-universe-v3 | 文字游戏大厅 | 3.371 | 游戏 |
+- **Web 类**: 6 个
+- **DevOps 类**: 5 个
 
-## 详细报告
+## 安装方式
 
-### 容器与DevOps
+```bash
+# 安装单个技能
+clawhub install <slug>
 
-- [docker-essentials](skills/docker-essentials.md) - Docker 基础命令和工作流
-- [docker-sandbox](skills/docker-sandbox.md) - 安全的沙箱容器环境
-- [docker-compose](skills/docker-compose.md) - 多容器应用编排
-- [docker-ctl](skills/docker-ctl.md) - 容器检查和管理
-- [kubernetes-devops](skills/kubernetes-devops.md) - K8s YAML清单生成
+# 示例
+clawhub install web-content-fetcher
+clawhub install docker-essentials
+```
 
-### Python开发
+## 更多技能
 
-- [python-executor](skills/python-executor.md) - Python代码执行器
-- [python-script-generator](skills/python-script-generator.md) - Python脚本生成器
+持续更新中...
 
-### 自动化测试
+## 相关链接
 
-- [playwright-mcp](skills/playwright-mcp.md) - Playwright MCP服务器
-- [playwright-scraper-skill](skills/playwright-scraper-skill.md) - 网页爬虫技能
-
-### 数据库
-
-- [database-designer](skills/database-designer.md) - 数据库设计器
-- [flexible-database-design](skills/flexible-database-design.md) - 灵活数据库设计
-
-### 游戏开发
-
-- [text-game-arcade-universe-v3](skills/text-game-arcade-universe-v3.md) - 文字游戏大厅
-
-## 推荐安装
-
-### 本地开发环境推荐
-
-- docker-essentials
-- python-executor
-- python-script-generator
-- database-designer
-
-### ECS/服务器推荐
-
-- docker-sandbox
-- kubernetes-devops
-- docker-compose
-
----
-
-*持续更新中...*
+- [ClawHub](https://clawhub.com)
+- [提交技能](https://clawhub.com/publish)

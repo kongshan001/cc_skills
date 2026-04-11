@@ -1,22 +1,21 @@
 # Docker Ctl
 
-> 技能Slug: docker-ctl  
-> 版本: 1.0.0  
-> 作者: xejrax  
-> 更新时间: 2026-02-28
+## 技能概述
 
-## 技能描述
+**Slug**: `docker-ctl`  
+**作者**: xejrax  
+**版本**: 1.0.0  
+**更新日期**: 2026-02-28
 
-Inspect containers, logs, and images via podman
+## 背景需求
 
-通过 podman 检查容器、日志和镜像。
+Inspect containers, logs, and images via podman.
 
 ## 功能列表
 
-- 容器检查
-- 日志查看
-- 镜像管理
-- podman 集成
+1. 容器检查
+2. 日志查看
+3. 镜像管理（通过 Podman）
 
 ## 安装方式
 
@@ -26,12 +25,16 @@ clawhub install docker-ctl
 
 ## 推荐安装评估
 
-### 本地开发环境 ✅ 推荐
+| 场景 | 推荐程度 | 说明 |
+|------|----------|------|
+| 本地开发 | ⭐⭐⭐⭐ | 需 Podman 环境 |
+| ECS 服务器 | ⭐⭐⭐⭐ | 容器管理能力 |
 
-- 替代 Docker 的轻量选择
-- 适合 macOS/Linux
+## 优缺点分析
 
-### ECS/服务器 ✅ 推荐
+**优点**:
+- 支持 Podman（无守护进程）
+- 轻量级
 
-- 无守护进程容器运行
-- 资源占用更低
+**缺点**:
+- 需要 Podman 而非 Docker
