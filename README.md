@@ -1,56 +1,43 @@
-# ClawHub 游戏技能调研报告
+# ClawHub 热门技能调研报告
 
-> 自动化调研 ClawHub 热门游戏类技能并生成独立调研文档
+> Claude Code / OpenClaw 热门 Skills 独立调研文档
 
-## 技能索引
+## 目录
 
-| # | 技能名称 | 描述 | 推荐安装 |
-|---|---------|------|---------|
-| 1 | [game-ai](./skills/game-ai.md) | Game AI 开发指南 - 行为树/状态机/寻路 | 本地 |
-| 2 | [text-game-arcade-universe-v3](./skills/text-game-arcade-universe-v3.md) | 综合性 ASCII 文字游戏大厅 | 本地 |
-| 3 | [identity-guess-game](./skills/identity-guess-game.md) | 身份猜猜猜 - 多人互动推理游戏 | 本地/ECS |
-| 4 | [play-any-game](./skills/play-any-game.md) | AI游戏伴侣助手 | ECS |
-| 5 | [tianyi-cloud-game](./skills/tianyi-cloud-game.md) | 天翼云游戏 | 本地 |
-| 6 | [rpsls-game](./skills/rpsls-game.md) | Rock Paper Scissors Lizard Spock | 本地/ECS |
-| 7 | [game](./skills/game.md) | 即时游戏设计引擎 | 本地/ECS |
-| 8 | [text-adventure-game-skill](./skills/text-adventure-game-skill.md) | 龙虾文游系统 | 本地/ECS |
-| 9 | [kuuila-game](./skills/kuuila-game.md) | Kuuila互动游戏框架 | 本地/ECS |
-| 10 | [game-numeric-design](./skills/game-numeric-design.md) | 游戏数值策划工具 | 本地/ECS |
-| 11 | [rule-pasta-zoo-game](./skills/rule-pasta-zoo-game.md) | 动物园规则怪谈 | 本地/ECS |
-| 12 | [agent-arcade-games](./skills/agent-arcade-games.md) | Agent Arcade 竞技游戏 | ECS |
-| 13 | [endless-downstairs](./skills/endless-downstairs.md) | Endless Downstairs 文字冒险 | 本地/ECS |
-| 14 | [interactive-games](./skills/interactive-games.md) | 互动游戏框架 | 本地/ECS |
-| 15 | [the-flip-publish](./skills/the-flip-publish.md) | Solana 区块链翻转游戏 | 本地(测试) |
-| 16 | [clawland](./skills/clawland.md) | Solana 链上奇偶博弈 | 本地(测试) |
-| 17 | [agent-arcade](./skills/agent-arcade.md) | PROMPTWARS 社交工程竞技 | ECS |
-| 18 | [lobster-trap](./skills/lobster-trap.md) | AI 社交推理游戏 | ECS |
+### 游戏开发
 
-## 调研方法
+| 技能 | 描述 | 文件 |
+|------|------|------|
+| game-development | Three.js 浏览器游戏开发 | [skills/game-development.md](skills/game-development.md) |
+| accessible-game-development | 无障碍游戏开发 (屏幕阅读器支持) | [skills/accessible-game-development.md](skills/accessible-game-development.md) |
+| cocos-cli-game-dev | Cocos CLI 游戏开发 | [skills/cocos-cli-game-dev.md](skills/cocos-cli-game-dev.md) |
 
-```bash
-# 搜索游戏类技能
-clawhub search "game" --limit 30
+### Python 开发
 
-# 查看技能详情
-clawhub inspect <slug>
-```
+| 技能 | 描述 | 文件 |
+|------|------|------|
+| python-executor | Python 沙箱执行 (预装 NumPy/Pandas) | [skills/python-executor.md](skills/python-executor.md) |
+| lsp-python | Python LSP 代码质量检查 | [skills/lsp-python.md](skills/lsp-python.md) |
+| python-code-test | Python 代码测试 | [skills/python-code-test.md](skills/python-code-test.md) |
 
-## 推荐分类
+### 自动化测试
 
-### 休闲娱乐类
-- rpsls-game, identity-guess-game, endless-downstairs
+| 技能 | 描述 | 文件 |
+|------|------|------|
+| e2e-testing-patterns | E2E 测试模式 (Playwright/Cypress) | [skills/e2e-testing-patterns.md](skills/e2e-testing-patterns.md) |
+| afrexai-qa-testing-engine | QA 测试引擎 | [skills/afrexai-qa-testing-engine.md](skills/afrexai-qa-testing-engine.md) |
+| e2e-testing | E2E 测试规范 | [skills/e2e-testing.md](skills/e2e-testing.md) |
 
-### 游戏开发类
-- game-ai, game-numeric-design, game, interactive-games
+### 开发者工具 (Docker/K8s)
 
-### AI竞技类
-- agent-arcade, agent-arcade-games, lobster-trap
-
-### 区块链实验类
-- clawland, the-flip-publish (需要Solana环境)
-
-### 中文特色类
-- text-adventure-game-skill, kuuila-game, rule-pasta-zoo-game
+| 技能 | 描述 | 文件 |
+|------|------|------|
+| docker-essentials | Docker 基础 | [skills/docker-essentials.md](skills/docker-essentials.md) |
+| docker-ctl | Docker/Podman 控制 | [skills/docker-ctl.md](skills/docker-ctl.md) |
+| container-debug | 容器调试 | [skills/container-debug.md](skills/container-debug.md) |
+| kubectl | Kubernetes 管理 | [skills/kubectl.md](skills/kubectl.md) |
 
 ---
-*调研时间: 2026-04-12*
+
+**调研时间**: 2026-04-13
+**数据来源**: ClawHub
