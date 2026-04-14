@@ -1,22 +1,26 @@
 # Python Script Generator
 
-> 技能Slug: python-script-generator  
-> 版本: 1.0.0  
-> 作者: sunshine-del-ux  
-> 更新时间: 2026-04-10
+- **Slug**: python-script-generator
+- **作者**: sunshine-del-ux
+- **版本**: 1.0.0
+- **更新时间**: 2026-04-14
 
-## 技能描述
+## 背景需求
 
-生成专业的 Python 脚本和应用模板，支持 CLI 工具、Flask API、FastAPI、Django Command、Scraper 等，一键生成完整项目代码。
+快速生成专业的 Python 脚本和应用模板，提升开发效率。
+
+## 目标
+
+一键生成完整项目代码，支持多种应用类型。
 
 ## 功能列表
 
-- CLI 工具模板生成
-- Flask API 项目模板
-- FastAPI 项目模板
-- Django Command 模板
-- Scraper 爬虫模板
-- 完整项目代码生成
+- CLI 工具生成
+- Flask API 生成
+- FastAPI 生成
+- Django Command 生成
+- Scraper 生成
+- 完整项目模板
 
 ## 安装方式
 
@@ -26,11 +30,5 @@ clawhub install python-script-generator
 
 ## 推荐安装评估
 
-### 本地开发环境 ✅ 推荐
-
-- 快速启动新项目
-- 标准化项目结构
-
-### ECS/服务器 ✅ 推荐
-
-- 自动化项目初始化
+- **本地开发**: ⭐⭐⭐⭐⭐ 快速原型开发
+- **ECS/服务器**: ⭐⭐⭐⭐ 脚手架工具

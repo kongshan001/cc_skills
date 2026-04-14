@@ -1,23 +1,23 @@
 # Python Executor
 
-| 项目 | 内容 |
-|------|------|
-| **技能名称** | python-executor |
-| **所有者** | okaris |
-| **版本** | 0.1.5 |
-| **更新时间** | 2026-04-13 |
+- **Slug**: python-executor
+- **作者**: okaris
+- **版本**: 0.1.5
+- **更新时间**: 2026-04-14
 
-## 技能描述
+## 背景需求
 
-通过 inference.sh 在安全沙箱环境中执行 Python 代码。预装：NumPy、Pandas、Matplotlib、requests、BeautifulSoup。
+在 AI Agent 环境中执行 Python 代码进行数据分析、脚本生成、计算等任务。
+
+## 目标
+
+提供安全的沙箱环境执行 Python 代码，支持常用数据科学库。
 
 ## 功能列表
 
-- Python 代码安全沙箱执行
-- 预装科学计算库（NumPy、Pandas）
-- 数据可视化（Matplotlib）
-- HTTP 请求（requests）
-- HTML 解析（BeautifulSoup）
+- Python 代码沙箱执行
+- 预装库: NumPy, Pandas, Matplotlib, requests, BeautifulSoup 等
+- 安全的推理执行环境
 
 ## 安装方式
 
@@ -27,13 +27,10 @@ clawhub install python-executor
 
 ## 推荐安装评估
 
-| 场景 | 推荐度 | 说明 |
-|------|--------|------|
-| **本地开发** | ⭐⭐⭐⭐⭐ | 数据分析/脚本执行 |
-| **ECS服务器** | ⭐⭐⭐⭐⭐ | 服务端代码执行 |
+- **本地开发**: ⭐⭐⭐⭐⭐ 轻量级，快速集成
+- **ECS/服务器**: ⭐⭐⭐⭐⭐ 支持远程执行
 
-## 使用场景
+## 替代方案
 
-- 数据分析任务
-- 脚本自动化
-- Python 代码测试
+- 直接使用本地 Python 环境
+- Jupyter Notebook 服务
