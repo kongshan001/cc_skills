@@ -1,60 +1,71 @@
 # ClawHub 热门技能调研报告
 
-> Claude Code / OpenClaw 热门 Skills 独立调研文档
+> 调研时间: 2026-04-15
 
-## 目录
+本目录包含从ClawHub热门技能中筛选的20个Skills独立调研报告。
 
-### 游戏开发
+## 索引表
 
-| 技能 | 描述 | 作者 | 文件 |
-|------|------|------|------|
-| game-ai | 游戏 AI 系统 (行为树/状态机/寻路) | thb32133451 | [skills/game-ai.md](skills/game-ai.md) |
-| game-development | Three.js 浏览器游戏开发 | - | [skills/game-development.md](skills/game-development.md) |
-| accessible-game-development | 无障碍游戏开发 | - | [skills/accessible-game-development.md](skills/accessible-game-development.md) |
-| cocos-cli-game-dev | Cocos CLI 游戏开发 | - | [skills/cocos-cli-game-dev.md](skills/cocos-cli-game-dev.md) |
+| # | Slug | 名称 | 版本 | 分类 | 推荐度 |
+|---|------|------|------|------|--------|
+| 1 | cli-developer | Cli Developer | 0.1.0 | 开发者工具 | ⭐⭐⭐ |
+| 2 | meow-finder | Meow Finder | 1.0.0 | 工具发现 | ⭐⭐⭐⭐ |
+| 3 | tools-ui | Tools Ui | 0.1.5 | UI组件 | ⭐⭐⭐⭐ |
+| 4 | ydc-ai-sdk-integration | You.com AI SDK集成 | 1.0.0 | AI集成 | ⭐⭐⭐⭐ |
+| 5 | webmcp | WebMCP (brunobuddy) | 1.0.0 | Web自动化 | ⭐⭐⭐⭐ |
+| 6 | web-mcp | WebMCP (slemo54) | 1.0.0 | AI集成 | ⭐⭐⭐⭐ |
+| 7 | apple-developer-toolkit | Apple Developer Toolkit | 3.5.0 | Apple开发 | ⭐⭐⭐⭐⭐ |
+| 8 | devtopia | Devtopia | 1.0.1 | 工具管理 | ⭐⭐⭐⭐ |
+| 9 | ai-dev-runtime | AI Dev Runtime | 0.5.0 | 开发运行时 | ⭐⭐⭐⭐⭐ |
+| 10 | dev | Dev | 1.0.0 | 全栈开发 | ⭐⭐⭐⭐⭐ |
+| 11 | openclaw-cursor-agent | OpenClaw Cursor Agent | 1.0.0 | 编码任务 | ⭐⭐⭐⭐⭐ |
+| 12 | agency-frontend-developer | Agency Frontend Developer | 1.0.0 | 前端开发 | ⭐⭐⭐⭐⭐ |
+| 13 | tools-page-generator | Tools Page Generator | 1.0.1 | 工具页面 | ⭐⭐⭐ |
+| 14 | agentdeals | AgentDeals | 1.0.0 | 基础设施 | ⭐⭐⭐⭐ |
+| 15 | mcp-review | Mcp Review | 1.0.0 | 工具审核 | ⭐⭐⭐⭐ |
+| 16 | ai-tools-evaluator | Ai Tools Evaluator | 1.0.0 | 工具评估 | ⭐⭐⭐⭐⭐ |
+| 17 | research-tools-skill | Research Tools Skill | 1.0.0 | 科研工具 | ⭐⭐⭐⭐ |
+| 18 | cognitive-tools | 李继刚认知工具箱 | 1.0.0 | 认知工具 | ⭐⭐⭐⭐⭐ |
 
-### Python 开发
+## 使用方式
 
-| 技能 | 描述 | 作者 | 文件 |
-|------|------|------|------|
-| python-executor | Python 沙箱执行 (预装 NumPy/Pandas) | okaris | [skills/python-executor.md](skills/python-executor.md) |
-| lsp-python | Python LSP 代码质量检查 (pylsp) | genify | [skills/lsp-python.md](skills/lsp-python.md) |
-| python-script-generator | Python 脚本生成器 (Flask/FastAPI/Django) | sunshine-del-ux | [skills/python-script-generator.md](skills/python-script-generator.md) |
-| python-code-test | Python 代码测试 | zhouhh2017 | [skills/python-code-test.md](skills/python-code-test.md) |
-| friendly-python | Pythonic 代码编写指南 | psiace | [skills/friendly-python.md](skills/friendly-python.md) |
+安装单个技能:
 
-### 自动化测试
+```bash
+clawhub install <slug>
+```
 
-| 技能 | 描述 | 作者 | 文件 |
-|------|------|------|------|
-| api-test-automation | API 测试自动化 (REST/GraphQL/性能/契约) | kaiyuelv | [skills/api-test-automation.md](skills/api-test-automation.md) |
-| test-runner | 跨语言测试运行器 (TS/Python/Swift) | cmanfre7 | [skills/test-runner.md](skills/test-runner.md) |
-| e2e-testing-patterns | E2E 测试模式 | - | [skills/e2e-testing-patterns.md](skills/e2e-testing-patterns.md) |
-| afrexai-qa-testing-engine | QA 测试引擎 | - | [skills/afrexai-qa-testing-engine.md](skills/afrexai-qa-testing-engine.md) |
+批量安装推荐技能:
 
-### 开发者工具 (Docker/K8s)
+```bash
+# 开发必备
+clawhub install ai-dev-runtime
+clawhub install dev
 
-| 技能 | 描述 | 作者 | 文件 |
-|------|------|------|------|
-| docker-essentials | Docker 基础命令 | arnarsson | [skills/docker-essentials.md](skills/docker-essentials.md) |
-| docker-compose | Docker Compose 多容器编排 | ivanggavila | [skills/docker-compose.md](skills/docker-compose.md) |
-| docker-sandbox | Docker 沙箱安全环境 | gitgoodordietrying | [skills/docker-sandbox.md](skills/docker-sandbox.md) |
-| docker-helper | Docker 辅助 (Dockerfile/Compose/调试) | ckchzh | [skills/docker-helper.md](skills/docker-helper.md) |
-| docker-manager | Docker 容器管理 (监控/日志) | sxliuyu | [skills/docker-manager.md](skills/docker-manager.md) |
-| docker-ctl | Docker/Podman 控制 | xejrax | [skills/docker-ctl.md](skills/docker-ctl.md) |
-| container-debug | 容器调试 | - | [skills/container-debug.md](skills/container-debug.md) |
-| kubectl | Kubernetes 管理 | - | [skills/kubectl.md](skills/kubectl.md) |
+# 前端开发
+clawhub install agency-frontend-developer
+clawhub install tools-ui
 
-### GitHub 工具
+# Apple开发
+clawhub install apple-developer-toolkit
+```
 
-| 技能 | 描述 | 作者 | 文件 |
-|------|------|------|------|
-| openclaw-github-assistant | GitHub 仓库管理 (CI/Issue/搜索) | conorkenn | [skills/openclaw-github-assistant.md](skills/openclaw-github-assistant.md) |
-| github-cli | GitHub CLI (gh) 全面参考 | tag-assistant | [skills/github-cli.md](skills/github-cli.md) |
-| github-workflow | GitHub 工作流集成 (Actions) | paul-leo | [skills/github-workflow.md](skills/github-workflow.md) |
+## 分类推荐
+
+### 开发者工具
+- cli-developer, meow-finder, devtopia
+
+### AI/ML开发
+- ai-dev-runtime, ai-tools-evaluator, cognitive-tools
+
+### 前端开发
+- agency-frontend-developer, tools-ui, dev
+
+### 移动开发
+- apple-developer-toolkit
+
+### 基础设施
+- agentdeals, research-tools-skill
 
 ---
-
-**调研时间**: 2026-04-14
-**数据来源**: ClawHub (clawhub.com)
-**技能数量**: 18 个热门技能
+Generated by Claude Code Skills/Plugin 调研 Agent

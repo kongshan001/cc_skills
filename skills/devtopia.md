@@ -1,25 +1,25 @@
 # Devtopia
 
-> AI 工具管理与编排
+## 技能概述
 
-## 概述
+- **Slug**: devtopia
+- **作者**: npmrunspirit
+- **版本**: 1.0.1
+- **更新时间**: 2026-04-15
 
-**Slug:** devtopia  
-**Owner:** npmrunspirit  
-**版本:** 1.0.1  
-**更新时间:** 2026-04-08
+## 描述
+
+Manage and compose AI-built tools using Devtopia CLI to discover, run, create, and submit tools within an agent-driven ecosystem.
+
+使用Devtopia CLI管理和组合AI构建的工具，在代理驱动生态系统中发现、运行、创建和提交工具。
 
 ## 功能列表
 
-- AI 工具发现
-- 运行 AI 工具
-- 创建 AI 工具
-- 提交工具到生态系统
-- AI 驱动的工具生态
-
-## 使用场景
-
-用户需要发现、运行、创建和提交 AI 工具时使用。
+- 工具发现
+- 工具运行
+- 工具创建
+- 工具提交
+- 生态系统集成
 
 ## 安装方式
 
@@ -31,14 +31,6 @@ clawhub install devtopia
 
 | 场景 | 推荐 | 说明 |
 |------|------|------|
-| 本地开发 | ✅ 推荐 | 开发者工具生态 |
-| ECS 服务器 | ✅ 推荐 | 可运行 AI 工具 |
-
-## 优缺点分析
-
-**优点:**
-- 丰富的工具生态
-- 支持工具创建和管理
-
-**缺点:**
-- 需要学习新的生态概念
+| 本地开发 | ⭐⭐⭐⭐ | 工具管理 |
+| ECS服务器 | ⭐⭐ | 不适用 |
+| 个人工具集 | ⭐⭐⭐ | 工具开发 |

@@ -1,27 +1,29 @@
-# Dev (Full Stack Web Developer)
+# Dev
 
-> 全栈网页开发助手
+## 技能概述
 
-## 概述
+- **Slug**: dev
+- **作者**: psvanzijl
+- **版本**: 1.0.0
+- **更新时间**: 2026-03-29
 
-**Slug:** dev  
-**Owner:** psvanzijl  
-**版本:** 1.0.0  
-**更新时间:** 2026-03-29
+## 描述
+
+Full stack web developer assistant specializing in React, JavaScript, HTML, CSS, Tailwind, and API integrations, focusing on clean code and cost-effective solutions.
+
+全栈Web开发助手，专业于React、JavaScript、HTML、CSS、Tailwind和API集成，注重简洁代码和成本效益。
 
 ## 功能列表
-- React 开发
-- JavaScript 开发
-- HTML/CSS 开发
-- Tailwind CSS
-- API 集成
-- 清洁代码编写
-- 成本优化
 
-## 使用场景
-当用户需要进行全栈网页开发时使用。
+- React开发
+- JavaScript开发
+- HTML/CSS开发
+- Tailwind集成
+- API集成
+- 代码优化
 
 ## 安装方式
+
 ```bash
 clawhub install dev
 ```
@@ -30,15 +32,6 @@ clawhub install dev
 
 | 场景 | 推荐 | 说明 |
 |------|------|------|
-| 本地开发 | ✅ 推荐 | 前端开发助手 |
-| ECS 服务器 | ✅ 推荐 | API 集成支持 |
-
-## 优缺点分析
-
-**优点:**
-- 全栈开发支持
-- 现代化技术栈
-- 成本优化关注
-
-**缺点:**
-- 专注 Web 开发
+| 本地开发 | ⭐⭐⭐⭐⭐ | Web开发必备 |
+| ECS服务器 | ⭐⭐⭐ | 后端服务 |
+| 个人工具集 | ⭐⭐⭐⭐⭐ | 全栈开发 |

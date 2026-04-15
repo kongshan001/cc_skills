@@ -1,24 +1,26 @@
 # OpenClaw Cursor Agent
 
-> Cursor CLI 编码任务管理
+## 技能概述
 
-## 概述
+- **Slug**: openclaw-cursor-agent
+- **作者**: zhangzeyu99-web
+- **版本**: 1.0.0
+- **更新时间**: 2026-04-15
+- **标签**: agent, background-task, cursor, latest, openclaw, tmux
 
-**Slug:** openclaw-cursor-agent  
-**Owner:** zhangzeyu99-web  
-**版本:** 1.0.0  
-**更新时间:** 2026-04-08
+## 描述
+
+Manage long-running Cursor CLI coding tasks through OpenClaw tools backed by tmux sessions. Use when the user asks to start a persistent coding job, inspect...
+
+通过tmux会话管理长时间运行的Cursor CLI编码任务。
 
 ## 功能列表
 
-- 长期运行 Cursor CLI 编码任务
-- OpenClaw 工具支持
-- tmux 会话管理
-- 持久化编程任务
-
-## 使用场景
-
-用户需要启动持久化编码任务，检查或审查编码工作时使用。
+- 长任务管理
+- Cursor CLI集成
+- tmux会话
+- 任务监控
+- 后台任务
 
 ## 安装方式
 
@@ -30,14 +32,6 @@ clawhub install openclaw-cursor-agent
 
 | 场景 | 推荐 | 说明 |
 |------|------|------|
-| 本地开发 | ✅ 推荐 | 代码编辑集成 |
-| ECS 服务器 | ✅ 推荐 | 适合远程开发 |
-
-## 优缺点分析
-
-**优点:**
-- 专门针对 Cursor 设计
-- 长任务管理能力强
-
-**缺点:**
-- 仅限于 Cursor 使用
+| 本地开发 | ⭐⭐⭐⭐⭐ | 大型项目开发 |
+| ECS服务器 | ⭐⭐⭐⭐ | 远程开发 |
+| 个人工具集 | ⭐⭐⭐⭐⭐ | 编码任务 |
