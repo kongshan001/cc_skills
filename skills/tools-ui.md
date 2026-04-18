@@ -1,26 +1,16 @@
 # Tools Ui
 
-## 技能概述
+## 技能描述
 
-- **Slug**: tools-ui
-- **作者**: okaris
-- **版本**: 0.1.5
-- **更新时间**: 2026-04-15
-
-## 描述
-
-Tool lifecycle UI components for React/Next.js from ui.inference.sh. Display tool calls: pending, progress, approval required, results. Capabilities: tool status display, progress tracking, user approval workflows.
-
-React/Next.js的工具生命周期UI组件。显示工具调用：待处理、进行中、需要审批、结果。
+React/Next.js 的工具生命周期 UI 组件，来自 ui.inference.sh。显示工具调用状态：pending、progress、approval required、results。
 
 ## 功能列表
 
-- 工具状态显示
-- 进度追踪
-- 用户审批工作流
-- 待处理工具显示
-- 进行中工具显示
-- 结果展示
+- 工具调用状态显示
+- Pending 状态指示
+- 进度条显示
+- 审批请求 UI
+- 结果展示组件
 
 ## 安装方式
 
@@ -30,8 +20,13 @@ clawhub install tools-ui
 
 ## 推荐安装评估
 
-| 场景 | 推荐 | 说明 |
-|------|------|------|
-| 本地开发 | ⭐⭐⭐⭐ | React开发必备 |
-| ECS服务器 | ⭐ | 不适用 |
-| 个人工具集 | ⭐⭐⭐ | Web开发 |
+| 环境 | 推荐度 | 说明 |
+|------|--------|------|
+| 本地 | ⭐⭐⭐⭐ | 前端项目开发 |
+| ECS | ⭐⭐ | 需要前端环境 |
+
+## 适用场景
+
+- 构建 AI 工具调用界面
+- 实现工具审批流程
+- 展示工具执行状态

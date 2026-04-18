@@ -1,25 +1,15 @@
-# Integrate You.com Web Tools With Vercel AI SDK
+# YDC AI SDK Integration
 
-## 技能概述
+## 技能描述
 
-- **Slug**: ydc-ai-sdk-integration
-- **作者**: edwardirby
-- **版本**: 1.0.0
-- **更新时间**: 2026-02-28
-
-## 描述
-
-Integrate Vercel AI SDK applications with You.com tools (web search, AI agent, content extraction). Use when developer mentions AI SDK, Vercel AI SDK, generateText, streamText, or You.com integration with AI SDK.
-
-将Vercel AI SDK应用程序与You.com工具集成（网页搜索、AI代理、内容提取）。
+将 Vercel AI SDK 应用与 You.com 工具集成（web search、AI agent、content extraction）。用于开发者提及 AI SDK、Vercel AI SDK、generateText、streamText 或 You.com 与 AI SDK 集成时。
 
 ## 功能列表
 
-- Web搜索集成
-- AI代理集成
-- 内容提取
-- generateText集成
-- streamText集成
+- Web Search 工具集成
+- AI Agent 工具集成
+- 内容提取工具
+- Vercel AI SDK 集成模板
 
 ## 安装方式
 
@@ -29,8 +19,13 @@ clawhub install ydc-ai-sdk-integration
 
 ## 推荐安装评估
 
-| 场景 | 推荐 | 说明 |
-|------|------|------|
-| 本地开发 | ⭐⭐⭐⭐ | AI SDK开发 |
-| ECS服务器 | ⭐⭐⭐ | 后端服务 |
-| 个人工具集 | ⭐⭐⭐⭐ | AI应用开发 |
+| 环境 | 推荐度 | 说明 |
+|------|--------|------|
+| 本地 | ⭐⭐⭐⭐⭐ | Vercel 项目开发 |
+| ECS | ⭐⭐⭐⭐ | 生产环境部署 |
+
+## 适用场景
+
+- 构建 AI 驱动的 Web 应用
+- 集成 You.com 搜索能力
+- 流式 AI 响应处理

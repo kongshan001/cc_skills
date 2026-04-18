@@ -1,25 +1,15 @@
-# Ai Tools Evaluator
+# AI Tools Evaluator
 
-## 技能概述
+## 技能描述
 
-- **Slug**: ai-tools-evaluator
-- **作者**: harrylabsj
-- **版本**: 1.0.0
-- **更新时间**: 2026-03-29
-
-## 描述
-
-AI工具评估器 - Evaluate and compare AI tools for specific use cases. Use when user asks about AI工具比较、AI产品评测、工具推荐、ChatGPT替代, or wants to find the best AI tool for...
-
-AI工具评估器 - 评估和比较特定用例的AI工具。
+AI 工具评估器 - 评估和比较特定用例的 AI 工具。用于用户询问 AI 工具比较、AI 产品评测、工具推荐、ChatGPT 替代，或想找到最佳 AI 工具。
 
 ## 功能列表
 
-- AI工具评估
+- AI 工具评估
 - 工具比较
-- 工具推荐
-- AI产品评测
-- 替代方案查找
+- 推荐系统
+- 用例分析
 
 ## 安装方式
 
@@ -29,8 +19,13 @@ clawhub install ai-tools-evaluator
 
 ## 推荐安装评估
 
-| 场景 | 推荐 | 说明 |
-|------|------|------|
-| 本地开发 | ⭐⭐⭐⭐ | 工具选型 |
-| ECS服务器 | ⭐⭐ | 不适用 |
-| 个人工具集 | ⭐⭐⭐⭐⭐ | AI工具探索 |
+| 环境 | 推荐度 | 说明 |
+|------|--------|------|
+| 本地 | ⭐⭐⭐⭐⭐ | 工具选型必备 |
+| ECS | ⭐⭐⭐ | 研究用途 |
+
+## 适用场景
+
+- AI 工具选型
+- 产品评测
+- 替代方案查找

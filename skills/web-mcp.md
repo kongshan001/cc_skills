@@ -1,25 +1,15 @@
-# WebMCP (slemo54)
+# Web-MCP
 
-## 技能概述
+## 技能描述
 
-- **Slug**: web-mcp
-- **作者**: slemo54
-- **版本**: 1.0.0
-- **更新时间**: 2026-04-15
-
-## 描述
-
-WebMCP - Enable AI agents to interact with your web applications through structured tools. Implements the WebMCP standard for Next.js/React apps with tool re...
-
-WebMCP - 通过结构化工具使AI代理能够与Web应用程序交互。为Next.js/React应用实现WebMCP标准。
+WebMCP - 使 AI agents 能通过结构化工具与 Web 应用交互。为 Next.js/React 应用实现 WebMCP 标准，支持工具注册和调用。
 
 ## 功能列表
 
-- AI代理Web交互
-- 工具注册
-- Next.js集成
-- React集成
-- 结构化工具暴露
+- WebMCP 标准实现
+- Next.js/React 集成
+- 工具注册系统
+- 结构化工具调用
 
 ## 安装方式
 
@@ -29,8 +19,13 @@ clawhub install web-mcp
 
 ## 推荐安装评估
 
-| 场景 | 推荐 | 说明 |
-|------|------|------|
-| 本地开发 | ⭐⭐⭐⭐ | Web开发 |
-| ECS服务器 | ⭐⭐⭐ | Web服务 |
-| 个人工具集 | ⭐⭐⭐⭐ | AI集成 |
+| 环境 | 推荐度 | 说明 |
+|------|--------|------|
+| 本地 | ⭐⭐⭐⭐⭐ | Next.js 项目 |
+| ECS | ⭐⭐⭐⭐ | 生产部署 |
+
+## 适用场景
+
+- 构建 AI 可交互 Web 应用
+- 暴露工具给 AI agents
+- Next.js 工具集成

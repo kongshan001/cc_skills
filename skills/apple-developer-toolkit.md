@@ -1,25 +1,16 @@
 # Apple Developer Toolkit
 
-## 技能概述
+## 技能描述
 
-- **Slug**: apple-developer-toolkit
-- **作者**: abdullah4ai
-- **版本**: 3.5.0
-- **更新时间**: 2026-04-15
-
-## 描述
-
-All-in-one Apple developer skill with three integrated tools shipped as a single unified binary. (1) Documentation search across Apple frameworks, symbols, API references. (2) Swift code generation from natural language. (3) App Store optimization tools.
-
-一体化Apple开发者技能，包含三个集成工具：文档搜索、Swift代码生成、App Store优化。
+一体化 Apple 开发者技能，包含三个集成工具：(1) 跨 Apple 框架、符号、API 的文档搜索，(2) VisionPro 空间计算开发，(3) Swift 调试辅助。
 
 ## 功能列表
 
-- Apple框架文档搜索
+- Apple 文档搜索
+- VisionPro 开发
+- Swift 调试
+- 框架 API 查询
 - 符号搜索
-- API参考搜索
-- Swift代码生成
-- App Store优化
 
 ## 安装方式
 
@@ -29,8 +20,13 @@ clawhub install apple-developer-toolkit
 
 ## 推荐安装评估
 
-| 场景 | 推荐 | 说明 |
-|------|------|------|
-| 本地开发 | ⭐⭐⭐⭐⭐ | Apple开发必备 |
-| ECS服务器 | ⭐ | 不适用 |
-| 个人工具集 | ⭐⭐⭐⭐⭐ | iOS/macOS开发 |
+| 环境 | 推荐度 | 说明 |
+|------|--------|------|
+| 本地 | ⭐⭐⭐⭐⭐⭐ | Apple 开发必备 |
+| ECS | ⭐⭐⭐ | Mac 绑定开发 |
+
+## 适用场景
+
+- Apple 平台开发
+- VisionOS 应用开发
+- Swift 问题调试
