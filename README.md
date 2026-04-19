@@ -1,33 +1,29 @@
 # ClawHub 热门技能调研报告
 
-> 调研时间: 2026-04-18
-
-本仓库汇总 ClawHub 热门技能的独立调研报告。
+> 自动化调研 ClawHub 热门技能并生成独立调研文档
 
 ## 技能索引
 
-| # | 技能名称 | 描述 | 推荐度 |
-|---|----------|------|--------|
-| 1 | cli-developer | CLI 工具开发 | ⭐⭐⭐⭐⭐ |
-| 2 | meow-finder | AI 工具发现 | ⭐⭐⭐⭐⭐ |
-| 3 | tools-ui | 工具生命周期 UI | ⭐⭐⭐⭐ |
-| 4 | ydc-ai-sdk-integration | Vercel AI SDK 集成 | ⭐⭐⭐⭐⭐ |
-| 5 | webmcp | WebMCP 自动化 | ⭐⭐⭐⭐⭐ |
-| 6 | web-mcp | WebMCP 标准 | ⭐⭐⭐⭐⭐ |
-| 7 | apple-developer-toolkit | Apple 开发工具 | ⭐⭐⭐⭐⭐ |
-| 8 | devtopia | AI 工具管理 | ⭐⭐⭐⭐⭐ |
-| 9 | ai-dev-runtime | AI 开发运行时 | ⭐⭐⭐⭐⭐ |
-| 10 | dev | 全栈 Web 开发 | ⭐⭐⭐⭐⭐ |
-| 11 | agency-frontend-developer | 前端开发者 | ⭐⭐⭐⭐ |
-| 12 | openclaw-cursor-agent | Cursor 代理 | ⭐⭐⭐⭐⭐ |
-| 13 | tools-page-generator | 工具页面生成 | ⭐⭐⭐ |
-| 14 | agentdeals | 开发者优惠查找 | ⭐⭐⭐⭐⭐ |
-| 15 | mcp-review | MCP 工具审查 | ⭐⭐⭐⭐⭐ |
-| 16 | cognitive-tools | 认知工具箱 | ⭐⭐⭐⭐⭐ |
-| 17 | ai-tools-evaluator | AI 工具评估 | ⭐⭐⭐⭐⭐ |
-| 18 | chrome-devtools-mcp-standard | Chrome DevTools | ⭐⭐⭐⭐⭐ |
-| 19 | customtools | 自定义工具 | ⭐⭐⭐⭐ |
-| 20 | coding-cli-management | CLI 管理 | ⭐⭐⭐⭐ |
+| 技能名称 | 描述 | 本地开发 | ECS/服务器 | 文档 |
+|----------|------|:--------:|:----------:|------|
+| docker-essentials | Docker  Essentials - Docker 容器管理核心命令和工作流程 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | [查看](./skills/docker-essentials.md) |
+| python-executor | Python Executor - 安全沙箱环境执行 Python 代码 | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | [查看](./skills/python-executor.md) |
+| github-cli | GitHub CLI - 全面的 gh CLI 参考 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | [查看](./skills/github-cli.md) |
+| k8s-debug | K8s Debug - Kubernetes Pod 故障诊断 | ⭐⭐ | ⭐⭐⭐⭐⭐ | [查看](./skills/k8s-debug.md) |
+| kubernetes-devops | Kubernetes DevOps - K8s 资源清单生成 | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ | [查看](./skills/kubernetes-devops.md) |
+| openclaw-github-assistant | OpenClaw GitHub Assistant - GitHub 仓库管理 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | [查看](./skills/openclaw-github-assistant.md) |
+| test-runner | Test Runner - 单元/集成/E2E 测试 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | [查看](./skills/test-runner.md) |
+| docker-compose | Docker Compose - 多容器应用定义 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | [查看](./skills/docker-compose.md) |
+
+## 调研方法
+
+使用 `clawhub search` 命令搜索热门方向：
+
+- Docker 相关: docker-essentials, docker-compose, docker-sandbox
+- Python 开发: python-executor, python-script-generator
+- Kubernetes: k8s-debug, kubernetes-devops
+- GitHub: github-cli, openclaw-github-assistant
+- 测试: test-runner, test-master
 
 ## 安装方式
 
@@ -35,23 +31,10 @@
 # 安装单个技能
 clawhub install <skill-name>
 
-# 查看技能详情
-clawhub inspect <skill-name>
+# 查看所有可用技能
+clawhub list
 ```
 
-## 推荐分类
+## 更新日志
 
-### 开发工具类
-- cli-developer, meow-finder, devtopia, ai-dev-runtime
-
-### 前端类
-- tools-ui, dev, agency-frontend-developer, web-mcp
-
-### 自动化类
-- webmcp, chrome-devtools-mcp-standard, openclaw-cursor-agent
-
-### 特定平台
-- apple-developer-toolkit, ydc-ai-sdk-integration
-
-### 效率工具
-- agentdeals, mcp-review, cognitive-tools, ai-tools-evaluator
+- 2026-04-19: 初始化调研，生成 8 个热门技能报告
