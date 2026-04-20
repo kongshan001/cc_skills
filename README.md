@@ -1,40 +1,67 @@
 # ClawHub 热门技能调研报告
 
-> 自动化调研 ClawHub 热门技能并生成独立调研文档
+> Claude Code 热门 Skills 独立调研报告
+
+## 调研概述
+
+- **调研时间**: 2026-04-20
+- **数据来源**: ClawHub Registry
+- **调研数量**: Top 12 技能
 
 ## 技能索引
 
-| 技能名称 | 描述 | 本地开发 | ECS/服务器 | 文档 |
-|----------|------|:--------:|:----------:|------|
-| docker-essentials | Docker  Essentials - Docker 容器管理核心命令和工作流程 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | [查看](./skills/docker-essentials.md) |
-| python-executor | Python Executor - 安全沙箱环境执行 Python 代码 | ⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | [查看](./skills/python-executor.md) |
-| github-cli | GitHub CLI - 全面的 gh CLI 参考 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | [查看](./skills/github-cli.md) |
-| k8s-debug | K8s Debug - Kubernetes Pod 故障诊断 | ⭐⭐ | ⭐⭐⭐⭐⭐ | [查看](./skills/k8s-debug.md) |
-| kubernetes-devops | Kubernetes DevOps - K8s 资源清单生成 | ⭐⭐⭐ | ⭐⭐⭐⭐⭐ | [查看](./skills/kubernetes-devops.md) |
-| openclaw-github-assistant | OpenClaw GitHub Assistant - GitHub 仓库管理 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | [查看](./skills/openclaw-github-assistant.md) |
-| test-runner | Test Runner - 单元/集成/E2E 测试 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | [查看](./skills/test-runner.md) |
-| docker-compose | Docker Compose - 多容器应用定义 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | [查看](./skills/docker-compose.md) |
+| 编号 | 技能名称 | Slug | 推荐度 | 适用场景 |
+|------|----------|------|--------|----------|
+| 1 | Context Driven Development | context-driven-development | ⭐⭐⭐⭐⭐ | AI 开发必备 |
+| 2 | Task Development Workflow | task-development-workflow | ⭐⭐⭐⭐⭐ | TDD 开发 |
+| 3 | PRD Development | prd-development | ⭐⭐⭐⭐ | 产品需求 |
+| 4 | Lowcode Platform Development | lowcode-platform-development | ⭐⭐⭐⭐ | 低代码平台 |
+| 5 | Development Coding Agent | dev-coding-agent | ⭐⭐⭐⭐⭐ | 编码开发 |
+| 6 | Devloop Agent Pack | devloop-agent-pack | ⭐⭐⭐⭐⭐ | 多 Agent 协作 |
+| 7 | COCOS CLI Game Dev | cocos-cli-game-dev | ⭐⭐⭐⭐⭐ | 游戏开发 |
+| 8 | CC Godmode | cc-godmode | ⭐⭐⭐⭐⭐ | 自 orchestration |
+| 9 | Senior Dev | senior-dev | ⭐⭐⭐⭐⭐ | 生产级开发 |
+| 10 | Contract Diagram | contract-diagram | ⭐⭐⭐⭐ | 图表契约 |
+| 11 | Vibe Coding Workflow | vibe-coding-workflow | ⭐⭐⭐⭐⭐ | AI 开发工作流 |
+| 12 | Vibe Coding Skill | vibe-coding-skill | ⭐⭐⭐⭐⭐ | Vibe Coding |
 
-## 调研方法
-
-使用 `clawhub search` 命令搜索热门方向：
-
-- Docker 相关: docker-essentials, docker-compose, docker-sandbox
-- Python 开发: python-executor, python-script-generator
-- Kubernetes: k8s-debug, kubernetes-devops
-- GitHub: github-cli, openclaw-github-assistant
-- 测试: test-runner, test-master
-
-## 安装方式
+## 快速安装
 
 ```bash
 # 安装单个技能
-clawhub install <skill-name>
+clawhub install <slug>
 
-# 查看所有可用技能
+# 查看所有技能
 clawhub list
 ```
 
-## 更新日志
+## 推荐技能组合
 
-- 2026-04-19: 初始化调研，生成 8 个热门技能报告
+### 入门组合
+- context-driven-development + dev-coding-agent
+
+### 进阶组合
+- context-driven-development + task-development-workflow + senior-dev
+
+### 全栈组合
+- context-driven-development + devloop-agent-pack + vibe-coding-workflow
+
+## 目录结构
+
+```
+cc_skills/
+├── README.md
+└── skills/
+    ├── context-driven-development.md
+    ├── task-development-workflow.md
+    ├── prd-development.md
+    ├── lowcode-platform-development.md
+    ├── dev-coding-agent.md
+    ├── devloop-agent-pack.md
+    ├── cocos-cli-game-dev.md
+    ├── cc-godmode.md
+    ├── senior-dev.md
+    ├── contract-diagram.md
+    ├── vibe-coding-workflow.md
+    └── vibe-coding-skill.md
+```
