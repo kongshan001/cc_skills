@@ -1,22 +1,20 @@
-# Unity
+# Unity Game Development
 
-## 技能描述
+## 技能概述
 
-Avoid common Unity mistakes — lifecycle ordering, GetComponent caching, physics timing, and Unity's fake null.
-
-**所有者**: ivangdavila  
-**创建时间**: 2026-02-10  
-**最新版本**: 1.0.0  
-**ClawHub Slug**: `unity`
+- **Slug**: unity
+- **作者**: ivangdavila
+- **版本**: 1.0.0
+- **更新时间**: 2026-02-25
+- **标签**: unity, game-engine, csharp
 
 ## 功能列表
 
-- Unity 生命周期最佳实践
-- GetComponent 缓存优化
-- 物理计时正确使用
-- Unity 假 null 问题处理
-- 常见错误避免
-- 性能优化建议
+1. Unity 生命周期管理最佳实践
+2. GetComponent 缓存优化
+3. 物理时序问题处理
+4. Unity 假空值(null)处理
+5. 常见 Unity 错误避免
 
 ## 安装方式
 
@@ -24,51 +22,27 @@ Avoid common Unity mistakes — lifecycle ordering, GetComponent caching, physic
 clawhub install unity
 ```
 
-或指定版本：
-
-```bash
-clawhub install unity --version 1.0.0
-```
-
 ## 推荐安装评估
 
-### 本地环境
-- ✅ **强烈推荐** - Unity 开发必备
-- 适合 Unity 游戏开发者
-- 需要 Unity 编辑器
-- 资源占用低
+| 环境 | 推荐度 | 说明 |
+|------|--------|------|
+| 本地开发 | ⭐⭐⭐⭐⭐ | Unity 游戏开发必备 |
+| ECS/服务器 | ⭐⭐ | 不适用，Unity 为编辑器技术 |
 
-### ECS/云服务器
-- ⚠️ **可选** - 适合 CI/CD 构建流程
-- 可用于自动化测试
-- 需要 Unity 命令行工具
-- 适合自动化构建
+## 适用场景
 
-## 使用场景
+- Unity 游戏客户端开发
+- Unity 性能优化
+- 移动端游戏优化
+- Unity 最佳实践学习
 
-1. Unity 游戏开发
-2. 性能优化
-3. 代码审查
-4. Bug 修复
-5. 最佳实践学习
-6. 团队培训
+## 优缺点分析
 
-## 常见问题解决
+**优点**:
+- 专注于常见 Unity 陷阱
+- 提供性能优化建议
+- 实用性强的代码模式
 
-- Awake/Start/Update 顺序问题
-- GetComponent 性能优化
-- FixedUpdate vs Update
-- null 检查陷阱
-- 协程正确使用
-- 内存泄漏预防
-
-## 相关技能
-
-- godot-dev-guide - Godot 开发
-- game-cog - 游戏设计 AI
-- blender - 3D 建模
-
-## 来源
-
-- **ClawHub**: https://clawhub.com/skills/unity
-- **搜索分数**: 0.979（游戏开发类别）
+**缺点**:
+- 不包含 3D/2D 美术工作流
+- 不包含 Unity Editor 扩展开发
