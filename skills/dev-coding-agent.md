@@ -1,34 +1,35 @@
 # Development Coding Agent
 
-> 增强型编码开发 Agent
+> Enhanced coding agent with OpenCode integration
 
-## 技能描述
+## 概述
 
-面向开发工作流的增强型编码 Agent，在构建功能、修复 bug、代码重构方面进行了优化。与 OpenCode 集成良好。
+- **Slug**: dev-coding-agent
+- **作者**: rogerwengch
+- **版本**: 1.0.0
+- **更新时间**: 2026-03-21
+- **标签**: coding, development, opencode
 
-## 核心功能
+## 功能列表
 
-1. **功能构建** - Feature 开发
-2. **Bug 修复** - Bug fixing
-3. **代码重构** - Code refactoring
-4. **OpenCode 集成** - 与 OpenCode 无缝集成
+- 特性构建
+- Bug 修复
+- 代码重构
+- OpenCode 集成
 
 ## 安装方式
 
 ```bash
-clawhub install dev-coding-agent
+clawhub install dev-coding-agent --dir ./skills
 ```
 
 ## 推荐安装评估
 
-| 场景 | 推荐度 | 说明 |
-|------|--------|------|
-| 本地开发 | ⭐⭐⭐⭐⭐ | 开发者核心技能 |
-| ECS/服务器 | ⭐⭐⭐⭐⭐ | 团队开发环境 |
-| 个人项目 | ⭐⭐⭐⭐⭐ | 提升开发效率 |
+| 场景 | 推荐 | 说明 |
+|------|------|------|
+| 本地开发 | ⭐⭐⭐⭐⭐ | OpenCode 用户首选 |
+| ECS 服务器 | ⭐⭐⭐⭐ | 需 OpenCode 环境 |
 
-### 适用人群
+## 使用场景
 
-- 所有级别开发者
-- 需要 AI 辅助开发的团队
-- OpenCode 用户
+适合使用 OpenCode 的开发者，优化了开发工作流。

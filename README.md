@@ -1,44 +1,54 @@
 # ClawHub 热门技能调研报告
 
-> 自动化调研 ClawHub 热门 Skills，定期更新
+> 自动化调研 ClawHub 热门 Skills，生成独立调研文档
 
-## 调研范围
+## 索引表
 
-- 游戏客户端开发 (Unity/Godot/Unreal)
-- Python 开发 (FastAPI/异步/测试/类型安全)
-- 自动化测试 (E2E/单元测试)
-- 开发者工具 (Docker/GitHub/CI/CD)
+| 技能名称 | Slug | 作者 | 版本 | 本地 | ECS | 功能定位 |
+|----------|------|------|------|------|-----|----------|
+| AI Agent Helper | ai-agent-helper | katrina-jpg | 1.0.0 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | Prompt Engineering |
+| Agent Evaluation | agent-evaluation | rustyorb | 1.0.0 | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ | Agent 测试评估 |
+| Agency Agents | agency-agents | jerry-guo-mys | 1.0.2 | ⭐⭐⭐ | ⭐⭐⭐⭐ | 61个专业Agent团队 |
+| Agent Development | agent-development | veeramanikandanr48 | 0.1.0 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | Claude Code 开发 |
+| Coding Agent Backup | coding-agent-backup | nickchan0412 | 1.0.0 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | 代码任务委托 |
+| Agent UI | agent-ui | okaris | 0.1.5 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | React 组件库 |
+| Development Coding Agent | dev-coding-agent | rogerwengch | 1.0.0 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | OpenCode 集成 |
+| coding-agent-common | coding-agent-common | whiskeyforsun | 1.0.0 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | 通用编码代理 |
+| Agents | agents | ivangdavila | 1.0.0 | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ | Agent 架构设计 |
+| Code Planning Agent | code-planning-agent | pigd0g | 1.0.1 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | 项目实施规划 |
+| AI Coder Pro | ai-coder | chinakingkong | 1.0.0 | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ | AI 编程助手 |
+| Agent Discovery | openclaw-agent-discovery | sky-lv | 1.0.0 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | Agent 发现探索 |
+| Agent World | agent-world | sbenodiz | 1.0.0 | ⭐⭐⭐⭐ | ⭐⭐⭐ | 多Agent社交模拟 |
+| OpenClaw Coding Agent Playbook | openclaw-coding-agent-playbook | danielsinewe | 0.1.1 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | 编码工作流编排 |
 
-## 技能索引
+## 技能详情
 
-| 技能 | 描述 | 推荐环境 | 文件 |
-|------|------|----------|------|
-| openclaw-github-assistant | GitHub 仓库管理、CI 状态、Issues | 本地/ECS | [查看](./skills/openclaw-github-assistant.md) |
-| docker-essentials | Docker 容器管理、镜像操作、调试 | 本地/ECS | [查看](./skills/docker-essentials.md) |
-| python-executor | 沙箱环境执行 Python 代码 | 本地/ECS | [查看](./skills/python-executor.md) |
-| unity | Unity 开发最佳实践、性能优化 | 本地 | [查看](./skills/unity.md) |
-| game-developer-skill | 跨引擎游戏开发 (Unity/Unreal) | 本地 | [查看](./skills/game-developer-skill.md) |
-| docker-compose | 多容器应用编排 | 本地/ECS | [查看](./skills/docker-compose.md) |
-| python-script-generator | Python 脚本/项目脚手架生成 | 本地/ECS | [查看](./skills/python-script-generator.md) |
-| test-runner | 单元/集成/E2E 测试 | 本地/ECS | [查看](./skills/test-runner.md) |
-| automation-workflows | 自动化工作流设计 | 本地/ECS | [查看](./skills/automation-workflows.md) |
-| docker-sandbox | Docker 沙箱隔离环境 | 本地/ECS | [查看](./skills/docker-sandbox.md) |
+- [AI Agent Helper](./skills/ai-agent-helper.md) - AI Agent 设定同优化助手
+- [Agent Evaluation](./skills/agent-evaluation.md) - Agent 测试评估基准
+- [Agency Agents](./skills/agency-agents.md) - 61个专业Agent团队
+- [Agent Development](./skills/agent-development.md) - Claude Code 自定义开发
+- [Coding Agent Backup](./skills/coding-agent-backup.md) - 代码任务委托备份
+- [Agent UI](./skills/agent-ui.md) - React/Next.js Agent组件
+- [Development Coding Agent](./skills/dev-coding-agent.md) - OpenCode开发代理
+- [coding-agent-common](./skills/coding-agent-common.md) - 通用编码代理
+- [Agents](./skills/agents.md) - Agent架构设计
+- [Code Planning Agent](./skills/code-planning-agent.md) - 项目规划代理
+- [AI Coder Pro](./skills/ai-coder.md) - AI编程助手
+- [Agent Discovery](./skills/openclaw-agent-discovery.md) - Agent发现探索
+- [Agent World](./skills/agent-world.md) - 多Agent社交模拟
+- [OpenClaw Coding Agent Playbook](./skills/openclaw-coding-agent-playbook.md) - 编码工作流
 
-## 环境推荐说明
+## 安装命令
 
-- ⭐⭐⭐⭐⭐ = 强烈推荐
-- ⭐⭐⭐⭐ = 推荐
-- ⭐⭐⭐ = 可用
-- ⭐⭐ = 不推荐
+```bash
+# 安装单个技能
+clawhub install <slug> --dir ./skills
 
-## 更新日志
+# 批量安装（按需选择）
+clawhub install ai-agent-helper --dir ./skills
+clawhub install coding-agent-backup --dir ./skills
+clawhub install agent-development --dir ./skills
+```
 
-- **2026-04-24**: 初始调研报告，包含 10 个热门技能
-
-## 贡献
-
-欢迎提交 Issue 或 PR 添加更多技能调研！
-
-## 推送仓库
-
-- GitHub: https://github.com/kongshan001/cc_skills
+---
+*生成时间: 2026-04-25*
