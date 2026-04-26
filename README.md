@@ -51,4 +51,28 @@ clawhub install agent-development --dir ./skills
 ```
 
 ---
-*生成时间: 2026-04-25*
+*生成时间: 2026-04-26*
+
+## 新增技能 (2026-04-26)
+
+| 技能名称 | Slug | 作者 | 版本 | 本地 | ECS | 功能定位 |
+|----------|------|------|------|------|-----|----------|
+| OpenClaw GitHub Assistant | openclaw-github-assistant | conorkenn | 2.0.1 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | GitHub 仓库管理 |
+| Docker Essentials | docker-essentials | arnarsson | 1.0.0 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | 容器管理 |
+| Test Runner | test-runner | cmanfre7 | 1.0.0 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | 测试运行器 |
+| Friendly Python | friendly-python | psiace | 1.0.0 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ | Pythonic 代码 |
+| GitHub CLI | github-cli | tag-assistant | 1.0.0 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | gh CLI 封装 |
+| Docker Compose | docker-compose | ivangdavila | 1.0.0 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | 多容器编排 |
+| Python Support | python-support | terrycarter1985 | 1.0.0 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | Python 语言支持 |
+| Test Master | test-master | veeramanikandanr48 | 0.1.0 | ⭐⭐⭐⭐ | ⭐⭐⭐ | 测试策略专家 |
+
+### 新增技能详情
+
+- [OpenClaw GitHub Assistant](./skills/openclaw-github-assistant.md) - GitHub 仓库管理
+- [Docker Essentials](./skills/docker-essentials.md) - Docker 容器管理
+- [Test Runner](./skills/test-runner.md) - 跨语言测试运行
+- [Friendly Python](./skills/friendly-python.md) - Pythonic 代码实践
+- [GitHub CLI](./skills/github-cli.md) - gh 命令行工具
+- [Docker Compose](./skills/docker-compose.md) - 多容器应用编排
+- [Python Support](./skills/python-support.md) - Python 开发环境
+- [Test Master](./skills/test-master.md) - 测试策略指导
