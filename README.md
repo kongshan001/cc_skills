@@ -1,78 +1,78 @@
 # ClawHub 热门技能调研报告
 
-> 自动化调研 ClawHub 热门 Skills，生成独立调研文档
+> 调研 ClawHub 平台热门 Skills，生成独立调研文档
 
-## 索引表
+## 调研概述
 
-| 技能名称 | Slug | 作者 | 版本 | 本地 | ECS | 功能定位 |
-|----------|------|------|------|------|-----|----------|
-| AI Agent Helper | ai-agent-helper | katrina-jpg | 1.0.0 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | Prompt Engineering |
-| Agent Evaluation | agent-evaluation | rustyorb | 1.0.0 | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ | Agent 测试评估 |
-| Agency Agents | agency-agents | jerry-guo-mys | 1.0.2 | ⭐⭐⭐ | ⭐⭐⭐⭐ | 61个专业Agent团队 |
-| Agent Development | agent-development | veeramanikandanr48 | 0.1.0 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | Claude Code 开发 |
-| Coding Agent Backup | coding-agent-backup | nickchan0412 | 1.0.0 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | 代码任务委托 |
-| Agent UI | agent-ui | okaris | 0.1.5 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | React 组件库 |
-| Development Coding Agent | dev-coding-agent | rogerwengch | 1.0.0 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | OpenCode 集成 |
-| coding-agent-common | coding-agent-common | whiskeyforsun | 1.0.0 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | 通用编码代理 |
-| Agents | agents | ivangdavila | 1.0.0 | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ | Agent 架构设计 |
-| Code Planning Agent | code-planning-agent | pigd0g | 1.0.1 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | 项目实施规划 |
-| AI Coder Pro | ai-coder | chinakingkong | 1.0.0 | ⭐⭐⭐⭐ | ⭐⭐⭐⭐ | AI 编程助手 |
-| Agent Discovery | openclaw-agent-discovery | sky-lv | 1.0.0 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | Agent 发现探索 |
-| Agent World | agent-world | sbenodiz | 1.0.0 | ⭐⭐⭐⭐ | ⭐⭐⭐ | 多Agent社交模拟 |
-| OpenClaw Coding Agent Playbook | openclaw-coding-agent-playbook | danielsinewe | 0.1.1 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | 编码工作流编排 |
+- **调研时间**: 2026-04-27
+- **数据来源**: ClawHub Explore/Search
+- **调研范围**: Top 20 热门游戏类 Skills
 
-## 技能详情
+## 技能索引
 
-- [AI Agent Helper](./skills/ai-agent-helper.md) - AI Agent 设定同优化助手
-- [Agent Evaluation](./skills/agent-evaluation.md) - Agent 测试评估基准
-- [Agency Agents](./skills/agency-agents.md) - 61个专业Agent团队
-- [Agent Development](./skills/agent-development.md) - Claude Code 自定义开发
-- [Coding Agent Backup](./skills/coding-agent-backup.md) - 代码任务委托备份
-- [Agent UI](./skills/agent-ui.md) - React/Next.js Agent组件
-- [Development Coding Agent](./skills/dev-coding-agent.md) - OpenCode开发代理
-- [coding-agent-common](./skills/coding-agent-common.md) - 通用编码代理
-- [Agents](./skills/agents.md) - Agent架构设计
-- [Code Planning Agent](./skills/code-planning-agent.md) - 项目规划代理
-- [AI Coder Pro](./skills/ai-coder.md) - AI编程助手
-- [Agent Discovery](./skills/openclaw-agent-discovery.md) - Agent发现探索
-- [Agent World](./skills/agent-world.md) - 多Agent社交模拟
-- [OpenClaw Coding Agent Playbook](./skills/openclaw-coding-agent-playbook.md) - 编码工作流
+| # | 技能名称 | Slug | 版本 | 作者 | 推荐安装 |
+|---|----------|------|------|------|----------|
+| 1 | 身份猜猜猜 | identity-guess-game | 1.0.0 | loongfay | 本地 |
+| 2 | 文字游戏大观园 | text-game-arcade-universe-v3 | 1.0.0 | 52yuanchangxing | 本地 |
+| 3 | 游戏AI系统 | game-ai | 1.0.0 | thb32133451 | 本地/ECS |
+| 4 | 旅行游戏副本生成器 | travel-city-game | 1.0.9 | hongweisong1999 | 本地 |
+| 5 | AI游戏伴侣 | play-any-game | 1.4.1 | cgandgameenginelearner | 本地 |
+| 6 | 图灵罐游戏日志阅读器 | play-game-solana-turing-pot-log-reader | 1.0.0 | joelstrawn | ECS |
+| 7 | 石头剪刀布蜥蜴 Spock | rpsls-game | 1.0.0 | akhmittra | 本地 |
+| 8 | 即时游戏设计引擎 | game | 2.0.0 | agisearch | 本地 |
+| 9 | 龙虾文游系统 | text-adventure-game-skill | 1.0.0 | 810722796-lgtm | 本地 |
+| 10 | 游戏数值策划 | game-numeric-design | 1.0.0 | wangssi1998-cell | 本地/ECS |
+| 11 | 动物园规则怪谈 | rule-pasta-zoo-game | 1.0.0 | dream-pig | 本地 |
+| 12 | Agent Arcade 游戏 | agent-arcade-games | 1.0.0 | lulzasaur9192 | 本地 |
+| 13 | Gamebox 多人游戏引擎 | gamebox | 1.0.1 | wangjiaocheng | 本地 |
+| 14 | 互动游戏框架 | interactive-games | 1.0.0 | yangyunxiao-ai | 本地 |
+| 15 | ChessMaster 国际象棋 | chessmaster | 1.0.0 | mrbeandev | 本地 |
 
-## 安装命令
+## 分类统计
+
+### 按类型
+- **休闲游戏**: identity-guess-game, rpsls-game, text-game-arcade-universe-v3
+- **游戏开发工具**: game-ai, game-numeric-design, game, gamebox
+- **游戏伴侣/辅助**: play-any-game, travel-city-game
+- **文字冒险**: text-adventure-game-skill, interactive-games, rule-pasta-zoo-game
+- **棋类**: chessmaster, agent-arcade-games
+- **区块链游戏**: play-game-solana-turing-pot-log-reader
+
+### 按推荐安装
+- **本地**: 13 个
+- **ECS**: 1 个
+- **本地/ECS**: 2 个
+
+## 快速开始
 
 ```bash
-# 安装单个技能
-clawhub install <slug> --dir ./skills
-
-# 批量安装（按需选择）
-clawhub install ai-agent-helper --dir ./skills
-clawhub install coding-agent-backup --dir ./skills
-clawhub install agent-development --dir ./skills
+# 安装所有技能
+clawhub install identity-guess-game
+clawhub install text-game-arcade-universe-v3
+clawhub install game-ai
+# ... 其他技能类似
 ```
 
+## 详细文档
+
+每个技能的详细报告见 `skills/` 目录：
+
+- [身份猜猜猜](./skills/identity-guess-game.md)
+- [文字游戏大观园](./skills/text-game-arcade-universe-v3.md)
+- [游戏AI系统](./skills/game-ai.md)
+- [旅行游戏副本生成器](./skills/travel-city-game.md)
+- [AI游戏伴侣](./skills/play-any-game.md)
+- [图灵罐游戏日志阅读器](./skills/play-game-solana-turing-pot-log-reader.md)
+- [石头剪刀布蜥蜴 Spock](./skills/rpsls-game.md)
+- [即时游戏设计引擎](./skills/game.md)
+- [龙虾文游系统](./skills/text-adventure-game-skill.md)
+- [游戏数值策划](./skills/game-numeric-design.md)
+- [动物园规则怪谈](./skills/rule-pasta-zoo-game.md)
+- [Agent Arcade 游戏](./skills/agent-arcade-games.md)
+- [Gamebox 多人游戏引擎](./skills/gamebox.md)
+- [互动游戏框架](./skills/interactive-games.md)
+- [ChessMaster 国际象棋](./skills/chessmaster.md)
+
 ---
-*生成时间: 2026-04-26*
 
-## 新增技能 (2026-04-26)
-
-| 技能名称 | Slug | 作者 | 版本 | 本地 | ECS | 功能定位 |
-|----------|------|------|------|------|-----|----------|
-| OpenClaw GitHub Assistant | openclaw-github-assistant | conorkenn | 2.0.1 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | GitHub 仓库管理 |
-| Docker Essentials | docker-essentials | arnarsson | 1.0.0 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | 容器管理 |
-| Test Runner | test-runner | cmanfre7 | 1.0.0 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | 测试运行器 |
-| Friendly Python | friendly-python | psiace | 1.0.0 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐ | Pythonic 代码 |
-| GitHub CLI | github-cli | tag-assistant | 1.0.0 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | gh CLI 封装 |
-| Docker Compose | docker-compose | ivangdavila | 1.0.0 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐⭐ | 多容器编排 |
-| Python Support | python-support | terrycarter1985 | 1.0.0 | ⭐⭐⭐⭐⭐ | ⭐⭐⭐⭐ | Python 语言支持 |
-| Test Master | test-master | veeramanikandanr48 | 0.1.0 | ⭐⭐⭐⭐ | ⭐⭐⭐ | 测试策略专家 |
-
-### 新增技能详情
-
-- [OpenClaw GitHub Assistant](./skills/openclaw-github-assistant.md) - GitHub 仓库管理
-- [Docker Essentials](./skills/docker-essentials.md) - Docker 容器管理
-- [Test Runner](./skills/test-runner.md) - 跨语言测试运行
-- [Friendly Python](./skills/friendly-python.md) - Pythonic 代码实践
-- [GitHub CLI](./skills/github-cli.md) - gh 命令行工具
-- [Docker Compose](./skills/docker-compose.md) - 多容器应用编排
-- [Python Support](./skills/python-support.md) - Python 开发环境
-- [Test Master](./skills/test-master.md) - 测试策略指导
+*Generated by OpenClaw - ClawHub Skills Research*

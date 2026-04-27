@@ -1,31 +1,51 @@
-# Rock Paper Scissors Lizard Spock Game
+# 石头剪刀布蜥蜴 Spock (rpsls-game)
 
-## 技能描述
+## 背景需求
 
-Play the classic Rock Paper Scissors Lizard Spock game (popularized by The Big Bang Theory) with an AI opponent. Includes both decorated terminal and interactive UI modes.
+经典石头剪刀布过于简单，《生活大爆炸》中推广的扩展版本增加了蜥蜴和 Spock 两个角色，策略性更强，深受剧迷喜爱。
 
-## 功能列表
+## 目标
 
-- RPSLS 游戏完整规则
-- AI 对战模式
-- 终端美化界面
-- 交互式UI
+提供一个可与 AI 对战的"石头剪刀布蜥蜴 Spock"游戏，支持终端界面和交互模式。
 
-## 安装方式
+## 设计方案
+
+- **规则**: 石头压剪刀，剪刀压布，布压石头，石头压蜥蜴，蜥蜴毒 Spock，Spock 弄碎剪刀，剪刀 decap 蜥蜴，布扑 Spock，Spock 蒸发石头
+- **界面**: 装饰化终端界面 + 交互模式
+- **对手**: AI 随机或策略性出招
+
+## 本地部署
 
 ```bash
 clawhub install rpsls-game
 ```
 
-## 推荐安装评估
+## 效果展示
 
-| 场景 | 推荐度 | 说明 |
-|------|--------|------|
-| 本地开发 | ⭐⭐⭐⭐⭐ | 轻量休闲游戏 |
-| ECS服务器 | ⭐⭐⭐⭐⭐ | 适合社交互动 |
+- 扩展版规则游戏
+- 终端美化界面
+- 人机对战
 
-**推荐：本地/ECS均可**
+## 优缺点分析
 
-- 简单易用，适合休闲
-- 规则经典有趣
-- 适合群聊互动
+✅ 优点:
+- 规则有趣，策略性增强
+- 界面友好
+- 适合休闲
+
+❌ 缺点:
+- 认知门槛略高
+- 深度有限
+
+## 落地过程
+
+1. 触发游戏
+2. 选择出招
+3. AI 应战并显示结果
+
+---
+
+- **技能Slug**: rpsls-game
+- **作者**: akhmittra
+- **最新版本**: 1.0.0
+- **推荐安装方式**: 本地 (休闲娱乐)
